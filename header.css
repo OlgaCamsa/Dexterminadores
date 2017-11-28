@@ -1,3 +1,6 @@
+*{margin: 0px;
+padding: 0px;}
+
 header{border: 1px solid black;
     width: 100%;
     height: 3em;
@@ -17,29 +20,47 @@ nav>div{border: 1px solid black;
 img{
     width: 20pt;
     height: 20pt;
+    
 }
 
 nav button{
     background-color: grey;
-    border: 0px;
+    border: 1px solid black;
     width: 80pt;
     height: 2em;
+    text-align: left;
+    border-radius: 5pt;
+    padding-left: 2pt;
+}
+
+button p{
+    padding-left: 30pt;
 }
 
 .menu{
     width: 300pt;
+    padding-left: 5pt;
+    vertical-align: middle; 
 }
-.logo{   
+.logo{
+    text-align: center;
+    vertical-align: middle; 
 }
 
 .logchef{
     width: 100pt;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .loguser{
     width: 100pt;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .carro{
     width: 100pt;
+    text-align: center;
+    vertical-align: middle;
 }
