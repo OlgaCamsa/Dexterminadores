@@ -1,0 +1,45 @@
+header{border: 1px solid black;
+    width: 100%;
+    height: 3em;
+    background-color: orange;
+}
+
+nav{border: 1px solid black;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+nav>div{border: 1px solid black;
+    display: table-cell;
+}
+
+img{
+    width: 20pt;
+    height: 20pt;
+}
+
+nav button{
+    background-color: grey;
+    border: 0px;
+    width: 80pt;
+    height: 2em;
+}
+
+.menu{
+    width: 300pt;
+}
+.logo{   
+}
+
+.logchef{
+    width: 100pt;
+}
+
+.loguser{
+    width: 100pt;
+}
+
+.carro{
+    width: 100pt;
+}
