@@ -1,19 +1,22 @@
 *{  margin: 0px;
-    padding: 0px;}
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;}
 
 header{/*border: 1px solid black;*/
     width: 100%;
     height: 3em;
     background-color: orange;}
 
-header>nav{/*border: 1px solid black;*/
+header nav{/*border: 1px solid black;*/
     width: 100%;
     height: 100%;}
 
 /*header img{width: 20pt;
     height: 20pt;}*/
 
-header>nav>div{/*border: 1px solid black;*/
+header nav div{/*border: 1px solid black;*/
 display: inline-block;}
 
 header button{/*border: 1px solid black;*/
