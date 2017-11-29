@@ -6,8 +6,8 @@
 
 header{/*border: 1px solid black;*/
     width: 100%;
-    height: 3em;
-    background-color: orange;}
+    height: 3.5em;
+    background-color: rgb(235, 91, 12);}
 
 header nav{/*border: 1px solid black;*/
     width: 100%;
@@ -16,36 +16,32 @@ header nav{/*border: 1px solid black;*/
 /*header img{width: 20pt;
     height: 20pt;}*/
 
-header nav div{/*border: 1px solid black;*/
-display: inline-block;}
-
-header button{/*border: 1px solid black;*/
-    width: 90pt;
-    height: 25pt;
-    border-radius: 5pt;
-    text-align: center;
-    /*box-shadow: 1pt 1pt 2pt 0pt gray;*/
-    /*margin: 0pt 2pt;*/}
-
-/*.menu{width: 300pt;
-    padding-left: 5pt;
-    position: absolute;
-    left: 0px;}*/
-
-/*nav img{width: 300px;
-height: 200px;
-position: relative;
-top: 0px;}*/
+header nav div{display: inline-block;}
 
 header .logo {position: absolute;
     top: -60px;
     left: 0px;}
 
-header .logo img{width: 300px;}
+header .logo img{width: 300px;
+}
 
-header .login{position: absolute;
-right: 20px;
-top: 25px;
-width: 400px;}
+header .login{border: 1px solid black;
+    position: absolute;
+right: 0px;
+top: 8px;
+width: 250px;
+display: -webkit-flex;
+    display: flex;}
 
-header .login>div{display: inline-block;}
+header .login>div{display: inline-block;
+    margin: 0pt 5pt;
+    float: right;}
+
+   /* header .login>div:first-of-type{margin: 0pt;}*/
+
+header .login img{   
+    width: 60px;
+    height: 60px;
+position: relative;
+top: 0px;
+left: 0px;}
