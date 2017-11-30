@@ -75,7 +75,8 @@ position: absolute;
 margin-top: 8pt;
 right: 20pt;}
 
-.rrssicon>img{width: 25pt;}
+.rrssicon img{width: 25pt;
+margin-right: 5pt;}
 
 
 /*#firstoftheicons {margin-right: 90px;}*/
