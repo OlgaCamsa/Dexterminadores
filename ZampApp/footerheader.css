@@ -1,0 +1,82 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-size: 15pt;
+}
+
+header{/*border: 1px solid black*/;
+    width: 100%;
+    height: 42pt;
+    background-color: rgb(235, 91, 12);}
+
+header nav{/*border: 1px solid black;*/
+    width: 100%;
+    height: 100%;}
+
+/*header img{width: 20pt;
+    height: 20pt;}*/
+
+header nav div{display: inline-block;}
+
+header .logo {position: absolute;
+    top: 5px;
+    left: 20px;}
+
+header .logo img{width: 250px;}
+
+header .login{/*border: 1px solid black*/;
+    position: absolute;
+right: 0px;
+top: 8px;
+width: 250px;
+display: -webkit-flex;
+    display: flex;}
+
+header .login>div{display: inline-block;
+    margin: 0pt 5pt;
+    float: right;}
+
+   /* header .login>div:first-of-type{margin: 0pt;}*/
+
+header .login img{   
+    width: 60px;
+    height: 60px;
+position: relative;
+top: 0px;
+left: 0px;}
+
+.rellenoheader{height: 20pt;}
+
+
+
+
+
+/*FOOTER CSS*/
+footer {background: rgb(234, 91, 12);
+    bottom:0px;
+    width: 100%;
+    height: 50px;
+    display: inline-block;}  
+    
+footer>div{display: inline-block;}
+
+footer>.enlaces{margin-left: 20pt;
+width: 400pt;}
+
+footer > .enlaces>div {
+    display: inline-block;
+    height: 20pt;
+    margin-left: 30pt;
+    margin-top: 10pt;
+    top: 0px;}
+
+.rrssicon{width: 100pt;
+position: absolute;
+margin-top: 8pt;
+right: 20pt;}
+
+.rrssicon>img{width: 25pt;}
+
+
+/*#firstoftheicons {margin-right: 90px;}*/
+
