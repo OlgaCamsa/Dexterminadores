@@ -134,10 +134,10 @@ header nav div {
 }
 header .logo {
   position: absolute;
-  left: 250px;
+  left: 50px;
 }
 header .logo img {
-  width: 350px;
+  width: 100px;
 }
 header .login {
   /*border: 1px solid black*/
@@ -194,3 +194,40 @@ footer > .enlaces > div {
   margin-right: 5pt;
 }
 /*#firstoftheicons {margin-right: 90px;}*/
+
+.asks{/*border: 1px solid black;*/
+  width: 100%;
+}
+
+.asks > div{/*border: 1px solid red;*/
+  display: inline-block;
+  width: 100%;
+  height: 200pt;
+}
+.asks>div>div{/*border: 1px solid black;*/
+  width: 45%;
+  height: 90%;
+  display: inline-block;
+  margin: 5pt 25pt;
+  background-color: #eb5b0c;
+  border-radius: 20pt;
+}
+.asks>div>.topizq{
+  float: left;
+}
+.asks>div>.topder{
+  float: right;
+}
+.asks>div>.downizq{
+float: left;
+}
+.asks>div>.downder{
+  float: right;
+}
+.asks .pregunta{
+  text-align: center;
+  padding: 20pt;
+}
+.asks form{
+  text-align: center;
+}
