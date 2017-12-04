@@ -5,9 +5,11 @@
 }
 
 body{
-	font-family: 'Arial';
+	font-family: Helvetica, Arial;
 	color: #C0CA33;
 	background-color: #f5f5f5;
+	
+
 }
 
 section{
@@ -81,6 +83,7 @@ div.filtro{
 	border-radius: 5px;
 	margin: 5px;
 	line-height: 1.3;
+	border: solid#566573 4px;
 }
 
 div.filtro > div{
@@ -95,6 +98,7 @@ div.resultados {
 	border-radius: 5px;
 	margin: 5px;
 	background-color: white;
+	border: solid#566573 4px;
 }
 
 div.divTableBody{
