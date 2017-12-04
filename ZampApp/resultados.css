@@ -67,6 +67,10 @@ section{
 	border: 1px #C0CA33 solid;
 }
 
+.result select option{
+	font-size: 1em
+}
+
 .result button:hover {
 	box-shadow: 0 3px 34px rgba(0,0,0,.25);
 	transform: translateY(-2px);
