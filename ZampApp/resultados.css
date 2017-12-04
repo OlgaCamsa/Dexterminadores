@@ -97,9 +97,8 @@ div.resultados {
 	background-color: white;
 }
 
-div.divTableRow{
+div.divTableBody{
 	margin: 40px 0px;
-	display: inline-block;
 }
 
 div>label {
@@ -119,6 +118,7 @@ div.divTableCell{
 	padding: 5px;
 	margin: 5px;
 	perspective: 1000px;
+	display: inline-block;
 }
 
 div.fotoproduct {
