@@ -699,6 +699,7 @@ section{
 .result img {
   width: 85%;
   height: 85%;
+  border-radius: 5px
 }
 
 .result a {
@@ -750,6 +751,7 @@ div.filtro{
   border-radius: 5px;
   margin: 5px;
   line-height: 1.3;
+  border: 4px #566573 solid;
 }
 
 div.filtro > div{
@@ -764,6 +766,7 @@ div.resultados {
   border-radius: 5px;
   margin: 5px;
   background-color: white;
+  border: 4px #566573 solid;
 }
 
 div.divTableBody{
@@ -771,7 +774,8 @@ div.divTableBody{
 }
 
 div>label {
-  font-size: 0.7em
+  font-size: 0.7em;
+  color: #C0CA33;
 }
 
 div.orden {
@@ -842,6 +846,7 @@ div.divTableCell > div {
 
 div.fotoproduct span {
   font-size: 0.7em; 
+  color: #C0CA33;
 }
 
 input[type="range"]{
