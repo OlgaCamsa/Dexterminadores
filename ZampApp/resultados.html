@@ -39,13 +39,13 @@
 			<div class="filtro">
 			<h2>Búsqueda avanzada</h2>
 			<div>
-				<h3>Proximidad</h3>
+				<h3>Proximidad (km)</h3>
 				<div>
 					<input type="range" min="0" max="100" step="1" value="50" oninput=""> 
 				</div>
 			</div>
 			<div>
-				<h3>Precio</h3>
+				<h3>Precio (€)</h3>
 				<div class="slider">
 					<input type="range" min="1" max="60" step="1" value="30" oninput=""> 
 				</div>
@@ -95,35 +95,35 @@
 			<div>
 				<h3>Categorías</h3>
 				<div>
-					<input type="radio" name="categoria" value="hamburguesas" id="cat1">
+					<input type="checkbox" name="categoria" value="hamburguesas" id="cat1">
 					<label for="cat1">Hamburguesas</label>
 				</div>
 				<div>
-					<input type="radio" name="categoria" value="pizzas" id="cat2">
+					<input type="checkbox" name="categoria" value="pizzas" id="cat2">
 					<label for="cat2">Pizzas</label>
 				</div>
 				<div>
-					<input type="radio" name="categoria" value="pastas" id="cat1">
+					<input type="checkbox" name="categoria" value="pastas" id="cat1">
 					<label for="cat3">Pastas</label>
 				</div>
 				<div>
-					<input type="radio" name="categoria" value="ensaladas" id="cat4">
+					<input type="checkbox" name="categoria" value="ensaladas" id="cat4">
 					<label for="cat4">Ensaladas</label>
 				</div>
 				<div>
-					<input type="radio" name="categoria" value="carnes" id="cat5">
+					<input type="checkbox" name="categoria" value="carnes" id="cat5">
 					<label for="cat5">Carnes</label>
 				</div>
 				<div>
-					<input type="radio" name="categoria" value="sopas" id="cat6">
+					<input type="checkbox" name="categoria" value="sopas" id="cat6">
 					<label for="cat6">Sopas</label>
 				</div>
 				<div>
-					<input type="radio" name="categoria" value="arroces" id="cat7">
+					<input type="checkbox" name="categoria" value="arroces" id="cat7">
 					<label for="cat7">Arroces</label>
 				</div>
 				<div>
-					<input type="radio" name="categoria" value="sushi" id="cat8">
+					<input type="checkbox" name="categoria" value="sushi" id="cat8">
 					<label for="cat8">Sushi</label>
 				</div>
 				<div>
@@ -140,8 +140,8 @@
 			<div class="orden">
 				<label for="orden">Ordenar por</label>
 				<select name="orden" id="orden">
-					<option value="1" selected="true">Ordenar por proximidad</option>
-					<option value="2">Ordenar por precio</option>
+					<option value="1" selected="true">Ordenar por proximidad (de menor a mayor)</option>
+					<option value="2">Ordenar por precio (de menor a mayor)</option>
 				</select>
 			</div>
 			<div class="divTable">
