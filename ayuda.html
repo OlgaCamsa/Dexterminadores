@@ -5,31 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ayuda</title>
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="footerheader.css">
 </head>
 <body>
 
         <header>
                 <nav>
                     <div class="logo">    
-                    <a href="home.html">
-                            <img src="zampapp.png" alt="ZAMPAPP">
+                    <a href="home">
+                            <img src="img/logo.png" alt="ZAMPAPP">
                         </a>
                     </div>
                     <div class="login">
                         <div class="logchef">
                         <a href="login chef">
-                            <img src="chef.png" alt="logchef"> 
+                            <img src="img/icono/chef.png" alt="logchef"> 
                         </a>
                         </div>
                         <div class="loguser">
                         <a href="login user">             
-                            <img src="perfil.png" alt="loguser"> 
+                            <img src="img/icono/perfil.png" alt="loguser"> 
                         </a>
                         </div>
                         <div class="carro">
                         <a href="carro">                           
-                            <img src="carrito.png" alt="carro">
+                            <img src="img/icono/carrito.png" alt="carro">
                         </a>                    
                         </div>
                     </div>
@@ -37,7 +37,7 @@
         </header>
         
     <h1>¿Quieres ponerte en contacto con nosotros?</h1>   
-        <form action="Contacto">
+        <form class="contacto">
             <div>
                 <label>Nombre</label>
                 <input type="text" name="nombre" id="inquisidor" placeholder="Tu nombre">
@@ -50,27 +50,30 @@
                 <label>¿Cúal es tu pregunta?</label>
                 <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje"></textarea>
             </div>
-            <input type="submit" value="Enviar">
+            <div>
+            <input type="submit" value="Enviar" placeholder="Enviar">
+            </div>
         </form>
         
         <p>¡Muchas gracias, contestaremos a tu mensaje lo antes posible!</p>
 
         <footer>
+            <div class="enlaces">
                 <div>
-                    <a href="ayuda.html">Ayuda</a>
+                    <a href="ayuda.html" class="nounderline">Ayuda</a>
                 </div>
                 <div>
-                    <a href="condicionesdeuso.html">Condiciones de uso</a>
+                    <a href="condicionesdeuso.html" class="nounderline">Condiciones de uso</a>
                 </div>
                 <div>
-                    <a href="sobrenosotros.html">Sobre nosotros</a>
+                    <a href="sobrenosotros.html" class="nounderline">Sobre nosotros</a>
                 </div>
-                <div>
-                    <img class="rrssicon" id="firstoftheicons" src="x.png" alt="Facebook">
-                    <img class="rrssicon" src="x.png" alt="Twitter">
-                    <img class="rrssicon" src="x.png" alt="Instagram">
-                </div>
-                </div> 
-        </footer>   
+            </div>
+            <div class="rrssicon">
+                    <img src="img/icono/facebook.png" alt="Facebook">
+                    <img src="img/icono/twitter.png" alt="Twitter">
+                    <img src="img/icono/instagram.png" alt="Instagram">
+            </div>
+        </footer>  
 </body>
 </html>
