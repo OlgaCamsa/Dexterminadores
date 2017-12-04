@@ -733,7 +733,8 @@ section{
 }
 
 .result select option{
-  font-size: 1em
+  font-size: 1em;
+  color: #C0CA33;
 }
 
 .result button:hover {
