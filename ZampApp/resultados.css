@@ -154,6 +154,7 @@ div.precio{
 .fotoproduct, .back {
 	backface-visibility: hidden;
 	position: absolute;
+	font-weight: normal;
 }
 
 .back {
@@ -166,7 +167,6 @@ div.back div{
 	text-align: left;
 	line-height: 0.8;
 	color: #566573;
-	font-weight: normal;
 }
 
 div.divTableCell > div {
@@ -176,7 +176,6 @@ div.divTableCell > div {
 
 div.fotoproduct span {
 	font-size: 0.7em;
-	font-weight: normal;
 }
 
 input[type="range"]{
