@@ -24,12 +24,7 @@ section{
 .result h3{
 	color: #566573;
 	font-size: 0.7em;
-}
-
-.result h4{
-	color: #566573;
-	font-size: 0.7em;
-	margin-bottom: 8px
+	margin: 5px 0;
 }
 
 .result img {
@@ -148,17 +143,18 @@ div.precio{
 	transform-style: preserve-3d;
 	position: relative;
 	height: 80%;
-	margin-bottom: 10px
+	margin-bottom: 10px;
 }
 
 .fotoproduct, .back {
 	backface-visibility: hidden;
 	position: absolute;
+	font-weight: normal;
 }
 
 .back {
 	transform: rotateY(180deg);
-	width: 100%
+	width: 100%;
 }
 
 div.back div{
@@ -166,7 +162,7 @@ div.back div{
 	text-align: left;
 	line-height: 0.8;
 	color: #566573;
-	font-weight: normal;
+	
 }
 
 div.divTableCell > div {
@@ -175,8 +171,7 @@ div.divTableCell > div {
 }
 
 div.fotoproduct span {
-	font-size: 0.7em;
-	font-weight: normal;
+	font-size: 0.7em;	
 }
 
 input[type="range"]{
