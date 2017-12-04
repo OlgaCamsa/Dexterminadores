@@ -161,6 +161,120 @@ header .login img {
   top: 0px;
   left: 0px;
 }
+
+/* Empieza el clickable de categorias*/
+
+#catpizza{
+  content: url('zampapp/img/comida/pizza.png');
+  width: 100px;
+  height: 100px;
+}
+#catpizza:checked {
+  content: url('Zampapp/img/comida/pizza2.png');
+}
+#cathamburguesa{
+  content: url('zampapp/img/comida/burguer.png');
+  width: 100px;
+  height: 100px;
+}
+#cathamburguesa:checked {
+  content: url('Zampapp/img/comida/burguer2.png');
+}
+#catbocadillo{
+  content: url('zampapp/img/comida/bocadillo.png');
+  width: 100px;
+  height: 100px;
+}
+#catbocadillo:checked {
+  content: url('Zampapp/img/comida/bocadillo2.png');
+}
+#catensalada{
+  content: url('zampapp/img/comida/ensalada.png');
+  width: 100px;
+  height: 100px;
+}
+#catensalada:checked {
+  content: url('Zampapp/img/comida/ensalada2.png');
+}
+#catsopa{
+  content: url('zampapp/img/comida/sopa.png');
+  width: 100px;
+  height: 100px;
+}
+#catsopa:checked {
+  content: url('Zampapp/img/comida/sopa2.png');
+}
+#catcarne{
+  content: url('zampapp/img/comida/carne.png');
+  width: 100px;
+  height: 100px;
+}
+#catcarne:checked {
+  content: url('Zampapp/img/comida/carne2.png');
+}
+#catpescado{
+  content: url('zampapp/img/comida/pescado.png');
+  width: 100px;
+  height: 100px;
+}
+#catpescado:checked {
+  content: url('Zampapp/img/comida/pescado2.png');
+}
+#catpescado{
+  content: url('zampapp/img/comida/pescado.png');
+  width: 100px;
+  height: 100px;
+}
+#catpescado:checked {
+  content: url('Zampapp/img/comida/pescado2.png');
+}
+#catpasta{
+  content: url('zampapp/img/comida/pasta.png');
+  width: 100px;
+  height: 100px;
+}
+#catpasta:checked {
+  content: url('Zampapp/img/comida/pasta2.png');
+}
+#catkebab{
+  content: url('zampapp/img/comida/kebab.png');
+  width: 100px;
+  height: 100px;
+}
+#catkebab:checked {
+  content: url('Zampapp/img/comida/kebab2.png');
+}
+#catsushi{
+  content: url('zampapp/img/comida/japonesa.png');
+  width: 100px;
+  height: 100px;
+}
+#catsushi:checked {
+  content: url('Zampapp/img/comida/japonesa2.png');
+}
+#catarroz{
+  content: url('zampapp/img/comida/arroz.png');
+  width: 100px;
+  height: 100px;
+}
+#catarroz:checked {
+  content: url('Zampapp/img/comida/arroz2.png');
+}
+#catvarios{
+  content: url('zampapp/img/comida/varios.png');
+  width: 100px;
+  height: 100px;
+}
+#catvarios:checked {
+  content: url('Zampapp/img/comida/varios2.png');
+}
+.transparent {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* Acaba el clickable de categorias*/
+
 /*!!!!!!!!!!!!!!!!!!!!!FOOTER!!!!!!!!!!!!!!!!!*/
 footer {
   background: #ea5b0c;
