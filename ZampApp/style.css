@@ -12,15 +12,6 @@ body{
   color: #C0CA33;
   background-color: #f5f5f5;
 }
-
-h1{
-  margin: auto;
-  margin-top:3%;
-  text-align: center;
-  font-family: Helvetica, arial;
-  font-size: 30px;
-  color: #C0CA33;}
-
 /*Fin Diseño general*/
 
 /* Empieza HEADER*/
@@ -101,56 +92,47 @@ footer > .enlaces > div {
 /*Fin FOOTER*/
 
 /* Empieza HOME */
-.home > section {
+.home section {
   display: flex;
   padding-bottom: 10px;
 }
-.home > section img {
+.home section img {
   width: 75px;
   height: 75px;
   text-align: center;
   vertical-align: middle;
 }
-.home > section p {
+.home section p {
   text-align: center;
   vertical-align: middle;
 }
-.home > section h1 {
+.home section h1 {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   vertical-align: middle;
 }
-.home > section .izquierda {
+.home .izquierda {
   background-color: white;
   border-radius: 5px;
-  border: 4px #566573 solid;
   margin-left: 20px;
+  border: 4px #566573 solid;
 }
-.home > section .izquierda .random {
+.home .random {
+  position: relative;
   width: 325px;
 }
-.home > section .izquierda .random a > button {
-  border: 0;
-  border-radius: 100%;
-  color: #fff;
-  cursor: pointer;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-  transition: all .1s linear;
+.home .random a {
   top: 25%;
   right: 25%;
   margin-left: 20px;
 }
-.home > section .izquierda .random a > button img {
+.home .random a img {
+  position: relative;
   width: 250px;
   height: 250px;
 }
-.home > section .izquierda .random > a > button:active {
-  transform: translateY(3px);
-}
-.home > section .derecha {
+.home .derecha {
   background-color: white;
   border-radius: 5px;
   max-width: auto;
@@ -158,159 +140,124 @@ footer > .enlaces > div {
   margin-right: 20px;
   border: 4px #566573 solid;
 }
-.home > section .derecha div {
+.home .derecha div {
   text-align: center;
 }
-.home > section .derecha div div {
+.home .subderecha {
   display: block;
+  height: 420px;
 }
-.home > section .derecha div div div {
+.home .busqueda {
+  margin: 15px 15px 0px 15px;
+}
+.home .busqueda a {
+  margin: 0px;
+}
+.home .busqueda a img {
+  margin: 0px;
+  width: 75px;
+  height: 75px;
+}
+.home .pretable {
   margin: 0 auto;
-  overflow-y: auto;
-  height: auto;
+  height: 75%;
   padding: 2px;
+  overflow-y: auto;
 }
-.home > section .derecha div div div div {
+.home .pretable div {
   text-align: center;
   vertical-align: middle;
   display: inline-block;
-  border-radius: 5px;
   height: auto;
   overflow: hidden;
-  padding: 1px;
 }
-.home > section .derecha div div div div p {
-  border-radius: 5px;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-.home > section .derecha div div .busqueda > a > button {
-  border: 0;
-  border-radius:100%;
-  color: #fff;
-  cursor: pointer;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-  transition: all .1s linear;
-}
-.home > section .derecha div div .busqueda > a > button img {
-  width: 50px;
-  height: 50px;
-}
-.home > section .derecha div div .busqueda > a > button:active {
-  box-shadow: 0 2px 0 #3f3f3f;
-  transform: translateY(3px);
-}
-/* Empieza el clickable de categorias */
-#catpizza{
-  content: url("img/comida/pizza.png");
+.home .pretable div input {
   width: 100px;
   height: 100px;
-}
-#catpizza:checked {
-  content: url("img/comida/pizza2.png");
-}
-#cathamburguesa{
-  content: url("img/comida/burguer.png");
-  width: 100px;
-  height: 100px;
-}
-#cathamburguesa:checked {
-  content: url("img/comida/burguer2.png");
-}
-#catbocadillo{
-  content: url("img/comida/bocadillo.png");
-  width: 100px;
-  height: 100px;
-}
-#catbocadillo:checked {
-  content: url("img/comida/bocadillo2.png");
-}
-#catensalada{
-  content: url("img/comida/ensalada.png");
-  width: 100px;
-  height: 100px;
-}
-#catensalada:checked {
-  content: url("img/comida/ensalada2.png");
-}
-#catsopa{
-  content: url("img/comida/sopa.png");
-  width: 100px;
-  height: 100px;
-}
-#catsopa:checked {
-  content: url("img/comida/sopa2.png");
-}
-#catcarne{
-  content: url("img/comida/carne.png");
-  width: 100px;
-  height: 100px;
-}
-#catcarne:checked {
-  content: url("img/comida/carne2.png");
-}
-#catpescado{
-  content: url("img/comida/pescado.png");
-  width: 100px;
-  height: 100px;
-}
-#catpescado:checked {
-  content: url("img/comida/pescado2.png");
-}
-#catpescado{
-  content: url("img/comida/pescado.png");
-  width: 100px;
-  height: 100px;
-}
-#catpescado:checked {
-  content: url("img/comida/pescado2.png");
-}
-#catpasta{
-  content: url("img/comida/pasta.png");
-  width: 100px;
-  height: 100px;
-}
-#catpasta:checked {
-  content: url("img/comida/pasta2.png");
-}
-#catkebab{
-  content: url("img/comida/kebab.png");
-  width: 100px;
-  height: 100px;
-}
-#catkebab:checked {
-  content: url("img/comida/kebab2.png");
-}
-#catsushi{
-  content: url("img/comida/japonesa.png");
-  width: 100px;
-  height: 100px;
-}
-#catsushi:checked {
-  content: url("img/comida/japonesa2.png");
-}
-#catarroz{
-  content: url("img/comida/arroz.png");
-  width: 100px;
-  height: 100px;
-}
-#catarroz:checked {
-  content: url("img/comida/arroz2.png");
-}
-#catvarios{
-  content: url("img/comida/varios.png");
-  width: 100px;
-  height: 100px;
-}
-#catvarios:checked {
-  content: url("img/comida/varios2.png");
-}
-.transparent {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+}
+.home .pretable div #catpizza {
+  content: url("img/comida/pizza.png");
+}
+.home .pretable div #cathamburguesa {
+  content: url("img/comida/burguer.png");
+}
+.home .pretable div #catbocadillo {
+  content: url("img/comida/bocadillo.png");
+}
+.home .pretable div #catensalada {
+  content: url("img/comida/ensalada.png");
+}
+.home .pretable div #catsopa {
+  content: url("img/comida/sopa.png");
+}
+.home .pretable div #catcarne {
+  content: url("img/comida/carne.png");
+}
+.home .pretable div #catpescado {
+  content: url("img/comida/pescado.png");
+}
+.home .pretable div #catpescado {
+  content: url("img/comida/pescado.png");
+}
+.home .pretable div #catpasta {
+  content: url("img/comida/pasta.png");
+}
+.home .pretable div #catkebab {
+  content: url("img/comida/kebab.png");
+}
+.home .pretable div #catsushi {
+  content: url("img/comida/japonesa.png");
+}
+.home .pretable div #catarroz {
+  content: url("img/comida/arroz.png");
+}
+.home .pretable div #catvarios {
+  content: url("img/comida/varios.png");
+}
+.home .pretable div #catpizza:checked {
+  content: url("img/comida/pizza2.png");
+}
+.home .pretable div #cathamburguesa:checked {
+  content: url("img/comida/burguer2.png");
+}
+.home .pretable div #catbocadillo:checked {
+  content: url("img/comida/bocadillo2.png");
+}
+.home .pretable div #catensalada:checked {
+  content: url("img/comida/ensalada2.png");
+}
+.home .pretable div #catsopa:checked {
+  content: url("img/comida/sopa2.png");
+}
+.home .pretable div #catcarne:checked {
+  content: url("img/comida/carne2.png");
+}
+.home .pretable div #catpescado:checked {
+  content: url("img/comida/pescado2.png");
+}
+.home .pretable div #catpescado:checked {
+  content: url("img/comida/pescado2.png");
+}
+.home .pretable div #catpasta:checked {
+  content: url("img/comida/pasta2.png");
+}
+.home .pretable div #catkebab:checked {
+  content: url("img/comida/kebab2.png");
+}
+.home .pretable div #catsushi:checked {
+  content: url("img/comida/japonesa2.png");
+}
+.home .pretable div #catarroz:checked {
+  content: url("img/comida/arroz2.png");
+}
+.home .pretable div #catvarios:checked {
+  content: url("img/comida/varios2.png");
+}
+.home .pretable div p {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 /* Fin clickable de categorias*/
 /*fin HOME*/
@@ -380,6 +327,14 @@ float: left;
 
 /* Empieza AYUDA */
 
+.ayuda h1{
+  margin: auto;
+  margin-top:3%;
+  text-align: center;
+  font-family: Helvetica, arial;
+  font-size: 30px;
+  color: #C0CA33;
+}
 .ayuda p{
   margin: auto;
   margin-top: 15px;
@@ -447,7 +402,7 @@ float: left;
   margin-top: 50px;
   background-color: white;
   margin-bottom:15px;
-  height: 340px;
+  height: 315px;
   overflow: auto;
 }
 .about{
