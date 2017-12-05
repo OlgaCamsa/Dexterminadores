@@ -1,18 +1,13 @@
 /*Empieza Diseño general*/
-*{
+
+body{
+  color: #C0CA33;
+  background-color: #f5f5f5;
   font-family: Helvetica, arial;
-  color: #D35400;
   padding:0px;
   margin:0px;
   font-size: 15pt;
 }
-
-body{
-  font-family: helvetica, Arial;
-  color: #C0CA33;
-  background-color: #f5f5f5;
-}
-
 h1{
   margin: auto;
   margin-top:3%;
