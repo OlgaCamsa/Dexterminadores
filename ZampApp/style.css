@@ -1,125 +1,21 @@
-body {
-  padding: 0px;
-  margin: 0px;
-  color: black;
-  font-size: 15px;
-  width: 100%;
+/*Empieza Diseño general*/
+*{
+  font-family: Helvetica, arial;
+  color: #D35400;
+  padding:0px;
+  margin:0px;
+  font-size: 15pt;
+}
+
+body{
+  font-family: helvetica, Arial;
+  color: #C0CA33;
   background-color: #f5f5f5;
 }
-.home > section {
-  display: flex;
-}
-.home > section img {
-  width: 75px;
-  height: 75px;
-  text-align: center;
-  vertical-align: middle;
-}
-.home > section p {
-  text-align: center;
-  vertical-align: middle;
-}
-.home > section h1 {
-  /*border-bottom: 3px solid black;*/
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  vertical-align: middle;
-}
-.home > section .izquierda {
-  width: 50%;
-  position: relative;
-  border: 4px #566573 solid;
-}
-.home > section .izquierda .busqueda > a > button {
-  border: 0;
-  background: grey;
-  border-radius: 0px;
-  box-shadow: 0 5px 0 #3f3f3f;
-  color: #fff;
-  cursor: pointer;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 12px 20px;
-  transition: all .1s linear;
-  position: absolute;
-  bottom: 10px;
-  right: 3px;
-}
-.home > section .izquierda .busqueda > a > button img {
-  width: 50px;
-  height: 50px;
-}
-.home > section .izquierda .busqueda > a > button:active {
-  box-shadow: 0 2px 0 grey;
-  transform: translateY(3px);
-}
-.home > section .izquierda .random > a > button {
-  border: 0;
-  border-radius: 250px;
-  color: #fff;
-  cursor: pointer;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-  transition: all .1s linear;
-  position: absolute;
-  top: 25%;
-  right: 25%;
-}
-.home > section .izquierda .random > a > button img {
-  width: 250px;
-  height: 250px;
-}
-.home > section .izquierda .random > a > button:active {
- 
-  transform: translateY(3px);
-}
-.home > section .derecha {
-  width: 50%;
-  border: 4px #566573 solid;
-}
-.home > section .derecha div {
-  text-align: center;
-}
-.home > section .derecha div div {
-  margin: 0 auto;
-  overflow-y: auto;
-  height: 430px;
-}
-.home > section .derecha div div div {
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block;
-  /*border: solid 3px black;*/
-  border-radius: 5px;
-  height: 125px;
-  overflow-y: hidden;
-}
-.home > section .derecha div div div p {
-  /*border: solid 3px black;*/
-  border-radius: 5px;
-}
-/*header {
-  border-top: solid 3px black;
-  border-left: solid 3px black;
-  border-right: solid 3px black;}*/
+/*Fin Diseño general*/
 
-/*footer {
-  border-bottom: solid 3px black;
-  border-left: solid 3px black;
-  border-right: solid 3px black;
-}*/
-
-
-
-
-
-
-/*!!!!!!!!!!!!!!!!HEADER!!!!!!!!!!!!!!!!!!!*/
+/* Empieza HEADER*/
 header {
-  /*border: 1px solid black*/
   width: 100%;
   height: 42pt;
   margin-bottom: 20pt;
@@ -127,12 +23,9 @@ header {
   position: relative;
 }
 header nav {
-  /*border: 1px solid black;*/
   width: 100%;
   height: 100%;
 }
-/*header img{width: 20pt;
-    height: 20pt;}*/
 header nav div {
   display: inline-block;
 }
@@ -144,7 +37,6 @@ header .logo img {
   width: 250px;
 }
 header .login {
-  /*border: 1px solid black*/
   position: absolute;
   right: 0px;
   top: 8px;
@@ -157,71 +49,15 @@ header .login > div {
   margin: 0pt 5pt;
   float: right;
 }
-/* header .login>div:first-of-type{margin: 0pt;}*/
 header .login img {
   width: 60px;
   height: 60px;
   position: relative;
   top: 0px;
   left: 0px;}
+/*fin HEADER*/
 
-
-
-
-
-
-  /*!!!!!!!!!!!!!!!!HEADER HOME!!!!!!!!!!!!!!!!!!!*/
-/*header {
-  width: 100%;
-  height: 42pt;
-  margin-bottom: 20pt;
-  background-color: #eb5b0c;
-  position: relative;
-}
-header nav {
-
-  width: 100%;
-  height: 100%;
-}
-
-header nav div {
-  display: inline-block;
-}
-.headhome .logo {
-  position: absolute;
-  left: 35%;
-  z-index: 1;
-}
-.headhome .logo img {
-  width: 350px;
-}
-header .login {
-  position: absolute;
-  right: 0px;
-  top: 8px;
-  width: 250px;
-  display: -webkit-flex;
-  display: flex;
-}
-header .login > div {
-  display: inline-block;
-  margin: 0pt 5pt;
-  float: right;
-}
-header .login img {
-  width: 60px;
-  height: 60px;
-  position: relative;
-  top: 0px;
-  left: 0px;}*/
-
-
-
-
-
-/*!!!!!!!!!!!!!!!!!!!!!FOOTER!!!!!!!!!!!!!!!!!*/
-
-
+/* Empieza FOOTER*/
 footer {
   background: #ea5b0c;
   bottom: 0px;
@@ -253,81 +89,9 @@ footer > .enlaces > div {
   width: 25pt;
   margin-right: 5pt;
 }
-/*#firstoftheicons {margin-right: 90px;}*/
+/*Fin FOOTER*/
 
-
-
-
-/*preguntas*/
-.asks{/*border: 1px solid black;*/
-  width: 100%;
-}
-
-.asks > div{/*border: 1px solid red;*/
-  display: inline-block;
-  width: 100%;
-  height: 185pt;
-padding: 0px;
-}
-.asks>div>div{border: 4px #566573 solid;
-  width: 40%;
-  height: 80%;
-  display: inline-block;
-  margin: 5pt 25pt;
-  background-color: white;
-  border-radius: 20pt;
-}
-.asks>div>.topizq{
-  float: left;
-}
-.asks>div>.topder{
-  float: right;
-}
-.asks>div>.downizq{
-float: left;
-}
-.asks>div>.downder{
-  float: right;
-}
-.asks .pregunta h3{
-  text-align: center;
-  padding: 5pt;
-  padding-top: 10pt;
-  font-size: 2em;
-  height: 30pt;
-}
-
-.asks h5{
-  text-align: center;
-  font-size: 1.3em;
-  margin: 1pt 0pt;
-  padding: 8pt 40pt 0pt 40pt;
- /* height: 75px;*/
-}
-
-.asks form{
-  text-align: center;
-  padding: 8pt;
-  font-size: 1.2em;
-}
-
-.asks>.askbutton{
-  width: 1px;
-  height: 20pt;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-}
-
-.asks>.askbutton img{
-  width: 80pt;
-  position: relative;
-  left: -40pt;
-}
-
-
-
-/* HOME */
+/* Empieza HOME */
 .home > section {
   display: flex;
   padding-bottom: 10px;
@@ -351,21 +115,20 @@ float: left;
 .home > section .izquierda {
   background-color: white;
   border-radius: 5px;
+  border: 4px #566573 solid;
+  margin-left: 20px;
 }
 .home > section .izquierda .random {
   width: 325px;
 }
 .home > section .izquierda .random a > button {
   border: 0;
-  
   border-radius: 100%;
- 
   color: #fff;
   cursor: pointer;
   font: inherit;
   margin: 0;
   outline: 0;
-  
   transition: all .1s linear;
   top: 25%;
   right: 25%;
@@ -376,7 +139,6 @@ float: left;
   height: 250px;
 }
 .home > section .izquierda .random > a > button:active {
- 
   transform: translateY(3px);
 }
 .home > section .derecha {
@@ -385,6 +147,7 @@ float: left;
   max-width: auto;
   margin-left: 20px;
   margin-right: 20px;
+  border: 4px #566573 solid;
 }
 .home > section .derecha div {
   text-align: center;
@@ -402,32 +165,25 @@ float: left;
   text-align: center;
   vertical-align: middle;
   display: inline-block;
-  /* border: solid 3px black; */
   border-radius: 5px;
   height: auto;
   overflow: hidden;
   padding: 1px;
 }
 .home > section .derecha div div div div p {
-  /* border: solid 3px black; */
   border-radius: 5px;
   margin-left: 2px;
   margin-right: 2px;
 }
 .home > section .derecha div div .busqueda > a > button {
   border: 0;
- 
   border-radius:100%;
-  
   color: #fff;
   cursor: pointer;
   font: inherit;
   margin: 0;
   outline: 0;
- 
   transition: all .1s linear;
-  
- 
 }
 .home > section .derecha div div .busqueda > a > button img {
   width: 50px;
@@ -437,12 +193,7 @@ float: left;
   box-shadow: 0 2px 0 #3f3f3f;
   transform: translateY(3px);
 }
-
-
-
-
 /* Empieza el clickable de categorias */
-
 #catpizza{
   content: url("img/comida/pizza.png");
   width: 100px;
@@ -552,16 +303,75 @@ float: left;
   -moz-appearance: none;
   appearance: none;
 }
-/* Acaba el clickable de categorias*/
+/* Fin clickable de categorias*/
+/*fin HOME*/
 
-
-
-/* AYUDA */
-/*css ayuda*/
-body {
-  background-color: #f5f5f5;
+/*Empieza PREGUNTAS*/
+.asks{
+  width: 100%;
 }
-h1{
+.asks > div{
+  display: inline-block;
+  width: 100%;
+  height: 185pt;
+  padding: 0px;
+}
+.asks>div>div{
+  border: 4px #566573 solid;
+  width: 40%;
+  height: 80%;
+  display: inline-block;
+  margin: 5pt 25pt;
+  background-color: white;
+  border-radius: 20pt;
+}
+.asks>div>.topizq{
+  float: left;
+}
+.asks>div>.topder{
+  float: right;
+}
+.asks>div>.downizq{
+float: left;
+}
+.asks>div>.downder{
+  float: right;
+}
+.asks .pregunta h3{
+  text-align: center;
+  padding: 5pt;
+  padding-top: 10pt;
+  font-size: 2em;
+  height: 30pt;
+}
+.asks h5{
+  text-align: center;
+  font-size: 1.3em;
+  margin: 1pt 0pt;
+  padding: 8pt 40pt 0pt 40pt;
+}
+.asks form{
+  text-align: center;
+  padding: 8pt;
+  font-size: 1.2em;
+}
+.asks>.askbutton{
+  width: 1px;
+  height: 20pt;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+.asks>.askbutton img{
+  width: 80pt;
+  position: relative;
+  left: -40pt;
+}
+/*Fin PREGUNTAS*/
+
+/* Empieza AYUDA */
+
+.ayuda h1{
   margin: auto;
   margin-top:3%;
   text-align: center;
@@ -569,7 +379,7 @@ h1{
   font-size: 30px;
   color: #C0CA33;
 }
-p{
+.ayuda p{
   margin: auto;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -577,11 +387,6 @@ p{
   font-family: Helvetica, arial;
   font-size: 20px;
   color: #C0CA33;
-}
-*{
-  font-family: Helvetica, arial;
-  font-size: 12px;
-  color: #D35400;
 }
 .contacto{
   margin:auto;
@@ -622,45 +427,16 @@ p{
   resize: none;
   box-shadow: 0 0 0 3px #f5f5f5;
 }
-.contacto input: :focus {
-  box-shadow
-  :none;
+.contacto input :focus {
+  box-shadow :none;
 }
 .nounderline {
   color: white;
   text-decoration: none;
 }
-/*
-.contacto input [type:'text']: focus, .contacto textarea:focus{
-  outline:none;
-  box-shadow: 0 0 0 3px #f5f5f5;
-}
-.contacto input [type='submit']{
-  border: 1px solid #f5f5f5;
-  box-shadow: 0 0 0 3px #f5f5f5;
-  padding:8px 16px;
-  border-radius: 20px;
-  font-weight: bold;
-  text-shadow: 1px 1px 0px white;
-  
-  background: #e4f1f6;
-  background: -moz-linear-gradient(top,#e4f1f6 0%,#cfe6ef 100%);
-  background: -webkit-repeating-linear-gradient(top, #e4f1f6 0%,#cfe6ef 100%);
-}
-.contacto input [type='submit']:hover{
-  background: #D35400;
-  background: -moz-linear-gradient(top,#edfcff 0%,#cfe6ef 100%);
-  background: -webkit-repeating-linear-gradient(top, #edfcff 0%,#cfe6ef 100%);
-}
-.contacto input [type='submit']:active{
-  background: #D35400;
-  background: -moz-linear-gradient(top,#cfe6ef 0%,#edfcff 100%);
-  background: -webkit-repeating-linear-gradient(top, #cfe6ef 0%,#edfcff 100%);
-}*/
-/* FIN AYUDA CSS */
+/* FIN AYUDA */
 
-/* empieza condiciones de uso*/
-
+/* Empieza Condiciones de uso*/
 .condiciones{
   margin:auto;
   width:70%;
@@ -673,7 +449,6 @@ p{
   height: 315px;
   overflow: auto;
 }
-
 .about{
   margin:auto;
   width:70%;
@@ -685,37 +460,21 @@ p{
   margin-bottom:15px;
   overflow: auto;
 }
-
 .condiciones p {
   text-align: left;
   color: #566573;
   font-size: 12px;
 }
-
 .condiciones h2 {
   font-size: 16px;
 }
+/* Fin CONDICIONES*/
 
-/* fin condiciones de uso*/
+/* Empieza RESULTADOS */
 
-/* RESULTADOS */
-/*css resultados*/
-*{
-    padding:0px;
-    margin:0px;
-    font-size: 15pt;
-}
-
-body{
-  font-family: helvetica, Arial;
-  color: #C0CA33;
-  background-color: #f5f5f5;
-}
-
-section{
+section .result{
   margin: 50px auto 20px auto;
 }
-
 .result{
   display: flex;
 }
@@ -725,24 +484,20 @@ section{
   color: #566573;
   margin-bottom: 15px
 }
-
 .result h3{
   color: #566573;
   font-size: 0.7em;
   margin: 5px 0;
 }
-
 .result img {
   width: 85%;
   height: 85%;
   border-radius: 5px
 }
-
 .result a {
   text-decoration: none;
   color: #C0CA33;
 }
-
 .result button{
   width: 25px;
   height: 25px;
@@ -757,27 +512,22 @@ section{
   border: 0px;
   vertical-align: middle;
 }
-
 .result input{
   cursor: pointer;
 }
-
 .result select{
   font-size: 0.7em;
   color: #C0CA33;
   border: 1px #C0CA33 solid;
 }
-
 .result select option{
   font-size: 1em;
   color: #C0CA33;
 }
-
 .result button:hover {
   box-shadow: 0 3px 34px rgba(0,0,0,.25);
   transform: translateY(-2px);
 }
-
 div.filtro{
   width: 15%;
   padding: 25px 10px;
@@ -789,13 +539,11 @@ div.filtro{
   margin: 5px;
   line-height: 1.3;
   border: 4px #566573 solid;
-  height: 730px;
+  height: 70%;
 }
-
 div.filtro > div{
   margin:10px 0px
 }
-
 div.resultados {
   width: 78%;
   padding: 10px;
@@ -806,23 +554,18 @@ div.resultados {
   background-color: white;
   border: 4px #566573 solid;
 }
-
 div.divTableBody{
   margin: 40px 0px;
 }
-
-div>label {
+.result div>label {
   font-size: 0.7em;
   color: #C0CA33;
 }
-
 div.orden {
   text-align: right;
   margin-bottom: 15px;
   font-size: 0.9em
 }
-
-
 div.divTableCell{
   width: 260px;
   height: 260px;
@@ -831,7 +574,6 @@ div.divTableCell{
   perspective: 1000px;
   display: inline-block;
 }
-
 div.fotoproduct {
   width: 85%;
   padding: 0 8%;
@@ -839,17 +581,14 @@ div.fotoproduct {
   /* for firefox 31 */
   transform: rotateY(0deg);
 }
-
 div.precio{
   height: 15%;
 }
-
 .divTableCell:hover .flipper, .divTableCell.hover .flipper {
   transform: rotateY(180deg);
   background-color: #f5f5f5;
   border-radius: 5px
 }
-
 .flipper {
   transition: 0.4s;
   transform-style: preserve-3d;
@@ -857,60 +596,46 @@ div.precio{
   height: 80%;
   margin-bottom: 10px;
 }
-
 .fotoproduct, .back {
   backface-visibility: hidden;
   position: absolute;
   font-weight: normal;
 }
-
 .back {
   transform: rotateY(180deg);
   width: 100%;
 }
-
 div.back div{
   font-size: 0.6em;
   text-align: left;
   line-height: 0.8;
   color: #566573;
-  
-}
-
+  }
 div.divTableCell > div {
   font-weight: bold;
   color: #566573;
 }
-
 div.fotoproduct span {
   font-size: 0.7em; 
   color: #C0CA33;
 }
-
 input[type="range"]{
   width: 90%;
 }
-
 .result .busqueda  {
   width: 100%;
   position: relative;
+  padding-bottom: 10px;
 }
-
 .result .busqueda button {
   position: absolute;
   right: 10%;
   height: 30px;
   width: 30px
 }
-
-
 .result .busqueda button img {
   text-align: center;
-  vertical-align: middle;
-  display: inline-block;
-  /*border: solid 3px black;*/
   height: 35px;
   width: 35px;
 }
-
-/* FIN RESULTADOS CSS */
+/* FIN RESULTADOS*/
