@@ -405,6 +405,14 @@ float: left;
   height: 315px;
   overflow: auto;
 }
+.condh1 h1{
+  margin: auto;
+  margin-top:3%;
+  text-align: center;
+  font-family: Helvetica, arial;
+  font-size: 30px;
+  color: #C0CA33;
+}
 .about{
   margin:auto;
   width:70%;
@@ -595,3 +603,14 @@ input[type="range"]{
   width: 35px;
 }
 /* FIN RESULTADOS*/
+
+/* Empieza SOBRE NOSOTROS */
+.nosotros h1{
+  margin: auto;
+  margin-top:3%;
+  text-align: center;
+  font-family: Helvetica, arial;
+  font-size: 30px;
+  color: #C0CA33;
+}
+/* FIN SOBRE NOSOTROS*/
