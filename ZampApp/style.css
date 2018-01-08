@@ -451,7 +451,33 @@ footer > .enlaces > div {
   position: relative;
   left: -40pt;
 }
-/*Fin PREGUNTAS*/
+.asks>.askbutton a {
+    font-size: 0px;
+}
+@media (max-width:450px) {
+.asks>.fila {
+    display: block;
+    height: 477px;
+    /* float: initial; */
+}
+.asks>.fila>div {
+    width: 95%;
+    margin: 5px 1%;
+    float: initial;
+    text-align: center;
+    height: 220px;
+}
+.asks>.askbutton {
+position: relative;
+}
+.asks>.askbutton>a {
+    text-decoration-line: none;
+    font-size: 0px;
+    }
+}
+/*Fin RANDOM*/
+
+
 /* Empieza AYUDA */
 .ayuda p {
   margin: auto;
