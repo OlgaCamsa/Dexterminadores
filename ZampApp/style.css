@@ -224,93 +224,59 @@ footer>.enlaces>div>a{
 
 /* Empieza HOME */
 
+.home * h1 {
+  margin: 0px;
+}
 .home section {
   display: flex;
   padding-bottom: 10px;
 }
-
-.home section img {
-  width: 75px;
-  height: 75px;
-  text-align: center;
-  vertical-align: middle;
-}
-
 .home section p {
   text-align: center;
   vertical-align: middle;
 }
-
 .home section h1 {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   vertical-align: middle;
 }
-
 .home .izquierda {
   background-color: white;
   border-radius: 5px;
-  margin-left: 20px;
+  margin: 20px;
   border: 4px #566573 solid;
-}
-
-.home .random {
   position: relative;
-  width: 325px;
 }
-
-.home .random a {
-  top: 25%;
-  right: 25%;
-  margin-left: 20px;
-}
-
-.home .random a img {
-  position: relative;
-  width: 250px;
-  height: 250px;
-}
-
 .home .derecha {
   background-color: white;
   border-radius: 5px;
-  max-width: auto;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
   border: 4px #566573 solid;
 }
-
 .home .derecha div {
   text-align: center;
 }
-
 .home .subderecha {
   display: block;
-  height: 420px;
 }
-
 .home .busqueda {
-  margin: 15px 15px 0px 15px;
+  margin: 0px 15px 0px 15px;
 }
-
 .home .busqueda a {
   margin: 0px;
 }
-
 .home .busqueda a img {
   margin: 0px;
   width: 75px;
   height: 75px;
 }
-
 .home .pretable {
-  margin: 0 auto;
-  height: 75%;
-  padding: 2px;
+  margin: 0 auto 0 auto;
   overflow-y: auto;
+  padding: 5px;
+  height: 380px;
 }
-
 .home .pretable div {
   text-align: center;
   vertical-align: middle;
@@ -318,121 +284,240 @@ footer>.enlaces>div>a{
   height: auto;
   overflow: hidden;
 }
-
-.home .pretable div input {
-  width: 100px;
-  height: 100px;
+.home .transparent {
+  width: 80px;
+  height: 80px;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-
 .home .pretable div #catpizza {
   content: url("img/comida/pizza.png");
 }
-
 .home .pretable div #cathamburguesa {
   content: url("img/comida/burguer.png");
 }
-
 .home .pretable div #catbocadillo {
   content: url("img/comida/bocadillo.png");
 }
-
 .home .pretable div #catensalada {
   content: url("img/comida/ensalada.png");
 }
-
 .home .pretable div #catsopa {
   content: url("img/comida/sopa.png");
 }
-
 .home .pretable div #catcarne {
   content: url("img/comida/carne.png");
 }
-
 .home .pretable div #catpescado {
   content: url("img/comida/pescado.png");
 }
-
 .home .pretable div #catpescado {
   content: url("img/comida/pescado.png");
 }
-
 .home .pretable div #catpasta {
   content: url("img/comida/pasta.png");
 }
-
 .home .pretable div #catkebab {
   content: url("img/comida/kebab.png");
 }
-
 .home .pretable div #catsushi {
   content: url("img/comida/japonesa.png");
 }
-
 .home .pretable div #catarroz {
   content: url("img/comida/arroz.png");
 }
-
 .home .pretable div #catvarios {
   content: url("img/comida/varios.png");
 }
-
 .home .pretable div #catpizza:checked {
   content: url("img/comida/pizza2.png");
 }
-
 .home .pretable div #cathamburguesa:checked {
   content: url("img/comida/burguer2.png");
 }
-
 .home .pretable div #catbocadillo:checked {
   content: url("img/comida/bocadillo2.png");
 }
-
 .home .pretable div #catensalada:checked {
   content: url("img/comida/ensalada2.png");
 }
-
 .home .pretable div #catsopa:checked {
   content: url("img/comida/sopa2.png");
 }
-
 .home .pretable div #catcarne:checked {
   content: url("img/comida/carne2.png");
 }
-
 .home .pretable div #catpescado:checked {
   content: url("img/comida/pescado2.png");
 }
-
 .home .pretable div #catpescado:checked {
   content: url("img/comida/pescado2.png");
 }
-
 .home .pretable div #catpasta:checked {
   content: url("img/comida/pasta2.png");
 }
-
 .home .pretable div #catkebab:checked {
   content: url("img/comida/kebab2.png");
 }
-
 .home .pretable div #catsushi:checked {
   content: url("img/comida/japonesa2.png");
 }
-
 .home .pretable div #catarroz:checked {
   content: url("img/comida/arroz2.png");
 }
-
 .home .pretable div #catvarios:checked {
   content: url("img/comida/varios2.png");
 }
-
 .home .pretable div p {
-  margin-left: 2px;
-  margin-right: 2px;
+  margin: 3px 2px;
+}
+@media (max-width: 480px) {
+  .home section {
+    display: block;
+  }
+  .home .izquierda .random a img {
+    margin: 0 0 10px 37%;
+  }
+  .home .busqueda a img {
+    margin: 5px;
+  }
+}
+@media (min-width: 320px) {
+  .home .resultadoshome h1 {
+    font-size: 30px;
+  }
+  .home.ingredientes h1 {
+    font-size: 30px;
+  }
+  .home .izquierda .random a img {
+    width: 100px;
+    height: 100px;
+  }
+  .home .izquierda {
+    margin: 5px;
+  }
+  .home .derecha {
+    margin: 5px;
+  }
+}
+@media (min-width: 481px) {
+  .home .resultadoshome h1 {
+    font-size: 20px;
+  }
+  .ingredientes h1 {
+    font-size: 20px;
+  }
+  .home .izquierda .random a img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+  .home .izquierda {
+    width: 200px;
+    margin: 10px;
+  }
+  .home .derecha {
+    margin: 10px;
+  }
+}
+@media (min-width: 641px) {
+  .home .transparent {
+    width: 84px;
+    height: 84px;
+  }
+  .home .resultadoshome h1 {
+    font-size: 25px;
+  }
+  .home .ingredientes h1 {
+    font-size: 25px;
+  }
+  .home .izquierda .random a img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+  .home .izquierda {
+    width: 250px;
+    margin: 10px;
+  }
+  .home .derecha {
+    margin: 10px;
+  }
+}
+@media (min-width: 961px) {
+  .home .resultadoshome h1 {
+    font-size: 30px;
+  }
+  .home .ingredientes h1 {
+    font-size: 30px;
+  }
+  .home {
+    font-size: 1.25em;
+  }
+  .home .transparent {
+    width: 120px;
+    height: 120px;
+  }
+  .home .izquierda .random a img {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+  }
+  .home .pretable div {
+    width: 125px;
+    height: 170px;
+    margin-bottom: 20px;
+  }
+  .home .pretable div p {
+    margin-top: 5px;
+  }
+  .home .izquierda {
+    width: 300px;
+    margin: 15px;
+  }
+  .home .derecha {
+    margin: 15px;
+  }
+}
+@media (min-width: 1025px) {
+  .home .resultadoshome h1 {
+    font-size: 30px;
+  }
+  .home .ingredientes h1 {
+    font-size: 30px;
+  }
+  .home .izquierda .random a img {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+  }
+  .home .izquierda {
+    width: 350px;
+    margin: 20px;
+  }
+  .home .derecha {
+    margin: 20px;
+  }
+}
+@media (min-width: 1281px) {
+  .home .resultadoshome h1 {
+    font-size: 30px;
+  }
+  .home .ingredientes h1 {
+    font-size: 30px;
+  }
+  .home .izquierda .random a img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+  }
+  .home .izquierda {
+    width: 350px;
+    margin: 20px;
+  }
+  .home .derecha {
+    margin: 20px;
+  }
 }
 
 
