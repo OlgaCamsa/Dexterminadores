@@ -88,7 +88,7 @@ header .login img {
     height: 25pt;
 }
 header .logo{
-  padding-left: 0px;
+  padding-left: 10px;
 }
 header .logo img {
   width: 150px;
@@ -132,7 +132,7 @@ header{
 footer {
     background: #ea5b0c;
     width: 100%;
-    height: 105px;
+    height: 110px;
 }
 
 footer>div {
@@ -198,7 +198,7 @@ footer>.enlaces>div {
     top: 0px;
 }
 footer>.enlaces>div:first-of-type {
-  margin-top: 8pt;
+  margin-top: 20px;
 }
   footer>.enlaces>div>a{
     font-size: 13pt;
@@ -435,7 +435,7 @@ footer>.enlaces>div:first-of-type {
 /*fin HOME*/
 
 
-/*Empieza PREGUNTAS*/
+/*Empieza RANDOM*/
 
 .asks {
     width: 100%;
@@ -508,9 +508,28 @@ footer>.enlaces>div:first-of-type {
     position: relative;
     left: -40pt;
 }
-
-
-/*Fin PREGUNTAS*/
+@media (max-width:450px) {
+.asks>.fila {
+    display: block;
+    height: 477px;
+    /* float: initial; */
+}
+.asks>.fila>div {
+    width: 95%;
+    margin: 5px 1%;
+    float: initial;
+    text-align: center;
+    height: 220px;
+}
+.asks>.askbutton {
+position: relative;
+}
+.asks>.askbutton>a {
+    text-decoration-line: none;
+    font-size: 0px;
+    }
+}
+/*Fin RANDOM*/
 
 
 /* Empieza AYUDA */
@@ -593,16 +612,19 @@ footer>.enlaces>div:first-of-type {
 /* Empieza Condiciones de uso*/
 
 .condiciones {
-    margin: auto;
+    margin: 15px auto;
     width: 70%;
     border: 4px solid #566573;
     border-radius: 10px;
-    padding: 45px 45px 20px;
-    margin-top: 50px;
+    /* padding: 45px 45px 20px; */
+    /* margin-top: 50px; */
     background-color: white;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     height: 315px;
     overflow: auto;
+    /* margin-top: 15px; */
+    padding: 30px 20px;
+
 }
 
 .condh1 h1 {
@@ -635,8 +657,17 @@ footer>.enlaces>div:first-of-type {
 .condiciones h2 {
     font-size: 16px;
 }
-
-
+@media (max-width:450px) {
+.condh1>h1{
+    font-size: 20px;
+}
+.condiciones>h2{
+    font-size: 16px;
+}
+.condiciones>p{
+    font-size: 14px;
+}
+}
 /* Fin CONDICIONES*/
 
 
@@ -854,6 +885,10 @@ input[type="range"] {
     font-family: Helvetica, arial;
     font-size: 30px;
     color: #C0CA33;
+}
+.nosotros>.about{
+    margin-top: 15px;
+    padding: 30px 20px;
 }
 
 
