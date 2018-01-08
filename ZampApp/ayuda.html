@@ -41,21 +41,21 @@
         <form class="contacto">
             <div>
                 <label>Nombre</label>
-                <input type="text" name="nombre" id="inquisidor" placeholder="Tu nombre">
+                <input type="text" name="nombre" id="inquisidor" placeholder="Tu nombre" required>
             </div>
             <div>
                 <label>Email</label>
-                <input type="email" name="email" id="email" placeholder="Tu email">
+                <input type="email" name="email" id="email" placeholder="Tu email" required>
             </div>
             <div>
                 <label>¿Cúal es tu pregunta?</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje"></textarea>
+                <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
             </div>
             <div>
-                <input type="submit" value="Enviar" placeholder="Enviar">
+                <input id="submit" type="submit" value="Enviar" placeholder="Enviar">
             </div>
         </form>
-        <p>¡Muchas gracias, contestaremos a tu mensaje lo antes posible!</p>
+        <p id="feedback"></p>
     </div>
     <footer>
         <div class="enlaces">
@@ -81,5 +81,7 @@
             </a>
         </div>
     </footer>
+<script src="ayuda.js"></script>
 </body>
+
 </html>
