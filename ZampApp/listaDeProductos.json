@@ -1,0 +1,130 @@
+ [
+	{
+		"nombre": "Pizza Pepperone Picante",
+		"precio": 11.60, 
+		"restaurante": "Tagliatella", 
+		"tags": ["tomate", "mozzarella", "salami picante"],
+		"descripción": "Tomate, Mozzarella, Salami Picante",
+		"foto": "https://res.cloudinary.com/hesvvq3zo/image/upload/w_1000,h_500,c_pad,q_30/v1477472361/takeaway/Le-Pizze-Pepperoni.jpg"
+	},
+	{
+		"nombre": "Pizza 4 quesos",
+		"precio": 12.60, 
+		"restaurante": "Tagliatella", 
+		"tags": ["tomate", "grana padano", "mozzarella", "gorgonzola", "emmental"],
+		"descripción": "Tomate, Grana Padano, Mozzarella, Gorgonzola, Emmental.",
+		"foto": "https://res.cloudinary.com/hesvvq3zo/image/upload/w_1000,h_500,c_pad,q_30/v1477472361/takeaway/Le-Pizze-4formaggi.jpg"
+	},
+	{
+		"nombre": "Pizza Carbonara", 
+		"precio": 9, 
+		"restaurante": "TelePizza", 
+		"tags": ["masa fresca", "doble de bacon", "champiñon", "salsa carbonara", "topping a base de mozzarella", "extra detopping a base de mozzarella"],
+		"descripción": "Masa fresca, doble de bacon, champiñón, salsa carbonara, topping a base de mozzarella y extra detopping a base de mozzarella.",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pcaq_c.png"
+	},
+	{
+		"nombre": "Pizza Boloñesa", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["doble ración de carne de vacuno", "topping a base de mozzarella", "extra de salsa de tomate confitado"],
+		"descripción": "Doble ración de carne de vacuno, topping a base de mozzarella y extra de salsa de tomate confitado.",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/bolo_c.png"
+	},
+	{
+		"nombre": "Pizza Hawaiana", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["masa fresca", "doble de york", "piña", "topping a base de mozzarella", "tomate", "extra de topping a base de mozzarella"],
+		"descripción": "Masa fresca, doble de york, piña, topping a base de mozzarella, tomate y extra de topping a base de mozzarella.",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/phw_c.png"
+	},
+	{
+		"nombre": "Pizza Carbonara Cebolla", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["masa fresca", "doble de bacon", "champiñon", "salsa carbonara", "topping a base de mozzarella y cebolla"],
+		"descripción": "Masa fresca, doble de bacon, champiñón, salsa carbonara, topping a base de mozzarella y cebolla",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pcar_c.png"
+	},
+	{
+		"nombre": "Pizza Rodeo", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["carne de vacuno", "bacon", "salsa steak", "salsa grill", "topping a base de mozzarella"],
+		"descripción": "La nueva Telepizza Rodeo compuesta por: carne de vacuno, bacon, salsa steak&grill y topping a base de mozzarella",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/rode_c.png"
+	},
+	{
+		"nombre": "Pizza Ibérica de TelePizza", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["jamón ibérico de cebo", "tomate natural", "aceite de oliva", "masa fresca"],
+		"descripción": "Una exquisita selección de jamón ibérico de cebo acompañado de finas rodajas de tomate natural y un toque de aceite de oliva sobre una crujiente masa",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/iber_c.png"
+	},
+	{
+		"nombre": "Pizza Burger", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["queso chedder", "carne de vacuno", "tomate natural", "pepinillos", "topping a base de mozzarella", "bacon cripsy", "salsa burger"],
+		"descripción": "Auténtico sabor burger en cada bocado. Queso cheddar, carne de vacuno, tomate natural y pepinillos, cubiertos con una masa con topping a base de mozzarella, bacon crispy y salsa burger.",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/p3pb_c.png"
+	},
+	{
+		"nombre": "Pizza Barbacoa Gourmet", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["5 quesos", "pollo marinado", "bacon ahumado", "carne de vacuno", "salsa barbacoa", "topping a base de mozzarella"],
+		"descripción": "Una mezcla de 5 quesos, tiras de pollo marinado, bacon ahumado, doble ración de carne de vacuno, salsa barbacoa y topping a base de mozzarella.",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/53bq_c.png"
+	},
+	{
+		"nombre": "Pizza Carbonara Gourmet Queso", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["5 quesos", "masa fina", "bacon", "champiñón", "salsa carbonara", "topping a base de mozzarella"],
+		"descripción": "Una pizza mediana mezcla de 5 quesos cubierta de una masa fina con doble ración de bacon, champiñón, salsa carbonara y extra de topping a base de mozzarella",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/tkgq_c.png"
+	},
+	{
+		"nombre": "Pizza Carbonara Gourmet Cebolla", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["5 quesos", "masa fina", "bacon", "champiñón", "salsa carbonara", "cebolla"],
+		"descripción": "Una pizza mediana mezcla de 5 quesos cubierta de una masa fina con doble ración de bacon, champiñón, salsa carbonara y cebolla.",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/tkgo_c.png"
+	},
+	{
+		"nombre": "Pizza Telepizza Vulcano Nachos", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["5 quesos", "masa fina", "bacon", "champiñón", "salsa carbonara", "cebolla"],
+		"descripción": "Una pizza mediana mezcla de 5 quesos cubierta de una masa fina con doble ración de bacon, champiñón, salsa carbonara y cebolla.",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/tkgo_c.png"
+	},
+	{
+		"nombre": "Pizza Bacon Cheeseburger", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["masa fresca", "bacon", "mini hamburguesas", "queso cheddar", "topping a base de mozzarella", "salsa burger", "tomate natural"],
+		"descripción": "Masa fresca, bacon, mini hamburguesitas, queso cheddar, topping a base de mozzarella, salsa burger y tomate natural.",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pzbc_c.png"
+	},
+	{
+		"nombre": "Pizza Barbacoa Crème Queso", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["masa fresca", "bacon", "champiñón", "pollo", "topping a base de mozzarella", "salsa barbacoa", "salsa carbonara"],
+		"descripción": "Masa fresca, bacon, champiñón, pollo, topping a base de mozzarella, mezcla de salsa barbacoa y carbonara y extra de topping a base de mozzarella.",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pbcq_c.png"
+	},
+	{
+		"nombre": "Pizza Jalisco", 
+		"precio": 7, 
+		"restaurante": "TelePizza", 
+		"tags": ["masa fresca", "aceitunas negras", "cebolla", "pimiento morrón", "carne de vacuno"],
+		"descripción": "Masa fresca, Aceitunas negras, Cebolla, Pimiento morrón, carne de vacuno",
+		"foto": "https://images.telepizza.com/vol/es/images/content/productos/jali_c.png"
+	}
+]

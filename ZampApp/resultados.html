@@ -7,7 +7,10 @@
 	<title>Resultados</title>
 	<link rel="stylesheet" type ="text/css" href="style.css">
 	<link rel="shortcut icon" href="img/icono/z.ico">
-
+	<link rel="stylesheet" href="../../../JavaScript/node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../../../JavaScript/node_modules/bootstrap/dist/css/bootstrap-theme.css">
+	<script src="../../../JavaScript/node_modules/jquery/dist/jquery.js"></script>
+	<script src="../../../JavaScript/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
 	<header>
@@ -37,19 +40,27 @@
         </nav>
 	</header>
 	<section>
-		<div class="result">
+		<div class="result">			
 			<div class="filtro">
 				<h2>Búsqueda avanzada</h2>
 				<div>
 					<h3>Proximidad (km)</h3>
 					<div>
-						<input type="range" min="0" max="100" step="1" value="50" oninput=""> 
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+								50%
+							</div>
+						</div> 
 					</div>
 				</div>
 				<div>
 					<h3>Precio (€)</h3>
 					<div>
-						<input type="range" min="1" max="60" step="1" value="30" oninput=""> 
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+								20€
+							</div>
+						</div> 
 					</div>
 				</div>
 				<div>
@@ -144,424 +155,152 @@
 				</div>
 			</div>
 			<div class="resultados">
-			<div class="orden">
-				<label for="orden">Ordenar por</label>
-				<select name="orden" id="orden">
-					<option value="1" selected="true">Ordenar por proximidad (de menor a mayor)</option>
-					<option value="2">Ordenar por precio (de menor a mayor)</option>
-				</select>
-			</div>
-			<div class="divTable">
-				<div class="divTableBody">					
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Hamburguesa">
-									<img src="img/fotos de comida/hamburguesa.jpg" alt="">
-									<span>Hamburguesa</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer<br>
-									2.Segundo<br>
-									3.Tercero<br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							9,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Bocadillo">
-									<img src="img/fotos de comida/bocadillo.jpg" alt="">
-									<span>Bocadillo</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							5,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Carne">
-									<img src="img/fotos de comida/carne.jpg" alt="">
-									<span>Carne</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							10,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Ensalada">
-									<img src="img/fotos de comida/ensalada.jpg" alt="">
-									<span>Ensalada</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							5,99 €
-							<button></button>
-						</div>
-					</div>				
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Kebab">
-									<img src="img/fotos de comida/kebab.jpg" alt="">
-									<span>Kebab</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							4,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Pasta">
-									<img src="img/fotos de comida/pasta.jpg" alt="">
-									<span>Pasta</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							11,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Pescado">
-									<img src="img/fotos de comida/pescado.jpg" alt="">
-									<span>Pescado</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-							</div>
-						<div class="precio">
-							11,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Pizza">
-									<img src="img/fotos de comida/pizza.jpg" alt="">
-									<span>Pizza</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							11,99 €
-							<button></button>
-						</div>
-					</div>			
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Sopa">
-									<img src="img/fotos de comida/sopa.jpg" alt="">
-									<span>Sopa</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							11,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Sushi">
-									<img src="img/fotos de comida/sushi.png" alt="">
-									<span>Sushi</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							11,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Hamburguesa">
-									<img src="img/fotos de comida/hamburguesa.jpg" alt="">
-									<span>Hamburguesa</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							11,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Hamburguesa">
-									<img src="img/fotos de comida/hamburguesa.jpg" alt="">
-									<span>Hamburguesa</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							11,99 €
-							<button></button>
-						</div>
-					</div>				
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Hamburguesa">
-									<img src="img/fotos de comida/hamburguesa.jpg" alt="">
-									<span>Hamburguesa</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							11,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Hamburguesa">
-									<img src="img/fotos de comida/hamburguesa.jpg" alt="">
-									<span>Hamburguesa</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							11,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Hamburguesa">
-									<img src="img/fotos de comida/hamburguesa.jpg" alt="">
-									<span>Hamburguesa</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							11,99 €
-							<button></button>
-						</div>
-					</div>
-					<div class="divTableCell">
-						<div class="flipper">
-							<div class="fotoproduct">
-								<a href="" class="product" title="Hamburguesa">
-									<img src="img/fotos de comida/hamburguesa.jpg" alt="">
-									<span>Hamburguesa</span>
-								</a>
-							</div>
-							<div class="back">
-								<h3>Ingredientes</h3>
-								<div>
-									1.Primer <br>
-									2.Segundo <br>
-									3.Tercero <br>
-								</div>
-								<h3>
-									Restaurante
-								</h3>
-							</div>
-						</div>
-						<div class="precio">
-							11,99 €
-							<button></button>
-						</div>
-					</div>					
+				<div class="orden">
+					<label for="orden">Ordenar por</label>
+					<select name="orden" id="orden">
+						<option value="1" selected="true">Ordenar por proximidad</option>
+						<option value="2">Ordenar por precio (de menor a mayor)</option>
+					</select>
 				</div>
-			</div>
-			<div>
-				<span><input type="radio" name="pagina"></span>
-				<span><input type="radio" name="pagina"></span>
-				<span><input type="radio" name="pagina"></span>
-				<span><input type="radio" name="pagina"></span>
-				<span><input type="radio" name="pagina"></span>
-			</div>
+				<div class="divTable">
+					<div class="divTableBody">					
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>				
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>			
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>				
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>
+						<div class="divTableCell">
+							<div class ="flipper">
+								<div class="front">
+								</div>
+								<div class="back">	
+								</div>							
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div>
+					<span><input type="radio" name="pagina"></span>
+					<span><input type="radio" name="pagina"></span>
+					<span><input type="radio" name="pagina"></span>
+					<span><input type="radio" name="pagina"></span>
+					<span><input type="radio" name="pagina"></span>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -583,5 +322,6 @@
             <a href="https://www.instagram.com/zampapp/?hl=es"><img src="img/icono/instagram.png" alt="Instagram"></a>
         </div>
     </footer>
+    <script src="resultados.js"></script>
 </body>
 </html>
