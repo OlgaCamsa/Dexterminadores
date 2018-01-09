@@ -763,39 +763,32 @@ box-shadow: 0 0 0 3px #f5f5f5;
 
 /* Empieza RESULTADOS */
 
-section .result {
+section .result{
   margin: 50px auto 20px auto;
-}
-
-.result {
   display: flex;
 }
 
-.result h2 {
+.result h2{
   font-size: 1.4em;
   text-align: center;
   color: #566573;
   margin-bottom: 15px
 }
-
-.result h3 {
+.result h3{
   color: #566573;
   font-size: 0.7em;
   margin: 5px 0;
 }
-
 .result img {
   width: 85%;
   height: 85%;
   border-radius: 5px
 }
-
 .result a {
   text-decoration: none;
   color: #C0CA33;
 }
-
-.result button {
+.result button{
   width: 25px;
   height: 25px;
   background-image: url(img/icono/mas.png);
@@ -809,33 +802,25 @@ section .result {
   border: 0px;
   vertical-align: middle;
 }
-
-.result input {
+.result input{
   cursor: pointer;
 }
-
-.result select {
+.result select{
   font-size: 0.7em;
   color: #C0CA33;
   border: 1px #C0CA33 solid;
 }
-
-.result select option {
+.result select option{
   font-size: 1em;
   color: #C0CA33;
 }
-
 .result button:hover {
-  box-shadow: 0 3px 34px rgba(0, 0, 0, .25);
+  box-shadow: 0 3px 34px rgba(0,0,0,.25);
   transform: translateY(-2px);
 }
-
-div.filtro {
-  width: 15%;
+div.filtro{
   padding: 25px 10px;
   font-size: 0.5em;
-  vertical-align: top;
-  display: inline-block;
   background-color: white;
   border-radius: 5px;
   margin: 5px;
@@ -844,37 +829,31 @@ div.filtro {
   height: 70%;
 }
 
-div.filtro>div {
-  margin: 10px 0px
+div.filtro > div{
+  margin:10px 0px
 }
-
 div.resultados {
   width: 78%;
   padding: 10px;
-  display: inline-block;
   text-align: center;
   border-radius: 5px;
   margin: 5px;
   background-color: white;
   border: 4px #566573 solid;
 }
-
-div.divTableBody {
+div.divTableBody{
   margin: 40px 0px;
 }
-
 .result div>label {
   font-size: 0.7em;
   color: #C0CA33;
 }
-
 div.orden {
   text-align: right;
   margin-bottom: 15px;
   font-size: 0.9em
 }
-
-div.divTableCell {
+div.divTableCell{
   width: 260px;
   height: 260px;
   padding: 5px;
@@ -882,24 +861,20 @@ div.divTableCell {
   perspective: 1000px;
   display: inline-block;
 }
-
-div.fotoproduct {
+div.front {
   width: 85%;
   padding: 0 8%;
   z-index: 2;
-  /* for firefox 31 */
   transform: rotateY(0deg);
 }
-
-div.precio {
+/*div.precio{
   height: 15%;
-}
-
-.divTableCell:hover .flipper,
-.divTableCell.hover .flipper {
+}*/
+.divTableCell:hover .flipper, .divTableCell.hover .flipper {
   transform: rotateY(180deg);
   background-color: #f5f5f5;
-  border-radius: 5px
+  border-radius: 5px;
+  height: 100%;
 }
 
 .flipper {
@@ -909,61 +884,69 @@ div.precio {
   height: 80%;
   margin-bottom: 10px;
 }
-
-.fotoproduct,
-.back {
+.front, .back {
   backface-visibility: hidden;
   position: absolute;
-  font-weight: normal;
+  padding: 10px;
+  /*font-weight: normal;*/
+}
+
+.back a:hover{
+  text-decoration: none;
 }
 
 .back {
   transform: rotateY(180deg);
-  width: 100%;
 }
 
-div.back div {
+.back p {
+  font-size: 0.7em;
+}
+/*div.back div{
   font-size: 0.6em;
   text-align: left;
   line-height: 0.8;
   color: #566573;
-}
-
-div.divTableCell>div {
+  }
+div.divTableCell > div {
   font-weight: bold;
   color: #566573;
 }
-
-div.fotoproduct span {
-  font-size: 0.7em;
+div.front span {
+  font-size: 0.7em; 
   color: #C0CA33;
 }
+*/
 
-input[type="range"] {
+input[type="range"]{
   width: 90%;
 }
-
-.result .busqueda {
+.result .busqueda  {
   width: 100%;
   position: relative;
   padding-bottom: 10px;
 }
-
 .result .busqueda button {
   position: absolute;
   right: 10%;
   height: 30px;
   width: 30px
 }
-
 .result .busqueda button img {
   text-align: center;
-  height: 35px;
-  width: 35px;
+  height: 45px;
+  width: 40px;
 }
 
-
+@media screen and (max-width:480px) {
+  section .result{
+    display: block;
+    width: 80%;
+  }
+}
 /* FIN RESULTADOS*/
+
+
 
 
 /* Empieza SOBRE NOSOTROS */
