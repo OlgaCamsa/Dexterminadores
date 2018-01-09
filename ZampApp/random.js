@@ -50,7 +50,7 @@ function Gustos() {
 }
 
 CogerRespuestas = function (evnt) {
-    evnt.preventDefault();
+    // evnt.preventDefault();
     var arrChkbox = document.getElementsByTagName('input');
     for (i = 0; i < arrChkbox.length; i++) {
         arrGustos[i] = new Gustos;

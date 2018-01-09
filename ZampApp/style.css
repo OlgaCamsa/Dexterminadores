@@ -613,6 +613,12 @@ footer>.enlaces>div>a{
   text-align: center;
   height: 220px;
 }
+.asks h5{
+  padding: 10px;
+}
+.asks form{
+  padding-top: 0px;
+}
 .asks>.askbutton {
 position: relative;
 }
