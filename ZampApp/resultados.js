@@ -56,3 +56,42 @@ function ShowLista(arr) {
 		this.foto = 
 	}
 }*/
+
+
+// JsHome angel, filtros
+function FiltrosInputs() {
+    nombre = '';
+	seleccionado = false;
+}
+function FiltrosSelects() {
+    nombre = '';
+	valor = '';
+}
+CogerFiltros = function (evnt) {
+    evnt.preventDefault();
+    var arrInputs = document.getElementsByClassName('filtro')[0].getElementsByTagName('input');
+	for (i = 0; i < arrInputs.length; i++) {
+		arrFiltrosInputs[i] = new FiltrosInputs;
+        arrFiltrosInputs[i].nombre=arrInputs[i].id;
+		arrFiltrosInputs[i].seleccionado=arrInputs[i].checked;
+	}
+	var arrOtros = document.getElementsByClassName('filtro')[0].getElementsByTagName('select');
+	for (i = 0; i < arrOtros.length; i++) {
+		arrFiltrosSelects[i] = new FiltrosSelects;
+        arrFiltrosSelects[i].nombre=arrOtros[i].id;
+        arrFiltrosSelects[i].valor=arrOtros[i].value;		
+	}
+    request.open("POST", "http://www.mocky.io/v2/5a538681300000862a1ebfbf");
+    request.onload = function () {
+        console.log('request: ', request);
+    };  
+    request.send(arrFiltrosInputs, arrFiltrosSelects);
+}
+
+var arrFiltrosInputs = [];
+var arrFiltrosSelects = [];
+var request = new XMLHttpRequest();
+var arrInputs = document.getElementsByClassName('filtro')[0].getElementsByTagName('input');
+var arrOtros = document.getElementsByClassName('filtro')[0].getElementsByTagName('select');
+var btnFiltro=document.getElementById('btnFiltro');
+btnFiltro.onclick = CogerFiltros;
