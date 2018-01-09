@@ -85,7 +85,7 @@ CogerFiltros = function (evnt) {
     request.onload = function () {
         console.log('request: ', request);
     };  
-    request.send(arrFiltros);
+    request.send(arrFiltrosInputs, arrFiltrosSelects);
 }
 
 var arrFiltrosInputs = [];
