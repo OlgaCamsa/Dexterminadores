@@ -1,0 +1,34 @@
+{	"Restaurante": "",
+        "Valoración": "",
+        "Web": "",
+        "Descripción": "",
+        "Platos": [],
+        "Imagen":""
+}
+{	"Restaurante": "Mc Donals",
+        "Valoración": "",
+        "Web": "https://www.mcdonalds.es/",
+        "Descripción": "McDonald's es una cadena de restaurantes de comida rápida. Sus principales productos son las hamburguesas, sándwiches, patatas fritas, menús para el desayuno, refrescos, batidos, postres y, recientemente, ensaladas y fruta. ",
+        "Platos": [Chicken McRoll, Big Mac, Grand McExtreme Chiken Crispy Cheese, Mediterranean Tuna, ]
+        "Imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFG8ZEA-pzSo-VKocr77paStF-eEXGg7daJIjnDMLPvnFZJ0eI"
+}
+{	"Restaurante": "Tagliatella",
+        "Valoración": "",
+        "Web": "https://www.latagliatella.es/",
+        "Descripción": "Pizzas confeccionadas en el tradicional forno italiano; carpaccios acompañados de genuina mozzarella di bufala, ensaladas con forma de torre de Pisa, elaboradas con auténticas verduras a la plancha; risottos con magret de pato y trufa, con ibéricos…; más de 400 combinaciones de pastas y salsas, panna cotta, tiramisú casero, helados artesanales… conforman una amplia oferta materializada en generosas raciones perfectas para que las disfrutes en compañía de los tuyos. Además, confeccionamos todas nuestras recetas con auténtico aceite de oliva virgen extra.",
+        "Platos": [],
+        "Imagen":"https://media-cdn.tripadvisor.com/media/photo-s/09/77/f1/83/la-tagliatella.jpg"
+}
+{	"Restaurante": "Udon",
+        "Valoración": "",
+        "Web": "http://www.udon.es/es/",
+        "Descripción": "Un nuevo concepto de restauración único y diferenciado en todo el territorio nacional basado en el “casual dining” con una filosofía clara: Comida rápida, equilibrada y nutritiva, servida en un entorno de diseño, a un precio competitivo y con un servicio orientado al cliente.",
+        "Platos": [Miso Ramen, Tempura Soba, Oyako Don, Yakimeshi Don, Kaesar Asian Salad ],
+        "Imagen":"https://elracodenmitj.files.wordpress.com/2011/02/udon.jpg"
+}
+{	"Restaurante": "Telepizza",
+        "Valoración": "",
+        "Web": "https://www.telepizza.es/",
+        "Descripción": "El foco de trabajo de Telepizza lo ocupan pizzas irresistibles y únicas. Elaboradas con la máxima atención al detalle y una selección rigurosa de ingredientes frescos y naturales. Su secreto es conocido. La masa. Elaborada con cariño y de forma artesanal.",
+        "Platos": [],
+        "Imagen":"http://3.bp.blogspot.com/-v6NvXoRITiE/Uhf0c7Z46fI/AAAAAAAAGkE/EbqRZzbpeIw/s1600/logo_telepizza_nuevo_1.jpg"
