@@ -85,13 +85,13 @@ header .login img {
 }
 @media (max-width:650px) {
 header {
-  height: 25pt;
+  height: 33pt;
 }
 header .logo{
 padding-left: 10px;
 }
 header .logo img {
-width: 150px;
+width: 200px;
 }
 header .login {
 width: 160px;

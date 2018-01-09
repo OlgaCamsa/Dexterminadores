@@ -32,13 +32,41 @@
 // // console.log('envio send');
 // request.send(null);
 
-var url = "http://www.mocky.io/v2/5a3a93af31000071148e9627";
-var request = new XMLHttpRequest();
+// var url = "http://www.mocky.io/v2/5a3a93af31000071148e9627";
+// var request = new XMLHttpRequest();
 
-request.open("GET", url);
-request.onload = function () {
-    if (request.status == 200) {
-        document.getElementById("random").innerHTML = this.response;
-        console.log('url si cargada');
-    } else {console.log('url si cargada');}};
-request.send(null)
+// request.open("GET", url);
+// request.onload = function () {
+//     if (request.status == 200) {
+//         document.getElementById("random").innerHTML = this.response;
+//         console.log('url si cargada');
+//     } else {console.log('url si cargada');}};
+// request.send(null)
+
+// JsHome angel
+function Gustos() {
+    nombre = '';
+    seleccionado = false;
+}
+
+CogerRespuestas = function (evnt) {
+    evnt.preventDefault();
+    var arrChkbox = document.getElementsByTagName('input');
+    for (i = 0; i < arrChkbox.length; i++) {
+        arrGustos[i] = new Gustos;
+        arrGustos[i].nombre=arrChkbox[i].id;
+        arrGustos[i].seleccionado=arrChkbox[i].checked;
+    }
+    request.open("POST", "http://www.mocky.io/v2/5a538681300000862a1ebfbf");
+    request.onload = function () {
+        console.log('request: ', request);
+    };  
+    request.send(arrGustos);
+}
+
+
+var arrGustos = [];
+var request = new XMLHttpRequest();
+var arrChkbox = document.getElementsByTagName('input');
+var btnAdelante=document.getElementById('btnAdelante');
+btnAdelante.onclick = CogerRespuestas;
