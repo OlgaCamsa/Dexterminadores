@@ -25,7 +25,7 @@ function Ingredientes() {
 }
 
 CogerDatos = function (evnt) {
-    evnt.preventDefault();
+    // evnt.preventDefault();
     var inputs = document.getElementsByTagName('input');
     for (i = 0; i < inputs.length; i++) {
         platos[i] = new Ingredientes;
