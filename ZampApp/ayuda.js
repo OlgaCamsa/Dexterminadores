@@ -15,16 +15,23 @@ $('#submit').click(function (evnt) {
             url,
             pregunta,
             function (data, textStatus, jqXHR) {
-                $('#modalsi').modal('show');
-                console.log('¡recibido!')
+                $('#modalmsg').html('¡Muchas gracias, contestaremos a tu mensaje lo antes posible!');
+                $('#modalfeedback').modal('show');
+                console.log('¡recibido!');
+                $('.field').val('');
             }
         )
             .fail(
             function (data, textStatus, jqXHR) {
-                $('#modalno').modal('show');
-                console.log('Error en el servidor')
+                $('#modalmsg').html('Lo sentimos, no se ha podido acceder al servidor :(</br> Puedes ponerte en contacto con nosotros en nuestras redes sociales');
+                $('#modalfeedback').modal('show');
+                console.log('Error en el servidor');
             }
             );
+    }
+    else {
+        $('#modalmsg').html('Completa todos los campos correctamente para poder enviar el mensaje');
+        $('#modalfeedback').modal('show');
     }
 });
 
