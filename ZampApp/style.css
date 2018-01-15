@@ -139,7 +139,16 @@ margin-bottom: 70px;
 
 /* Empieza FOOTER*/
 
+.rellenofooter{
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  height: 50px;
+}
+
 footer {
+  position: fixed;
+  bottom: 0px;
   background: #ea5b0c;
   width: 100%;
   height: 50px;
@@ -147,6 +156,7 @@ footer {
 
 footer>div {
   display: inline-block;
+  line-height: initial;
 }
 
 footer>.enlaces {
@@ -179,6 +189,9 @@ footer>.enlaces>div {
 }
 
 @media (max-width:700px) {
+  .rellenofooter{
+    height: 90px;
+  }
   footer{
       height: 110px;
   }
@@ -573,7 +586,7 @@ footer>.enlaces>div>a{
 
 #askbutton>a{
   width: 1px;
-  margin:auto;
+  /* margin:auto; */
 }
 
 #askbutton>a> img {
@@ -642,6 +655,7 @@ border: 4px solid #566573;
 border-radius: 10px;
 padding: 20px 20px 20px 20px;
 margin-top: 20px;
+margin-bottom: 15px;
 background-color: white;
 }
 
