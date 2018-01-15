@@ -8,6 +8,16 @@
   font-size: 15pt;
 }
 
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h5 {
+font-size: 26px;
+font-weight: 700;
+}
+
 body {
   font-family: helvetica, Arial;
   color: #C0CA33;
@@ -529,104 +539,79 @@ footer>.enlaces>div>a{
 
 /*Empieza RANDOM*/
 
-.asks {
+#asks {
   width: 100%;
 }
 
-.asks>div {
-  display: inline-block;
-  width: 100%;
-  height: 185pt;
+#asks>div {
   padding: 0px;
-}
-
-.asks>div>div {
-  border: 4px #566573 solid;
-  width: 40%;
-  height: 80%;
-  display: inline-block;
-  margin: 5pt 25pt;
+  border: 5px #566573 solid;
+  margin: 6px 0px;
   background-color: white;
   border-radius: 20pt;
 }
 
-.asks>div>.topizq {
-  float: left;
-}
-
-.asks>div>.topder {
-  float: right;
-}
-
-.asks>div>.downizq {
-  float: left;
-}
-
-.asks>div>.downder {
-  float: right;
-}
-
-.asks .pregunta h3 {
+#asks .pregunta h3 {
   text-align: center;
-  padding: 5pt;
-  padding-top: 10pt;
-  font-size: 2em;
-  height: 30pt;
+  margin: 10px 5px;
 }
 
-.asks h5 {
+#asks h5 {
   text-align: center;
-  font-size: 1.3em;
-  margin: 1pt 0pt;
-  padding: 8pt 40pt 0pt 40pt;
+  margin: 10px 10px;
 }
 
-.asks form {
+#asks form {
   text-align: center;
-  padding: 8pt;
-  font-size: 1.2em;
 }
 
-.asks>.askbutton {
-  width: 1px;
-  height: 20pt;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-}
-
-.asks>.askbutton img {
-  width: 80pt;
-  position: relative;
-  left: -40pt;
-}
-@media (max-width:450px) {
-.asks>.fila {
+#askbutton {
   display: block;
-  height: 477px;
-  /* float: initial; */
-}
-.asks>.fila>div {
-  width: 95%;
-  margin: 5px 1%;
-  float: initial;
+  width: 100%;
   text-align: center;
-  height: 220px;
 }
-.asks h5{
-  padding: 10px;
+
+#askbutton>a{
+  width: 1px;
+  margin:auto;
 }
-.asks form{
-  padding-top: 0px;
+
+#askbutton>a> img {
+  width: 25%;
+  margin-bottom: 5px;
 }
-.asks>.askbutton {
-position: relative;
+
+@media (min-width:900px) {
+.container{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
-.asks>.askbutton>a {
-  text-decoration-line: none;
-  font-size: 0px;
-  }
+#asks {
+  height: 400px;
 }
+#asks>div {
+  margin: 6px 10px;
+  width: 40%;
+}
+#asks>#topizq {
+  float: left;
+}
+#asks>#topder {
+  float: right;
+}
+#asks>#downizq {
+  float: left;
+}
+#asks>#downder {
+  float: right;
+}
+#askbutton>a> img {
+  width: 10%;
+  margin-bottom: 5px;
+}
+} 
+
 /*Fin RANDOM*/
 
 
