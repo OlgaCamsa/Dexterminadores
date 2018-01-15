@@ -12,12 +12,12 @@ function RecojeDatos() {
 var url = 'http://www.mocky.io/v2/5a5893682d0000781ad2e57b';
 var badurl = 'http://www.mocky.io/v2/5a5cabf22e00005e199f83bd';
 function EnvioDatos(data) {
-    $.post(url, data,
+    $.get(url, data,
         function (data, textStatus, jqXHR) {
             console.log('Recibido');
-            $('#textModal').html("Me gusta tu elección amigo<br>ZamsApp's Actitude Always");
+            $('#textModal').html("Me gusta tu elección amigo<br>ZampApp's Actitude Always");
             $('#myModal').modal('show');
-            setTimeout(enlaceresultados, 2000);
+            setTimeout(enlaceresultados, 6000);
         },
     )
     .fail(function (data, textStatus, jqXHR) {
