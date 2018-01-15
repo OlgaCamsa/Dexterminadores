@@ -1,47 +1,29 @@
-// class HomeController {
-//     constructor() {
-//         platos = [];
-//         inputs = document.getElementsByTagName('input');
-//         btnBuscar = document.getElementById('btnBusqueda');
-//         btnBuscar.onclick = CogerDatos;
-//     }
-//     Ingredientes() {
-//         nombre = '';
-//         seleccionado = false;
-//     }
-//     CogerDatos() {
-//         var inputs = document.getElementsByTagName('input');
-//         for (i = 0; i < inputs.length; i++) {
-//             platos[i] = new Ingredientes;
-//             platos[i].nombre = inputs[i].attributes[0].value;
-//             platos[i].seleccionado = inputs[i].checked;
-//         }
-//     }
-// }
-
 function Ingredientes() {
     nombre = '';
     seleccionado = false;
 }
 
-CogerDatos = function (evnt) {
+$('#btnBusqueda').click(function (evnt) {
     // evnt.preventDefault();
-    var inputs = document.getElementsByTagName('input');
-    for (i = 0; i < inputs.length; i++) {
-        platos[i] = new Ingredientes;
-        platos[i].nombre=inputs[i].attributes[0].value;
-        platos[i].seleccionado=inputs[i].checked;
-    }
-    request.open("POST", "http://www.mocky.io/v2/5a538681300000862a1ebfbf");
-    request.onload = function () {
-        console.log('request: ', request);
-    };  
-    request.send(platos);
-}
+    var platos = [];
 
+    $('input').each(function () {
+        let x = new Ingredientes
+        x.nombre = this.attributes[0].value;
+        x.seleccionado = this.checked;
+        platos.push(x);
+    })
 
-var platos = [];
-var request = new XMLHttpRequest();
-var inputs = document.getElementsByTagName('input');
-var btnBuscar=document.getElementById('btnBusqueda');
-btnBuscar.onclick = CogerDatos;
+    $.ajax({
+        type: "POST",
+        url: "http://www.mocky.io/v2/5a5c70c92e0000050a9f82a1",
+        data: platos,
+        success: function (response) {
+            console.log('Conseguido',platos);
+        }
+    })
+    .fail(function(parametros){
+        console.log('Epic Fail')
+        
+    });
+})
