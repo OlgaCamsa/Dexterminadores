@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/icono/z.ico">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -40,55 +41,9 @@
         <div class="margin"></div>
     </header>
 
-    <div class="asks">
-        <div class="fila">
-            <div class="topizq">
-                <div class="pregunta">
-                    <h3>Temperatura</h3>
-                </div>
-                <div>
-                    <h5>¿Prefieres una plato para entrar en calor o fresco?</h5>
-                </div>
-                <div>
-                    <form action="">
-                        <input type="checkbox" name="temp" id="caliente" value="1">
-                        <label for="caliente">
-                            Caliente
-                        </label>
-                        <input type="checkbox" name="temp" id="frio" value="2">
-                        <label for="frio">
-                            Frío
-                        </label>
-                    </form>
-                </div>
-            </div>
-            <div class="topder">
-                <div class="pregunta">
-                    <h3>Sabor</h3>
-                </div>
-                <div>
-                    <h5>¿Te gusta el picante o eres mas de agridulce?</h5>
-                </div>
-                <div>
-                    <form action="">
-                        <input type="checkbox" name="pic" id="agridulce" value="1">
-                        <label for="agridulce">
-                            Agridulce
-                        </label>
-                        <input type="checkbox" name="pic" id="picante" value="2">
-                        <label for="picante">
-                            Picante
-                        </label>
-                        <input type="checkbox" name="pic" id="muypicante" value="3">
-                        <label for="muypicante">
-                            Muy picante
-                        </label>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="downizq">
+    <div class="container">
+        <div id="asks">
+            <div id="topizq">
                 <div class="pregunta">
                     <h3>Cantidad</h3>
                 </div>
@@ -97,18 +52,66 @@
                 </div>
                 <div>
                     <form action="">
-                        <input type="checkbox" name="pesado" id="ligero" value="1">
+                        <input type="checkbox" name="pesado" id="ligero">
                         <label for="ligero">
                             Ligera
                         </label>
-                        <input type="checkbox" name="pesado" id="contundente" value="2">
+                        <br>
+                        <input type="checkbox" name="pesado" id="contundente">
                         <label for="contundente">
                             Contundente
                         </label>
                     </form>
                 </div>
             </div>
-            <div class="downder">
+            <div id="topder">
+                <div class="pregunta">
+                    <h3>Temperatura</h3>
+                </div>
+                <div>
+                    <h5>¿Prefieres una plato para entrar en calor o fresco?</h5>
+                </div>
+                <div>
+                    <form action="">
+                        <input type="checkbox" name="temp" id="caliente">
+                        <label for="caliente">
+                            Caliente
+                        </label>
+                        <br>
+                        <input type="checkbox" name="temp" id="frio">
+                        <label for="frio">
+                            Frío
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div id="downder">
+                <div class="pregunta">
+                    <h3>Sabor</h3>
+                </div>
+                <div>
+                    <h5>¿Te gusta el picante o eres mas de agridulce?</h5>
+                </div>
+                <div>
+                    <form action="">
+                        <input type="checkbox" name="pic" id="agridulce">
+                        <label for="agridulce">
+                            Agridulce
+                        </label>
+                        <br>
+                        <input type="checkbox" name="pic" id="picante">
+                        <label for="picante">
+                            Picante
+                        </label>
+                        <br>
+                        <input type="checkbox" name="pic" id="muypicante">
+                        <label for="muypicante">
+                            Muy picante
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div id="downizq">
                 <div class="pregunta">
                     <h3>Tipo de comida</h3>
                 </div>
@@ -117,29 +120,34 @@
                 </div>
                 <div>
                     <form action="">
-                        <input type="checkbox" name="tipo" id="carne" value="1">
+                        <input type="checkbox" name="tipo" id="carne">
                         <label for="carne">
                             Carne
                         </label>
-                        <input type="checkbox" name="tipo" id="pescado" value="2">
+                        <br>
+                        <input type="checkbox" name="tipo" id="pescado">
                         <label for="pescado">
                             Pescado
                         </label>
-                        <input type="checkbox" name="tipo" id="vegetariano" value="2">
+                        <br>
+                        <input type="checkbox" name="tipo" id="vegetariano">
                         <label for="vegetariano">
                             Vegetal
                         </label>
                     </form>
                 </div>
+
             </div>
         </div>
-        <div class="askbutton">
-            <a href="resultados.html">
-                <img src="img/icono/buscar.png" alt="busqueda" id="btnAdelante"
+        <div id="askbutton">
+            <a id="aresultados" href="resultados.html">
+                <img src="img/icono/buscar.png" alt="busqueda" id="btnAdelante">
             </a>
         </div>
     </div>
-    
+
+<div class="rellenofooter"></div>
+
     <footer>
         <div class="enlaces">
             <div>
@@ -164,7 +172,21 @@
             </a>
         </div>
     </footer>
-    <script src="random.js"></script>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="text-center" id="textModal">Que buen gusto que tienes chaval</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
 </body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="randomjq.js"></script>
 
 </html>
