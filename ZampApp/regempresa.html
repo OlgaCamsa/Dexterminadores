@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro Empresa</title>
+
+    <link rel="shortcut icon" href="img/icono/z.ico">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="img/logo.png" alt="ZAMPAPP">
+                </a>
+            </div>
+            <div class="login">
+                <div class="logchef">
+                    <a href="login chef">
+                        <img src="img/icono/chef.png" alt="logchef">
+                    </a>
+                </div>
+                <div class="loguser">
+                    <a href="login user">
+                        <img src="img/icono/perfil.png" alt="loguser">
+                    </a>
+                </div>
+                <div class="carro">
+                    <a href="carro">
+                        <img src="img/icono/carrito.png" alt="carro">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="margin"></div>
+    </header>
+
+    <section>
+        <div class="RegEmpresa">
+            <form>
+                <div class="row arriba">
+                    <div class="col-lg-3 col-sm-12">
+                        <p>Imagen del Restaurante</p>
+                        <label for="Logo" class="btn btn-primary">Subir</label>
+                        <input name="Logo" type="file" id="Logo" ;>
+                        <img src="" alt="" id="LogoImg">
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+
+
+                        <div class="input-group mb-2">
+                            <input name="Restaurante" type="text" class="form-control" placeholder="Restaurante" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+
+                        <div class="input-group mb-2">
+                            <input name="Nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+
+                        <div class="input-group mb-2">
+                            <input name="Teléfono" type="number " class="form-control" placeholder="Teléfono" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+
+                        <div class="input-group mb-2">
+                            <input name="Direcciones" type="text" class="form-control" placeholder="Dirección de Negocio" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="input-group mb-2">
+                            <input name="Usuario" type="text" class="form-control" placeholder="Usuario" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group mb-2">
+                            <input name="Apellidos" type="text" class="form-control" placeholder="Apellidos" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group mb-2">
+                            <input name="Correo" type="email " class="form-control" placeholder="Correo" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                </div>
+                <div class="medio">
+                    <nav id="uldias ">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active padding" id="nav-Lunes-tab" data-toggle="tab" href="#nav-Lunes" role="tab" aria-controls="nav-Lunes"
+                                aria-selected="true">Lunes</a>
+                            <a class="nav-item nav-link padding" id="nav-Martes-tab" data-toggle="tab" href="#nav-Martes" role="tab" aria-controls="nav-Martes"
+                                aria-selected="false">Martes</a>
+                            <a class="nav-item nav-link padding" id="nav-Miercoles-tab" data-toggle="tab" href="#nav-Miercoles" role="tab" aria-controls="nav-Miercoles"
+                                aria-selected="false">Miercoles</a>
+                            <a class="nav-item nav-link padding" id="nav-Jueves-tab" data-toggle="tab" href="#nav-Jueves" role="tab" aria-controls="nav-Jueves"
+                                aria-selected="false">Jueves</a>
+                            <a class="nav-item nav-link padding" id="nav-Viernes-tab" data-toggle="tab" href="#nav-Viernes" role="tab" aria-controls="nav-Viernes"
+                                aria-selected="false">Viernes</a>
+                            <a class="nav-item nav-link padding" id="nav-Sabado-tab" data-toggle="tab" href="#nav-Sabado" role="tab" aria-controls="nav-Sabado"
+                                aria-selected="false">Sábado</a>
+                            <a class="nav-item nav-link padding" id="nav-Domingo-tab" data-toggle="tab" href="#nav-Domingo" role="tab" aria-controls="nav-Domingo"
+                                aria-selected="false">Domingo</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-Lunes" role="tabpanel" aria-labelledby="nav-Lunes-tab">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <label> Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Lunes_1" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Lunes_2" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Lunes_3" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Lunes_1" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Lunes_2" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Lunes_3" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-Martes" role="tabpanel" aria-labelledby="nav-Martes-tab">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Martes_1" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Martes_2" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Martes_3" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Martes_1" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Martes_2" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Martes_3" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-Miercoles" role="tabpanel" aria-labelledby="nav-Miercoles-tab">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Miercoles_1" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Miercoles_2" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Miercoles_3" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Miercoles_1" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Miercoles_2" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Miercoles_3" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-Jueves" role="tabpanel" aria-labelledby="nav-Jueves-tab">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Jueves_1" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Jueves_2" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Jueves_3" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Jueves_1" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Jueves_2" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Jueves_3" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-Viernes" role="tabpanel" aria-labelledby="nav-Viernes-tab">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Viernes_1" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Viernes_2" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Viernes_3" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Viernes_1" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Viernes_2" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Viernes_3" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-Sabado" role="tabpanel" aria-labelledby="nav-Sabado-tab">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Sábado_1" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Sábado_2" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Sábado_3" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Sábado_1" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Sábado_2" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Sábado_3" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-Domingo" role="tabpanel" aria-labelledby="nav-Domingo-tab">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Domingo_1" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Domingo_2" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Horario de Apertura</label>
+                                        <input name="Horario_de_apertura_Domingo_3" type="time" class="form-control" placeholder="Horario de Apertura" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Domingo_1" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Domingo_2" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group HCierre">
+                                        <label>Horario de Cierre</label>
+                                        <input name="Horario_de_Cierre_Domingo_3" type="time" class="form-control" placeholder="Horario de Cerrar" aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row abajo">
+                    <div class="col-6">
+                        <div class="input-group-prepend mb-3 mt-3">
+                            <div class="input-group-text">
+                                <input name="Reserva" type="checkbox" aria-label="Checkbox for following text input" id="Reserva">
+                            </div>
+                            <label for="Reserva">Se puede reservar?</label>
+                        </div>
+                        <div class="input-group">
+                            <input name="Password" type="password" class="form-control mt-1" placeholder="Contraseña" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="dropdown mb-3 mt-3">
+
+                            <button class="btn btn-secondary dropdown-toggle boton_deslizante" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Método de Pago
+                            </button>
+                            <div class="dropdown-menu boton_deslizante" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item tipo_de_pago" href="#">Pago con Tarjeta</a>
+                                <a class="dropdown-item tipo_de_pago" href="#">Transferencia</a>
+                                <a class="dropdown-item tipo_de_pago" href="#">Paypal</a>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input name="Password_confirmación" type="password" class="form-control" placeholder="Confirmar Contraseña" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-2">
+                    <button class="btn" id="btnRegistro" type="submit">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="rellenofooter"></div>
+    <footer>
+        <div class="enlaces">
+            <div>
+                <a href="ayuda.html" class="nounderline">Ayuda</a>
+            </div>
+            <div>
+                <a href="condicionesdeuso.html" class="nounderline">Condiciones de uso</a>
+            </div>
+            <div>
+                <a href="sobrenosotros.html" class="nounderline">Sobre nosotros</a>
+            </div>
+        </div>
+        <div class="rrssicon">
+            <a href="https://www.facebook.com/ZampApp-192632914617935/">
+                <img src="img/icono/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/ZampappBeta">
+                <img src="img/icono/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/zampapp/?hl=es">
+                <img src="img/icono/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+    <script src="jsRegEmpresa.js"></script>
+</body>
+
+</html>
