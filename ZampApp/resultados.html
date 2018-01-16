@@ -8,9 +8,10 @@
 	<link rel="stylesheet" type ="text/css" href="style.css">
 	<link rel="shortcut icon" href="img/icono/z.ico">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="node_modules/bootstrap-slider/dist/css/bootstrap-slider.css">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
-	<script src="node_modules/jquery/dist/jquery.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="./node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/bootstrap-slider/dist/bootstrap-slider.js"></script>
 </head>
 <body>
 	<header>
@@ -42,116 +43,110 @@
 	<section>
 		<div class="result">			
 			<div class="filtro">
-				<h2>Búsqueda avanzada</h2>
-				<div>
-					<h3>Proximidad (km)</h3>
+				<button id="responsiveBusqueda">Búsqueda avanzada</button>
+				<div id="divEscondido">
+					<h2>Búsqueda avanzada</h2>
 					<div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-								5km
-							</div>
-						</div> 
-					</div>
-				</div>
-				<div>
-					<h3>Precio (€)</h3>
-					<div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-								20€
-							</div>
-						</div> 
-					</div>
-				</div>
-				<div>
-					<h3>Alergias/ Preferencias</h3>
-					<div>
-						<input type="checkbox" name="preferencias" value="sin gluten" id="pref1">
-						<label for="pref1">Sin gluten</label>
+						<h3>Proximidad (km)</h3>
+						<div>
+							<input id="ex8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+						</div>
 					</div>
 					<div>
-						<input type="checkbox" name="preferencias" value="sin lactosa" id="pref2">
-						<label for="pref2">Sin lactosa</label>
+						<h3>Precio (5-100€)</h3>
+						<div>
+							<input id="ex2" type="text" class="span2" value="" data-slider-min="5" data-slider-max="100" data-slider-step="1" data-slider-value="[15,30]"/> 
+						</div>
 					</div>
 					<div>
-						<input type="checkbox" name="preferencias" value="sin frutos secos" id="pref3">
-						<label for="pref3">Sin frutos secos</label>
+						<h3>Alergias/ Preferencias</h3>
+						<div>
+							<input type="checkbox" name="preferencia" value="sin gluten" id="pref1">
+							<label for="pref1">Sin gluten</label>
+						</div>
+						<div>
+							<input type="checkbox" name="preferencia" value="sin lactosa" id="pref2">
+							<label for="pref2">Sin lactosa</label>
+						</div>
+						<div>
+							<input type="checkbox" name="preferencia" value="sin frutos secos" id="pref3">
+							<label for="pref3">Sin frutos secos</label>
+						</div>
+						<div>
+							<input type="checkbox" name="preferencia" value="vegetariano" id="pref4">
+							<label for="pref4">Vegetariano</label>
+						</div>
+						<div>
+							<input type="checkbox" name="preferencia" value="vegano" id="pref5">
+							<label for="pref5">Vegano</label>
+						</div>
+						<div>
+							<label for="otraspref">Otros</label>
+							<select name="preferencia" id="otraspref">
+								<option value="" selected="true"></option>
+								<option value="sin fructosa">Sin fructosa</option>
+								<option value="sin azucar">Sin azucar</option>
+								<option value="sin huevo">Sin huevo</option>
+							</select>
+						</div>
 					</div>
 					<div>
-						<input type="checkbox" name="preferencias" value="vegetariano" id="pref4">
-						<label for="pref4">Vegetariano</label>
+						<h3>Cantidad</h3>
+						<div>
+							<select name="cantidad" id="cantidad">
+								<option value="para una persona" selected="true">Para una persona</option>
+								<option value="para compartir">Para compartir</option>
+							</select>
+						</div>
 					</div>
 					<div>
-						<input type="checkbox" name="preferencias" value="vegano" id="pref5">
-						<label for="pref5">Vegano</label>
+						<h3>Categorías</h3>
+						<div>
+							<input type="checkbox" name="categoria" value="hamburguesas" id="cat1">
+							<label for="cat1">Hamburguesas</label>
+						</div>
+						<div>
+							<input type="checkbox" name="categoria" value="pizzas" id="cat2">
+							<label for="cat2">Pizzas</label>
+						</div>
+						<div>
+							<input type="checkbox" name="categoria" value="pastas" id="cat3">
+							<label for="cat3">Pastas</label>
+						</div>
+						<div>
+							<input type="checkbox" name="categoria" value="ensaladas" id="cat4">
+							<label for="cat4">Ensaladas</label>
+						</div>
+						<div>
+							<input type="checkbox" name="categoria" value="carnes" id="cat5">
+							<label for="cat5">Carnes</label>
+						</div>
+						<div>
+							<input type="checkbox" name="categoria" value="sopas" id="cat6">
+							<label for="cat6">Sopas</label>
+						</div>
+						<div>
+							<input type="checkbox" name="categoria" value="arroces" id="cat7">
+							<label for="cat7">Arroces</label>
+						</div>
+						<div>
+							<input type="checkbox" name="categoria" value="sushi" id="cat8">
+							<label for="cat8">Sushi</label>
+						</div>
+						<div>
+							<label for="otrascat">Otras</label>
+							<select name="categoria" id="otrascat">
+								<option value="" selected="true"></option>
+								<option value="mariscos">Mariscos</option>
+								<option value="noodles">Noodles</option>
+							</select>
+						</div>
 					</div>
-					<div>
-						<label for="otraspref">Otros</label>
-						<select name="preferencias" id="otraspref">
-							<option value="1" selected="true">Otros</option>
-							<option value="2">Sin fructosa</option>
-							<option value="3">Sin azucar</option>
-							<option value="4">Sin huevo</option>
-						</select>
+					<div class="busqueda">
+						<button class="button" id="botonFiltro">
+							<img src="img/icono/buscar.png" alt="" class="busqueda" id="btnFiltro">
+						</button>
 					</div>
-				</div>
-				<div>
-					<h3>Cantidad</h3>
-					<div>
-						<label for="cantidad">Cantidad</label>
-						<select name="cantidades" id="cantidad">
-							<option value="1" selected="true">Para una persona</option>
-							<option value="2">Para compartir</option>
-						</select>
-					</div>
-				</div>
-				<div>
-					<h3>Categorías</h3>
-					<div>
-						<input type="checkbox" name="categoria" value="hamburguesas" id="cat1">
-						<label for="cat1">Hamburguesas</label>
-					</div>
-					<div>
-						<input type="checkbox" name="categoria" value="pizzas" id="cat2">
-						<label for="cat2">Pizzas</label>
-					</div>
-					<div>
-						<input type="checkbox" name="categoria" value="pastas" id="cat3">
-						<label for="cat3">Pastas</label>
-					</div>
-					<div>
-						<input type="checkbox" name="categoria" value="ensaladas" id="cat4">
-						<label for="cat4">Ensaladas</label>
-					</div>
-					<div>
-						<input type="checkbox" name="categoria" value="carnes" id="cat5">
-						<label for="cat5">Carnes</label>
-					</div>
-					<div>
-						<input type="checkbox" name="categoria" value="sopas" id="cat6">
-						<label for="cat6">Sopas</label>
-					</div>
-					<div>
-						<input type="checkbox" name="categoria" value="arroces" id="cat7">
-						<label for="cat7">Arroces</label>
-					</div>
-					<div>
-						<input type="checkbox" name="categoria" value="sushi" id="cat8">
-						<label for="cat8">Sushi</label>
-					</div>
-					<div>
-						<label for="otrascat">Otras</label>
-						<select name="categoria" id="otrascat">
-							<option value="1" selected="true">Otras</option>
-							<option value="2">Mariscos</option>
-							<option value="4">Noodles</option>
-						</select>
-					</div>
-				</div>
-				<div class="busqueda">
-					<button class="button">
-						<img src="img/icono/buscar.png" alt="" class="busqueda" id="btnFiltro">
-					</button>
 				</div>
 			</div>
 			<div class="resultados">
@@ -164,194 +159,33 @@
 				</div>
 				<div class="divTable">
 					<div class="divTableBody">					
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>				
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>			
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>				
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>
-						<div class="divTableCell">
-							<div class ="flipper">
-								<div class="front">
-								</div>
-								<div class="back">	
-								</div>							
-							</div>
-							<input type="number" size="3" name="num" min="1" max="100" value="0">
-							<button class="añadir"></button>
-						</div>					
 					</div>
-				</div>
-				<div>
-					<span><input type="radio" name="pagina"></span>
-					<span><input type="radio" name="pagina"></span>
-					<span><input type="radio" name="pagina"></span>
-					<span><input type="radio" name="pagina"></span>
-					<span><input type="radio" name="pagina"></span>
 				</div>
 			</div>
 		</div>
 	</section>
 	<footer>
-		<div class="enlaces">
-			<div>
-				<a href="ayuda.html" class="nounderline">Ayuda</a>
-			</div>
-			<div>
-				<a href="condicionesdeuso.html" class="nounderline">Condiciones de uso</a>
-			</div>
-			<div>
-				<a href="sobrenosotros.html" class="nounderline">Sobre nosotros</a>
-			</div>
-		</div>
+        <div class="enlaces">
+            <div>
+                <a href="ayuda.html" class="nounderline">Ayuda</a>
+            </div>
+            <div>
+                <a href="condicionesdeuso.html" class="nounderline">Condiciones de uso</a>
+            </div>
+            <div>
+                <a href="sobrenosotros.html" class="nounderline">Sobre nosotros</a>
+            </div>
+        </div>
         <div class="rrssicon">
-            <a href="https://www.facebook.com/ZampApp-192632914617935/"><img src="img/icono/facebook.png" alt="Facebook"></a>
-            <a href="https://twitter.com/ZampappBeta"><img src="img/icono/twitter.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com/zampapp/?hl=es"><img src="img/icono/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/ZampApp-192632914617935/">
+                <img src="img/icono/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/ZampappBeta">
+                <img src="img/icono/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/zampapp/?hl=es">
+                <img src="img/icono/instagram.png" alt="Instagram">
+            </a>
         </div>
     </footer>
     <script src="resultados.js"></script>

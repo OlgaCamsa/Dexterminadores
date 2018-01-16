@@ -1,10 +1,13 @@
- [
+[
 	{
 		"nombre": "Pizza Pepperone Picante",
 		"precio": 11.60, 
 		"restaurante": "Tagliatella", 
 		"tags": ["tomate", "mozzarella", "salami picante"],
 		"descripción": "Tomate, Mozzarella, Salami Picante",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://res.cloudinary.com/hesvvq3zo/image/upload/w_1000,h_500,c_pad,q_30/v1477472361/takeaway/Le-Pizze-Pepperoni.jpg"
 	},
 	{
@@ -13,6 +16,9 @@
 		"restaurante": "Tagliatella", 
 		"tags": ["tomate", "grana padano", "mozzarella", "gorgonzola", "emmental"],
 		"descripción": "Tomate, Grana Padano, Mozzarella, Gorgonzola, Emmental.",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://res.cloudinary.com/hesvvq3zo/image/upload/w_1000,h_500,c_pad,q_30/v1477472361/takeaway/Le-Pizze-4formaggi.jpg"
 	},
 	{
@@ -21,6 +27,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["masa fresca", "doble de bacon", "champiñon", "salsa carbonara", "topping a base de mozzarella", "extra detopping a base de mozzarella"],
 		"descripción": "Masa fresca, doble de bacon, champiñón, salsa carbonara, topping a base de mozzarella y extra detopping a base de mozzarella.",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pcaq_c.png"
 	},
 	{
@@ -29,6 +38,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["doble ración de carne de vacuno", "topping a base de mozzarella", "extra de salsa de tomate confitado"],
 		"descripción": "Doble ración de carne de vacuno, topping a base de mozzarella y extra de salsa de tomate confitado.",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/bolo_c.png"
 	},
 	{
@@ -37,6 +49,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["masa fresca", "doble de york", "piña", "topping a base de mozzarella", "tomate", "extra de topping a base de mozzarella"],
 		"descripción": "Masa fresca, doble de york, piña, topping a base de mozzarella, tomate y extra de topping a base de mozzarella.",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/phw_c.png"
 	},
 	{
@@ -45,6 +60,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["masa fresca", "doble de bacon", "champiñon", "salsa carbonara", "topping a base de mozzarella y cebolla"],
 		"descripción": "Masa fresca, doble de bacon, champiñón, salsa carbonara, topping a base de mozzarella y cebolla",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pcar_c.png"
 	},
 	{
@@ -53,6 +71,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["carne de vacuno", "bacon", "salsa steak", "salsa grill", "topping a base de mozzarella"],
 		"descripción": "La nueva Telepizza Rodeo compuesta por: carne de vacuno, bacon, salsa steak&grill y topping a base de mozzarella",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/rode_c.png"
 	},
 	{
@@ -61,6 +82,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["jamón ibérico de cebo", "tomate natural", "aceite de oliva", "masa fresca"],
 		"descripción": "Una exquisita selección de jamón ibérico de cebo acompañado de finas rodajas de tomate natural y un toque de aceite de oliva sobre una crujiente masa",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/iber_c.png"
 	},
 	{
@@ -69,6 +93,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["queso chedder", "carne de vacuno", "tomate natural", "pepinillos", "topping a base de mozzarella", "bacon cripsy", "salsa burger"],
 		"descripción": "Auténtico sabor burger en cada bocado. Queso cheddar, carne de vacuno, tomate natural y pepinillos, cubiertos con una masa con topping a base de mozzarella, bacon crispy y salsa burger.",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/p3pb_c.png"
 	},
 	{
@@ -77,6 +104,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["5 quesos", "pollo marinado", "bacon ahumado", "carne de vacuno", "salsa barbacoa", "topping a base de mozzarella"],
 		"descripción": "Una mezcla de 5 quesos, tiras de pollo marinado, bacon ahumado, doble ración de carne de vacuno, salsa barbacoa y topping a base de mozzarella.",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/53bq_c.png"
 	},
 	{
@@ -85,6 +115,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["5 quesos", "masa fina", "bacon", "champiñón", "salsa carbonara", "topping a base de mozzarella"],
 		"descripción": "Una pizza mediana mezcla de 5 quesos cubierta de una masa fina con doble ración de bacon, champiñón, salsa carbonara y extra de topping a base de mozzarella",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/tkgq_c.png"
 	},
 	{
@@ -93,6 +126,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["5 quesos", "masa fina", "bacon", "champiñón", "salsa carbonara", "cebolla"],
 		"descripción": "Una pizza mediana mezcla de 5 quesos cubierta de una masa fina con doble ración de bacon, champiñón, salsa carbonara y cebolla.",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/tkgo_c.png"
 	},
 	{
@@ -101,6 +137,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["5 quesos", "masa fina", "bacon", "champiñón", "salsa carbonara", "cebolla"],
 		"descripción": "Una pizza mediana mezcla de 5 quesos cubierta de una masa fina con doble ración de bacon, champiñón, salsa carbonara y cebolla.",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/tkgo_c.png"
 	},
 	{
@@ -109,6 +148,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["masa fresca", "bacon", "mini hamburguesas", "queso cheddar", "topping a base de mozzarella", "salsa burger", "tomate natural"],
 		"descripción": "Masa fresca, bacon, mini hamburguesitas, queso cheddar, topping a base de mozzarella, salsa burger y tomate natural.",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pzbc_c.png"
 	},
 	{
@@ -117,6 +159,9 @@
 		"restaurante": "TelePizza", 
 		"tags": ["masa fresca", "bacon", "champiñón", "pollo", "topping a base de mozzarella", "salsa barbacoa", "salsa carbonara"],
 		"descripción": "Masa fresca, bacon, champiñón, pollo, topping a base de mozzarella, mezcla de salsa barbacoa y carbonara y extra de topping a base de mozzarella.",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pbcq_c.png"
 	},
 	{
@@ -125,6 +170,174 @@
 		"restaurante": "TelePizza", 
 		"tags": ["masa fresca", "aceitunas negras", "cebolla", "pimiento morrón", "carne de vacuno"],
 		"descripción": "Masa fresca, Aceitunas negras, Cebolla, Pimiento morrón, carne de vacuno",
+		"categoria": "pizzas",
+		"cantidad":"para compartir",
+		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/jali_c.png"
+	},
+	{
+        "nombre": "Chicken McRoll",
+        "precio": 2.5,
+        "restaurante": "McDonals",
+        "tags": ["tortilla", "tortita", "pollo", "tomate", "wrap", "burrito",  "mayonesa", "pollo rebozado", "pollo frito"],
+        "descripción": "Disfruta de nuestro inconfundible pollo crujiente acompañado de tomate, lechuga y mayonesa. ¡Bien envuelto en una rica tortilla para que no se te escape!",
+        "categoria": "rolls",
+        "cantidad":"para una persona",
+        "preferencia":"",
+        "foto":"https://www.mcdonalds.es/sites/default/files/produits/477x360_mcwrap_0.png"
+    },
+    {
+        "nombre": "Miso Ramen",
+        "precio": 9.95,
+        "restaurante": "Udon",
+        "tags": ["sopa", "fideos", "caldo", "caldo de pollo", "carne", "soja", "miso", "cerdo", "algas wakame", "alga", "wakame", "nori", "huevo", "alga nori", "cebolleta tierna", "cebolleta"],
+        "descripción":"Fideos Ramen con caldo de pollo elaborado con soja y miso. Con láminas de cerdo marinado (chashu), algas wakame, huevo de corral semicocido y marinado, alga nori y cebolleta tierna" ,
+        "categoria": "sopas",
+        "cantidad":"para una persona",
+        "preferencia":"",
+        "foto":"http://www.udon.es/products/images/Miso_Soup_G_1.jpg"
+    },
+    {
+        "nombre": "Tempura Soba",
+        "precio": 9.95,
+        "restaurante": "Udon",
+        "tags": ["sopa", "caldo", "soba", "tempura", "verdura", "langostino", "tempura de verduras", "tempura de langostino", "pescado", "alga", "alga nori"],
+        "descripción":"Soba con una deliciosa y crujiente tempura de verduras ecológicas y langostino con alga nori",
+        "categoria": "tempuras",
+        "cantidad":"para una persona",
+        "preferencia":"",
+        "foto":"http://www.udon.es/products/images/Tempura_soba_G896.jpg"
+    },
+    {
+        "nombre": "Oyako Don",
+        "precio": 9.35,
+        "restaurante": "Udon",
+        "tags": ["arroz", "pollo rebozado", "pollo", "carne", "cebolla", "setas shiitake", "dashi", "huevo revuelto", "salsa tonkatsu", "cebollino"],
+        "descripción":"Arroz con tiras de contramuslo de pollo rebozadas, cebolla, setas shiitake, dashi, huevo revuelto, salsa tonkatsu y cebollino",
+        "categoria": "cocina japonesa",
+        "cantidad":"para una persona",
+        "preferencia":"",
+        "foto":"http://udon.es/products/images/Oyako_Don_G.jpg"
+    },
+    {
+        "nombre": "Yakimeshi Don",
+        "precio": 9.35,
+        "restaurante": "Udon",
+        "tags": ["arroz", "secreto de Cerdo", "cerdo", "carne", "setas", "soja", "maíz", "cebolleta", "zanahoria", "setas shiitake", "calabacín", "brotes de soja", "maíz dulce", "salsa de soja"],
+        "descripción":"Arroz salteado con secreto de cerdo de granja, cebolleta, zanahoria, setas shiitake, calabacín, brotes de soja y maíz dulce. Con salsa de soja Kikkoman",
+        "categoria": "arroces",
+        "cantidad":"para una persona",
+        "preferencia":"",
+        "foto":"http://www.udon.es/products/images/Yakimeshi_Don_G.jpg"
+    },
+    {
+        "nombre": "Kaesar Asian Salad",
+        "precio": 8.45,
+        "restaurante": "Udon",
+        "tags": ["aguacate", "tomate cherry", "tomate", "carne", "pollo", "pechuga", "maíz", "queso", "pechuga de pollo", "salsa césar", "maiz tostado", "dashi", "chips de maiz", "cacahuete", "parmesano", "ensalada"],
+        "descripción": "Ensalada verde con aguacate, tomate cherry, dados de pechuga de pollo de corral rebozado con maíz tostado, salsa césar con dashi, chips crujientes de maíz, cacahuetes y parmesano rallado",
+        "categoria": "ensaladas",
+        "cantidad":"para una persona",
+        "preferencia":"",
+        "foto":"http://www.udon.es/products/images/CAESARSALADG.jpg"
+    },
+    {
+        "nombre": "Big Mac",
+        "precio": 4.20,
+        "restaurante": "McDonals",
+        "tags": ["hamburguesa", "carne", "vacuno", "lechuga", "cebolla", "pepinillo", "queso", "queso cheddar", "salsa", "pan de sésamo"],
+        "descripción": "Dos jugosas hamburguesas de carne 100% vacuno español, lechuga fresca y crujiente, cebolla, pepinillo, queso Cheddar fundido y nuestra inimitable salsa secreta. Todo esto envuelto en un nuevo pan de sésamo horneado al estilo tradicional.",
+        "categoria": "hamburguesas",
+        "cantidad":"para una persona",
+        "preferencia":"",
+        "foto":"https://www.mcdonalds.es/sites/default/files/produits/477x360_bm.png"
+    },
+    {
+	    "nombre": "Grand McExtreme™ Chiken Crispy Cheese",
+	    "precio": 5.50,
+	    "restaurante": "McDonals",
+	    "tags": ["hamburguesa", "pollo", "pollo rebozado", "pollo frito", "cebolla", "queso", "queso gouda", "gouda", "lechuga", "salsa de queso"],
+	    "descripción": "Delicioso pollo crujiente 100% origen español, cebolla crispy y asada, queso Gouda, lechuga Batavia y una irresistible salsa cremosa de queso. ¿Se te ha hecho ya la boca agua?",
+	    "categoria": "hamburguesas",
+        "cantidad":"para una persona",
+        "preferencia":"",
+	    "foto":"https://www.mcdonalds.es/sites/default/files/produits/477x360_chickenbells.png"
+    },
+    {
+	    "nombre": "Mediterranean Tuna",
+	    "precio": 5.55,
+	    "restaurante": "McDonals",
+	    "tags": ["ensalada", "atún", "pescado", "pimientos", "pimiento rojo", "pimiento amarillo", "lechuga", "croutons", "pan"],
+	    "descripción": "¡Nuestra base más fresca acompañado de nuestros productos más frescos! Disfruta de esta deliciosa ensalada de atún con la mejor variedad de pimientos y crujientes croutons.",
+	    "categoria": "ensaladas",
+        "cantidad":"para una persona",
+        "preferencia":"",
+	    "foto":"https://www.mcdonalds.es/sites/default/files/produits/mediterraneantuna477.png"
+	},
+	{
+	    "nombre": "Wowburger",
+	    "precio": 5.6,
+	    "restaurante": "La trocadero",
+	    "tags": ["vegano", "remolacha", "mostaza", "pepinillos", "cebolla caramelizada", "espinaca", "lechuga", "jalapeños", "pan vegano"],
+	    "descripción": "Vegan burger ecológica de remolacha, pepinillos, cebolla caramelizada, espinaca baby, lechuga trocadero, y jalapeños.",
+	    "categoria": "hamburguesas",
+        "cantidad":"para una persona",
+        "preferencia":"vegano",
+	    "foto":"http://www.latrocadero.com/wp-content/uploads/2017/10/wowburger-300x294.png"
+	},
+	{
+	    "nombre": "Setburg",
+	    "precio": 5.95,
+	    "restaurante": "La trocadero",
+	    "tags": ["vegano", "setas", "rúcula", "tomate concentrado", "cebolla roja", "queso vegano", "salsa pesto vegana", "pan vegano"],
+	    "descripción": "Vegan burger ecológica de setas, rúcula, tomate concentrado, cebolla roja, queso vegano, y salsa pesto vegana.",
+	    "categoria": "hamburguesas",
+        "cantidad":"para una persona",
+        "preferencia":"vegano",
+	    "foto":"http://www.latrocadero.com/wp-content/uploads/2017/10/setburg-300x288.png"
+	},
+	{
+	    "nombre": "Setbacon",
+	    "precio": 5.95,
+	    "restaurante": "La trocadero",
+	    "tags": ["vegano", "setas", "bacon vegano", "cebolla caramelizada", "lechuga trocadero", "tomate fresco", "salsa curry", "pan vegano"],
+	    "descripción": "Vegan burger ecológica de setas, vegan bacon, cebolla caramelizada, lechuga trocadero, tomate fresco, y salsa curry.",
+	    "categoria": "hamburguesas",
+        "cantidad":"para una persona",
+        "preferencia":"vegano",
+	    "foto":"http://www.latrocadero.com/wp-content/uploads/2017/10/setbacon-300x257.png"
+	},
+	{
+	    "nombre": "LTClaccic",
+	    "precio": 5.95,
+	    "restaurante": "La trocadero",
+	    "tags": ["vegano", "remolacha", "bacon vegano", "cebolla roja", "pepinillos", "rúcula", "lechuga trocadero", "pan vegano", "queso vegano", "veganesa", "ketchup"],
+	    "descripción": "Vegan burger ecológica de setas, vegan bacon, cebolla caramelizada, lechuga trocadero, tomate fresco, y salsa curry.",
+	    "categoria": "hamburguesas",
+        "cantidad":"para una persona",
+        "preferencia":"vegano",
+	    "foto":"http://www.latrocadero.com/wp-content/uploads/2017/10/Ltclasic-300x288.png"
+	},
+	{
+	    "nombre": "Falburger",
+	    "precio": 5.75,
+	    "restaurante": "La trocadero",
+	    "tags": ["vegano", "falafel", "tomate concentrado", "cebolla roja", "pepinillos", "espinaca", "aceitunas negras", "pan vegano", "lechuga trocadero", "ajonesa", "hummus"],
+	    "descripción": "Vegan burger ecológica de falafel, tomate concentrado, cebolla roja, pepinillos, lechuga trocadero, espinaca baby, aceitunas negras, ajonesa y hummus.",
+	    "categoria": "hamburguesas",
+        "cantidad":"para una persona",
+        "preferencia":"vegano",
+	    "foto":"http://www.latrocadero.com/wp-content/uploads/2017/10/falburger-300x261.png"
+	},
+	{
+	    "nombre": "Campburg",
+	    "precio": 5.75,
+	    "restaurante": "La trocadero",
+	    "tags": ["vegano", "zanahoria", "cebolla", "pimiento rojo asado", "cebolla caramelizada", "rúcula", "pan vegano", "lechuga trocadero", "queso vegano", "veganesa", "mostaza"],
+	    "descripción": "Vegan burger ecológica de zanahoria y cebolla, pimiento rojo asado, cebolla caramelizada, rúcula, lechuga trocadero, queso vegano, veganesa, y mostaza.",
+	    "categoria": "hamburguesas",
+        "cantidad":"para una persona",
+        "preferencia":"vegano",
+	    "foto":"http://www.latrocadero.com/wp-content/uploads/2017/10/CAMPBURG-300x254.png"
 	}
 ]
