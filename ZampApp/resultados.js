@@ -1,4 +1,5 @@
 
+
 /*var url = "http://www.mocky.io/v2/5a3cf50f310000b517b59365";
 
 document.getElementById("boton1").onclick = function() {
@@ -16,50 +17,121 @@ document.getElementById("boton1").onclick = function() {
 }
 */
 
-var xmlhttp = new XMLHttpRequest();
-var url = "./listaDeProductos.json";
+$("#responsiveBusqueda").click(function(){
+	$("#divEscondido").toggle();
+})
 
-xmlhttp.onload = function() {
+/*SLIDERS*/
+
+var slider = new Slider("#ex8", {
+	tooltip: 'always'
+});
+
+$("#ex2").slider({});
+
+/*FIN SLIDERS*/
+
+
+/*FILTROS*/
+
+var myArr;
+var requestFiltro = new XMLHttpRequest();
+var url = "./listaDeProductos.json";
+requestFiltro.onload = function() {
 	if (this.readyState == 4) {
-        if (this.status == 200) {
-            console.log('Exito')
-        	var myArr = JSON.parse(this.responseText);
-        	ShowLista(myArr);
-        }
-        else{
-     		alert('Un error');
-        }
-    }
-    else {
-    	alert('La página se está cargando');
-    }
+		if (this.status == 200) {
+			console.log('Exito 2')
+			myArr = JSON.parse(this.responseText);
+			ShowLista(myArr);
+		}
+		else{
+			alert('Un error');
+		}
+	}
+	else {
+		alert('La página se está cargando');
+	}
 };
-xmlhttp.open("POST", url, true);
-xmlhttp.send();
+requestFiltro.open("POST", url, true);
+requestFiltro.send();
+
+
+
+var valores={};
+var listaFiltrada = [];
 
 function ShowLista(arr) {
-	var front = [];
-	var back = [];
-	for (let i = 0; i < (arr.length); i++){
-		front[i] = '<h3>' + arr[i].nombre + '</h3>' + '<img style = height:150px; src="' + arr[i].foto + '">' + '<br>' + '<p>' + arr[i].precio.toFixed(2) + " €" + '</p>';
-		document.getElementsByClassName("front")[i].innerHTML = front[i];
-		back[i] = '<a href=""><h3>' + "Descripción" + '</h3>' + '<p>' + arr[i].descripción + '</p>' + '<br>' + '<h3>' + "Restaurante" + '</h3>' + '<p>' + arr[i].restaurante + '</p></a>';
-		document.getElementsByClassName("back")[i].innerHTML = back[i];
-	}
-}
 
-/*class Productos {
-	constructor(){
-		this.nombre = 
-		this.precio =
-		this.restaurante =
-		this.foto = 
+	$('#botonFiltro').click(function(evnt){
+		$(".divTableBody").empty();
+		evnt.preventDefault();
+
+		$('.filtro select').each(function(){
+			valores[this.name]=this.value;
+		})
+
+		$('.filtro input:checked[type=checkbox]').each(function(){
+			valores[this.name]=(valores[this.name]?valores[this.name]+',':'')+this.value;
+		})
+
+		$('.filtro input').not('.filtro input[type=checkbox]').each(function(){
+			valores[this.name]=(valores[this.name]?valores[this.name]+',':'')+this.value;
+		})
+
+		for(i=0; i<myArr.length;i++){
+			if ((Object.values(myArr[i])[6] == valores.cantidad)&&
+				(myArr[i].categoria == valores.categoria)&&
+				(myArr[i].preferencia == valores.preferencia)){
+				listaFiltrada.push(myArr[i]);
+			}						
+		};
+		
+
+		/*for (let i=0; i<(myArr.length); i++){
+			for (let k = 0; k < Object.keys(valores).length; k++){
+				for(let j=0; j<(valores[Object.keys(valores)[k]].split(",").length);j++){
+					if((valores[Object.keys(valores)[k]].split(",")[j]==myArr[i][Object.keys(valores)[k]])){
+						listaFiltrada.push(myArr[i]); 
+					}
+
+				}
+			}
+		}*/
+		
+
+		var flipper = [];
+
+		for (plato in listaFiltrada){
+			flipper[plato] = document.createElement("div");
+			flipper[plato] = '<div class="divTableCell">' + '<div class="flipper"><div class="front">' + 
+			'<h3>' + listaFiltrada[plato].nombre + '</h3>' + 
+			'<img src="' + listaFiltrada[plato].foto + '">' + '<br>' + 
+			'<div class="precio">' + '<p>' + listaFiltrada[plato].precio.toFixed(2) + " €" + '</p>' + '</div>' + '</div>' + 
+			'<div class="back">' + '<a href=""><h3>' + "Descripción" + '</h3>' + 
+			'<p>' + listaFiltrada[plato].descripción + '</p>' + '<br>' + 
+			'<h3>' + "Restaurante" + '</h3>' + 
+			'<p>' + listaFiltrada[plato].restaurante + '</p>' + 
+			'<div class="precio">' + '<p>' + listaFiltrada[plato].precio.toFixed(2) + " €" + '</p>' + '</div>' + '</a></div></div>' + 
+			'<input type="number" size="3" name="num" min="1" max="100" value="0"/>' +
+			'<button class="añadir"></button></div>';
+
+			$(".divTableBody").append(flipper[plato]);
+		}
+
+		listaFiltrada.splice(0,listaFiltrada.length);
+		console.log(valores);
 	}
-}*/
+
+	);
+};
+
+/*FIN FILTROS*/
+
+
 
 
 // JsHome angel, filtros
-function FiltrosInputs() {
+/*function FiltrosInputs() {
     nombre = '';
 	seleccionado = false;
 }
@@ -94,4 +166,7 @@ var request = new XMLHttpRequest();
 var arrInputs = document.getElementsByClassName('filtro')[0].getElementsByTagName('input');
 var arrOtros = document.getElementsByClassName('filtro')[0].getElementsByTagName('select');
 var btnFiltro=document.getElementById('btnFiltro');
-btnFiltro.onclick = CogerFiltros;
+btnFiltro.onclick = CogerFiltros;*/
+
+
+/*FUNCCION DE LOS FILTROS*/
