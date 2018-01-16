@@ -806,7 +806,7 @@ footer>.enlaces>div {
     margin-top: 50px;
     background-color: white;
     margin-bottom: 15px;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .condiciones p {
@@ -1129,3 +1129,73 @@ color: #C0CA33;
 
 
 /* FIN SOBRE NOSOTROS*/
+
+/* Empieza REGISTRO EMPRESA */
+
+.RegEmpresa{
+    height: 598px;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  
+  .RegEmpresa #uldias{
+    margin-left: 30%;
+  }
+  
+  .RegEmpresa #Logo{
+    display: none;
+  
+  }
+  
+  .RegEmpresa #LogoImg{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .RegEmpresa .form-control{
+    padding: 2px;
+    margin: 2px;
+  }
+  
+  .RegEmpresa .btn{
+    background-color: #c0ca33;
+    border: 2px solid #566573;
+  }
+  
+  .RegEmpresa input[type=checkbox] {
+    transform: scale(2);
+  }
+  
+  .input-group-prepend label{
+    vertical-align: middle;
+    margin: 0px;
+  
+  }
+  
+  .padding{
+    padding:5px;
+  }
+  
+  #btnRegistro{
+    color: white;
+  }
+  
+  @media (max-width: 481px) {
+    .RegEmpresa #uldias{
+      margin-left: 0%;
+    }
+    .abajo .col-6 .form-control{
+      margin-top: 17px;
+    }
+    .medio .tab-content .tab-pane .row .col-6 .HCierre{
+      margin-top: 30px;
+    }
+    .RegEmpresa #LogoImg{
+      width: 50px;
+      height: 50px;
+    }
+  
+  }
+  /* FIN REGISTRO EMPRESA*/
+  
