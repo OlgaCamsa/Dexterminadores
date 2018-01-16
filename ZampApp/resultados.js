@@ -79,7 +79,7 @@ function ShowLista(arr) {
 		})
 
 		for(i=0; i<myArr.length;i++){
-			if ((Object.values(myArr[i])[6] == valores.cantidad)&&
+			if ((myArr[i].cantidad == valores.cantidad)&&
 				(myArr[i].categoria == valores.categoria)&&
 				(myArr[i].preferencia == valores.preferencia)){
 				listaFiltrada.push(myArr[i]);
