@@ -6,7 +6,7 @@
 		"tags": ["tomate", "mozzarella", "salami picante"],
 		"descripción": "Tomate, Mozzarella, Salami Picante",
 		"categoria": "pizzas",
-		"cantidad":"para compartir",
+		"cantidad":"para una persona",
 		"preferencia":"",
 		"foto": "https://res.cloudinary.com/hesvvq3zo/image/upload/w_1000,h_500,c_pad,q_30/v1477472361/takeaway/Le-Pizze-Pepperoni.jpg"
 	},
@@ -17,7 +17,7 @@
 		"tags": ["tomate", "grana padano", "mozzarella", "gorgonzola", "emmental"],
 		"descripción": "Tomate, Grana Padano, Mozzarella, Gorgonzola, Emmental.",
 		"categoria": "pizzas",
-		"cantidad":"para compartir",
+		"cantidad":"para una persona",
 		"preferencia":"",
 		"foto": "https://res.cloudinary.com/hesvvq3zo/image/upload/w_1000,h_500,c_pad,q_30/v1477472361/takeaway/Le-Pizze-4formaggi.jpg"
 	},
@@ -28,7 +28,7 @@
 		"tags": ["masa fresca", "doble de bacon", "champiñon", "salsa carbonara", "topping a base de mozzarella", "extra detopping a base de mozzarella"],
 		"descripción": "Masa fresca, doble de bacon, champiñón, salsa carbonara, topping a base de mozzarella y extra detopping a base de mozzarella.",
 		"categoria": "pizzas",
-		"cantidad":"para compartir",
+		"cantidad":"para una persona",
 		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pcaq_c.png"
 	},
@@ -39,7 +39,7 @@
 		"tags": ["doble ración de carne de vacuno", "topping a base de mozzarella", "extra de salsa de tomate confitado"],
 		"descripción": "Doble ración de carne de vacuno, topping a base de mozzarella y extra de salsa de tomate confitado.",
 		"categoria": "pizzas",
-		"cantidad":"para compartir",
+		"cantidad":"para una persona",
 		"preferencia":"",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/bolo_c.png"
 	},
