@@ -251,7 +251,7 @@
 		"restaurante": "TelePizza",
 		"tags": [
 			"5 quesos",
-			"gourmet"
+			"gourmet",
 			"masa fina",
 			"bacon",
 			"champiñón",
@@ -409,7 +409,7 @@
 			"pollo frito",
 			"carne",
 			"ligero",
-			"caliente",
+			"caliente"
 		],
 		"descripción": "Disfruta de nuestro inconfundible pollo crujiente acompañado de tomate, lechuga y mayonesa. ¡Bien envuelto en una rica tortilla para que no se te escape!",
 		"categoria": "rolls",
@@ -520,7 +520,7 @@
 			"calabacín",
 			"brotes de soja",
 			"maíz dulce",
-			"salsa de soja"
+			"salsa de soja",
 			"ligero",
 			"caliente"
 		],
