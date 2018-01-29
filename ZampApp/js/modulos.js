@@ -1,4 +1,3 @@
-
 var LSModule = (function () {
     var valores = {};
 
@@ -21,13 +20,18 @@ var LSModule = (function () {
 
     // ---Función para guardar los datos de cada input en el local storage con la clave inputs---
     function _guardarDatos() {
+        window.localStorage.setItem('inputs', JSON.stringify(_preparaDatos()));
+    }
 
-        window.localStorage.setItem('inputs',JSON.stringify(_preparaDatos()));
+    // ---Función que recoge los datos guardados en el Local Storage de los inputs---
+    function _cargarDatos() {
+        return JSON.parse(window.localStorage.getItem('inputs'));
     }
 
     // ---Funciones disponibles al llamar LSModules---
     return {
         GuardarInputs: _guardarDatos,
-        LeerInputs: _preparaDatos
+        LeerInputs: _preparaDatos,
+        CargarInputs: _cargarDatos
     }
 })();
