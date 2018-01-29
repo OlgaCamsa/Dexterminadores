@@ -1,7 +1,3 @@
-
-
-
-
 $("#responsiveBusqueda").click(function(){
 	$("#divEscondido").toggle();
 })
@@ -11,8 +7,6 @@ $("#responsiveBusqueda").click(function(){
 var slider = new Slider("#ex8", {
 	tooltip: 'always'
 });
-
-
 
 
 $("#ex2").slider({
@@ -26,15 +20,20 @@ $("#ex2").slider({
 
 /*FILTROS*/
 
+
 var myArr;
 var requestFiltro = new XMLHttpRequest();
 var url = "./listaDeProductos.json";
 requestFiltro.onload = function() {
 	if (this.readyState == 4) {
 		if (this.status == 200) {
-			console.log('Exito 2')
+			console.log('Exito')
+			LSModule.CargarInputs;
+			var valores = JSON.parse(window.localStorage.getItem('inputs'));
+			console.log(valores);
 			myArr = JSON.parse(this.responseText);
 			ShowLista(myArr);
+			CrearListaFiltrada(valores, myArr);
 		}
 		else{
 			alert('Un error');
@@ -53,23 +52,8 @@ var valores={};
 
 function ShowLista(arr) {
 
-	$('#botonFiltro').click(function(evnt){
-		
-		valores = {};
-		evnt.preventDefault();
-
-		$('.filtro select').each(function(){
-			valores[this.name]=this.value;
-		})
-
-		$('.filtro input:checked[type=checkbox]').each(function(){
-			valores[this.name]=(valores[this.name]?valores[this.name]+',':'')+this.value;
-		})
-
-		$('.filtro input').not('.filtro input[type=checkbox]').each(function(){
-			valores[this.name]=(valores[this.name]?valores[this.name]+',':'')+this.value;
-		})
-
+		$('#botonFiltro').click(function(evnt){		
+		valores=LSModule.LeerInputs();
 		CrearListaFiltrada(valores, myArr);	
 	});
 };
@@ -78,6 +62,9 @@ function ShowLista(arr) {
 function CrearListaFiltrada(valores, myArr){
 	var listaFiltrada = [];
 	for(i=0; i<myArr.length;i++){
+		if (valores.cantidad !== null){
+			
+		}
 		if ((myArr[i].cantidad == valores.cantidad)&&
 			(myArr[i].categoria == valores.categoria)&&
 			(myArr[i].preferencia == valores.preferencia)){
