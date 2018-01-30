@@ -48,44 +48,78 @@ requestFiltro.send();
 
 
 
-var valores={};
+
 
 function ShowLista(arr) {
-
+		var valores={};
 		$('#botonFiltro').click(function(evnt){		
 		valores=LSModule.LeerInputs();
 		CrearListaFiltrada(valores, myArr);	
 	});
 };
 
-
+var listaFiltrada = [];
 function CrearListaFiltrada(valores, myArr){
-	var listaFiltrada = [];
-	for(i=0; i<myArr.length;i++){
-		if (valores.cantidad !== null){
-			
-		}
-		if ((myArr[i].cantidad == valores.cantidad)&&
-			(myArr[i].categoria == valores.categoria)&&
-			(myArr[i].preferencia == valores.preferencia)){
-			listaFiltrada.push(myArr[i]);
-		}						
-	};
+	switch(valores){
+		case (valores.categoria !== null):
+			listaFiltrada.push(myArr.filter(plato => plato.categoria == valores.categoria));
+		case (valores.cantidad !== null):
+			listaFiltrada.push(myArr.filter(plato => plato.cantidad == valores.cantidad));
+		case (valores.preferencia !== null):
+			listaFiltrada.push(myArr.filter(plato => plato.preferencia == valores.preferencia));
+
+	}
+
+	if (valores.categoria !== null){
+		console.log("jjfklj");
+		listaFiltrada.push(myArr.filter(plato => plato.categoria == valores.categoria));
+	}
+	else if (valores.cantidad !== null){
+		listaFiltrada.push(myArr.filter(plato => plato.cantidad == valores.cantidad));
+	}
+	else if(valores.preferencia !== null){
+		console.log("sdf");
+		listaFiltrada.push(myArr.filter(plato => plato.preferencia == valores.preferencia));
+	}					
+	
+	return listaFiltrada;
+	console.log(listaFiltrada);	
 	pintarPlatos(listaFiltrada);
+	
+	/*var valoresRx = Rx.Observable.pairs(valores)
+		.map(x => {
+			var [keys, values] = x;
+			console.log('Key:', keys.split(","), 'Value:', values.split(","));
+		});
+
+	var myArrRx = Rx.Observable.pairs(myArr)
+		.map(y => {
+			var [key, value] = y;
+			console.log('Key:', key.split(","), 'Value:', value);
+		})
+		.merge(valoresRx)
+		.filter(value => value.categoria == value.values)
+		
+	myArrRx.subscribe (x => console.log("ddd" + x));*/
+
+		
 }
 
+
+
 function pintarPlatos(listaFiltrada){
+	console.log("vvv", listaFiltrada);
 	$(".divTableBody").empty();
 	var view = [];
 	var rendered = [];
-	for (plato in listaFiltrada){
+	for (i in listaFiltrada){
 
-		view[plato] = {
-			name : listaFiltrada[plato].nombre,
-			precio : listaFiltrada[plato].precio.toFixed(2) + " €",
-			descripción : listaFiltrada[plato].descripción,
-			restaurante : listaFiltrada[plato].restaurante,
-			src : listaFiltrada[plato].foto
+		view[i] = {
+			name : listaFiltrada[i].nombre,
+			precio : listaFiltrada[i].precio.toFixed(2) + " €",
+			descripción : listaFiltrada[i].descripción,
+			restaurante : listaFiltrada[i].restaurante,
+			src : listaFiltrada[i].foto
 		};
 
 	}
@@ -99,3 +133,16 @@ function pintarPlatos(listaFiltrada){
 }
 
 /*FIN FILTROS*/
+
+/*var listaFiltrada = [];
+	for(i=0; i<myArr.length;i++){
+		if (valores.cantidad !== null){
+			
+		}
+		if ((myArr[i].cantidad == valores.cantidad)&&
+			(myArr[i].categoria == valores.categoria)&&
+			(myArr[i].preferencia == valores.preferencia)){
+			listaFiltrada.push(myArr[i]);
+		}						
+	};
+	pintarPlatos(listaFiltrada);*/
