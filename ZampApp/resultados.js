@@ -27,13 +27,25 @@ var url = "./listaDeProductos.json";
 requestFiltro.onload = function() {
 	if (this.readyState == 4) {
 		if (this.status == 200) {
-			console.log('Exito')
-			LSModule.CargarInputs;
-			var valores = JSON.parse(window.localStorage.getItem('inputs'));
-			console.log(valores);
+			console.log('Exito');
 			myArr = JSON.parse(this.responseText);
-			ShowLista(myArr);
-			CrearListaFiltrada(valores, myArr);
+			window.onload = function(){
+				LSModule.CargarInputs;
+				var valores = JSON.parse(window.localStorage.getItem('inputs'));
+				console.log(valores);
+				CrearListaFiltrada(valores, myArr);
+			}
+			
+			if ($('#botonFiltro').click(function(e){
+				e.preventDefault();
+				console.log("true");
+				var valores={};
+				valores=LSModule.LeerInputs();
+				CrearListaFiltrada(valores, myArr);
+			}));
+			
+			//ShowLista(myArr);
+			
 		}
 		else{
 			alert('Un error');
@@ -47,44 +59,46 @@ requestFiltro.open("POST", url, true);
 requestFiltro.send();
 
 
-
-
-
-function ShowLista(arr) {
-		var valores={};
-		$('#botonFiltro').click(function(evnt){		
-		valores=LSModule.LeerInputs();
-		CrearListaFiltrada(valores, myArr);	
-	});
-};
-
 var listaFiltrada = [];
+
 function CrearListaFiltrada(valores, myArr){
-	switch(valores){
-		case (valores.categoria !== null):
-			listaFiltrada.push(myArr.filter(plato => plato.categoria == valores.categoria));
-		case (valores.cantidad !== null):
-			listaFiltrada.push(myArr.filter(plato => plato.cantidad == valores.cantidad));
-		case (valores.preferencia !== null):
-			listaFiltrada.push(myArr.filter(plato => plato.preferencia == valores.preferencia));
-
-	}
-
-	if (valores.categoria !== null){
-		console.log("jjfklj");
-		listaFiltrada.push(myArr.filter(plato => plato.categoria == valores.categoria));
-	}
-	else if (valores.cantidad !== null){
-		listaFiltrada.push(myArr.filter(plato => plato.cantidad == valores.cantidad));
-	}
-	else if(valores.preferencia !== null){
-		console.log("sdf");
-		listaFiltrada.push(myArr.filter(plato => plato.preferencia == valores.preferencia));
-	}					
 	
-	return listaFiltrada;
-	console.log(listaFiltrada);	
+	if (valores.categoria !== "undefined"){
+		console.log("jjfklj");
+		listaFiltrada = listaFiltrada.concat(myArr.filter(plato => plato.categoria == valores.categoria));
+	}
+	else if (valores.cantidad !== "undefined"){
+		listaFiltrada =listaFiltrada.concat(myArr.filter(plato => plato.cantidad == valores.cantidad));
+	}
+	else if(valores.preferencia !== "undefined"){
+		console.log("sdf");
+		listaFiltrada =listaFiltrada.concat(myArr.filter(plato => plato.preferencia == valores.preferencia));
+	}
+	valores = {};
+	var myset = new Set(listaFiltrada);
+	console.log("4", myset);
+	listaFiltrada = Array.from(myset);
+	console.log("5", listaFiltrada);
+
 	pintarPlatos(listaFiltrada);
+	
+	
+
+
+	/*if (valores.categoria !== "undefined"){
+		console.log("jjfklj");
+		listaFiltrada = listaFiltrada.concat(myArr.filter(plato => plato.categoria == valores.categoria));
+	}
+	else if (valores.cantidad !== "undefined"){
+		listaFiltrada =listaFiltrada.concat(myArr.filter(plato => plato.cantidad == valores.cantidad));
+	}
+	else if(valores.preferencia !== "undefined"){
+		console.log("sdf");
+		listaFiltrada =listaFiltrada.concat(myArr.filter(plato => plato.preferencia == valores.preferencia));
+	}	*/				
+	
+	
+	
 	
 	/*var valoresRx = Rx.Observable.pairs(valores)
 		.map(x => {
@@ -108,7 +122,7 @@ function CrearListaFiltrada(valores, myArr){
 
 
 function pintarPlatos(listaFiltrada){
-	console.log("vvv", listaFiltrada);
+	
 	$(".divTableBody").empty();
 	var view = [];
 	var rendered = [];
@@ -131,6 +145,8 @@ function pintarPlatos(listaFiltrada){
         $(".divTableBody").append(rendered).html();
     },'html');
 }
+listaFiltrada.splice(0,listaFiltrada.length);
+
 
 /*FIN FILTROS*/
 
