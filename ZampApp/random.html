@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="img/icono/z.ico">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <script src="mustache.min.js"></script>
 </head>
 
 <body>
@@ -45,23 +46,23 @@
 
     <div class="container">
         <div id="asks">
-            <div id="topizq">
+            <!-- <div id="topizq">
                 <div class="pregunta">
                     <h3>Cantidad</h3>
                 </div>
                 <div>
-                    <h5>Tenemos comidas completas y para picotear</h5>
+                    <h5>Tenemos comidas para compartir</h5>
                 </div>
                 <div>
                     <form action="">
-                        <input type="checkbox" name="pesado" id="ligero">
-                        <label for="ligero">
-                            Ligera
+                        <input type="checkbox" name="cantidad" value="compartir" id="compartir">
+                        <label for="compartir">
+                            Para compartir
                         </label>
                         <br>
-                        <input type="checkbox" name="pesado" id="contundente">
-                        <label for="contundente">
-                            Contundente
+                        <input type="checkbox" name="cantidad" value="individual" id="individual">
+                        <label for="individual">
+                            Individual
                         </label>
                     </form>
                 </div>
@@ -75,12 +76,12 @@
                 </div>
                 <div>
                     <form action="">
-                        <input type="checkbox" name="temp" id="caliente">
+                        <input type="checkbox" name="temp" value="caliente" id="caliente">
                         <label for="caliente">
                             Caliente
                         </label>
                         <br>
-                        <input type="checkbox" name="temp" id="frio">
+                        <input type="checkbox" name="temp" value="frio" id="frio">
                         <label for="frio">
                             Frío
                         </label>
@@ -96,50 +97,50 @@
                 </div>
                 <div>
                     <form action="">
-                        <input type="checkbox" name="pic" id="agridulce">
-                        <label for="agridulce">
-                            Agridulce
-                        </label>
-                        <br>
-                        <input type="checkbox" name="pic" id="picante">
+                        <input type="checkbox" name="pic" value="picante" id="picante">
                         <label for="picante">
                             Picante
                         </label>
                         <br>
-                        <input type="checkbox" name="pic" id="muypicante">
-                        <label for="muypicante">
-                            Muy picante
+                        <input type="checkbox" name="pic" value="nadapicante" id="nadapicante">
+                        <label for="nadapicante">
+                            Nada Picante
+                        </label>
+                        <br>
+                        <input type="checkbox" name="pic" value="agridulce" id="agridulce">
+                        <label for="agridulce">
+                            Agridulce
                         </label>
                     </form>
                 </div>
             </div>
             <div id="downizq">
                 <div class="pregunta">
-                    <h3>Tipo de comida</h3>
+                    <h3>Alergias</h3>
                 </div>
                 <div>
-                    <h5>Puedes cambiarlos y combinarlos a tu gusto</h5>
+                    <h5>¿Tienes alguna intolerancia alimenticia?</h5>
                 </div>
                 <div>
                     <form action="">
-                        <input type="checkbox" name="tipo" id="carne">
-                        <label for="carne">
-                            Carne
+                        <input type="checkbox" name="alergia" value="gluten" id="gluten">
+                        <label for="gluten">
+                            Gluten
                         </label>
                         <br>
-                        <input type="checkbox" name="tipo" id="pescado">
-                        <label for="pescado">
-                            Pescado
+                        <input type="checkbox" name="alergia" value="lactosa" id="lactosa">
+                        <label for="lactosa">
+                            Lactosa
                         </label>
                         <br>
-                        <input type="checkbox" name="tipo" id="vegetariano">
-                        <label for="vegetariano">
-                            Vegetal
+                        <input type="checkbox" name="alergia" value="frutossecos" id="frutossecos">
+                        <label for="frutossecos">
+                            Frutos secos
                         </label>
                     </form>
                 </div>
 
-            </div>
+            </div> -->
         </div>
         <div id="askbutton">
             <a id="aresultados" href="resultados.html">
@@ -191,6 +192,8 @@
 </body>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="randomplantilla.js"></script>
+<script src="js/modulos.js"></script>
 <script src="randomjq.js"></script>
 
 </html>

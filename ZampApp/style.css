@@ -679,6 +679,11 @@ footer>.enlaces>div {
         margin: 6px 10px;
         width: 40%;
     }
+    #asks h5 {
+        margin: auto;
+        width: 80%;
+        height: 62px;
+    }
     #asks>#topizq {
         float: left;
     }
