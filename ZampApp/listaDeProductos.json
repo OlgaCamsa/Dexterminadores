@@ -3,13 +3,8 @@
 		"nombre": "Pizza Pepperone Picante",
 		"precio": 11.60,
 		"restaurante": "Tagliatella",
-		"tags": [
-			"pizza",
-			"muy picante",
-			"carne",
-			"contundente",
+		"ingredientes": [
 			"queso",
-			"caliente",
 			"tomate",
 			"mozzarella",
 			"salami",
@@ -17,9 +12,10 @@
 		],
 		"descripción": "Tomate, Mozzarella, Salami Picante",
 		"categoria": "pizzas",
-		"cantidad":"para una persona",
-		"preferencia":"",
-		"cantidad": "para compartir",
+		"cantidad": "para una persona",
+		"pic": "picante",
+		"temp": "caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://res.cloudinary.com/hesvvq3zo/image/upload/w_1000,h_500,c_pad,q_30/v1477472361/takeaway/Le-Pizze-Pepperoni.jpg"
 	},
@@ -27,13 +23,8 @@
 		"nombre": "Pizza 4 quesos",
 		"precio": 12.60,
 		"restaurante": "Tagliatella",
-		"tags": [
-			"pizza",
+		"ingredientes": [
 			"queso",
-			"vegetariano",
-			"vegetal",
-			"contundente",
-			"caliente",
 			"tomate",
 			"grana padano",
 			"mozzarella",
@@ -42,9 +33,10 @@
 		],
 		"descripción": "Tomate, Grana Padano, Mozzarella, Gorgonzola, Emmental.",
 		"categoria": "pizzas",
-		"cantidad":"para una persona",
-		"preferencia":"",
-		"cantidad": "para compartir",
+		"cantidad": "para una persona",
+		"pic": "nada picante",
+		"temp": "caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://res.cloudinary.com/hesvvq3zo/image/upload/w_1000,h_500,c_pad,q_30/v1477472361/takeaway/Le-Pizze-4formaggi.jpg"
 	},
@@ -52,24 +44,21 @@
 		"nombre": "Pizza Carbonara",
 		"precio": 9,
 		"restaurante": "TelePizza",
-		"tags": [
-			"pizza",
+		"ingredientes": [
 			"bacon",
-			"carne",
 			"queso",
 			"crema",
 			"champiñon",
 			"carbonara",
 			"salsa carbonara",
-			"mozzarella",
-			"caliente",
-			"contundente"
+			"mozzarella"
 		],
 		"descripción": "Masa fresca, doble de bacon, champiñón, salsa carbonara, topping a base de mozzarella y extra detopping a base de mozzarella.",
 		"categoria": "pizzas",
-		"cantidad":"para una persona",
-		"preferencia":"",
-		"cantidad": "para compartir",
+		"cantidad": "para una persona",
+		"pic": "nada picante",
+		"temp": "caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pcaq_c.png"
 	},
@@ -77,22 +66,19 @@
 		"nombre": "Pizza Boloñesa",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
-			"pizza",
-			"carne",
+		"ingredientes": [
 			"vacuno",
 			"mozzarella",
 			"tomate confitado",
 			"tomate",
-			"caliente",
-			"contundente",
 			"queso"
 		],
 		"descripción": "Doble ración de carne de vacuno, topping a base de mozzarella y extra de salsa de tomate confitado.",
 		"categoria": "pizzas",
-		"cantidad":"para una persona",
-		"preferencia":"",
-		"cantidad": "para compartir",
+		"cantidad": "para una persona",
+		"pic": "nada picante",
+		"temp": "caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/bolo_c.png"
 	},
@@ -100,22 +86,21 @@
 		"nombre": "Pizza Hawaiana",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"masa fresca",
 			"york",
 			"jamón york",
 			"piña",
 			"mozzarella",
 			"tomate",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente",
-			"carne"
+			"queso"
 		],
 		"descripción": "Masa fresca, doble de york, piña, topping a base de mozzarella, tomate y extra de topping a base de mozzarella.",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic": "nada picante",
+		"temp": "caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/phw_c.png"
 	},
@@ -123,7 +108,7 @@
 		"nombre": "Pizza Carbonara Cebolla",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"masa fresca",
 			"bacon",
 			"champiñon",
@@ -132,15 +117,14 @@
 			"cebolla",
 			"crema",
 			"carbonara",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente",
-			"carne"
+			"queso"
 		],
 		"descripción": "Masa fresca, doble de bacon, champiñón, salsa carbonara, topping a base de mozzarella y cebolla",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pcar_c.png"
 	},
@@ -148,21 +132,20 @@
 		"nombre": "Pizza Rodeo",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"vacuno",
 			"bacon",
 			"salsa steak",
 			"salsa grill",
 			"mozzarella",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente",
-			"carne"
+			"queso"
 		],
 		"descripción": "La nueva Telepizza Rodeo compuesta por: carne de vacuno, bacon, salsa steak&grill y topping a base de mozzarella",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/rode_c.png"
 	},
@@ -170,7 +153,7 @@
 		"nombre": "Pizza Ibérica de TelePizza",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"jamón ibérico de cebo",
 			"tomate natural",
 			"aceite de oliva",
@@ -178,15 +161,14 @@
 			"jamón",
 			"tomate",
 			"aceite",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente",
-			"carne"
+			"queso"
 		],
 		"descripción": "Una exquisita selección de jamón ibérico de cebo acompañado de finas rodajas de tomate natural y un toque de aceite de oliva sobre una crujiente masa",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/iber_c.png"
 	},
@@ -194,7 +176,7 @@
 		"nombre": "Pizza Burger",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"queso cheddar",
 			"cheddar",
 			"vacuno",
@@ -205,15 +187,14 @@
 			"bacon cripsy",
 			"bacon",
 			"salsa burger",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente",
-			"carne"
+			"queso"
 		],
 		"descripción": "Auténtico sabor burger en cada bocado. Queso cheddar, carne de vacuno, tomate natural y pepinillos, cubiertos con una masa con topping a base de mozzarella, bacon crispy y salsa burger.",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/p3pb_c.png"
 	},
@@ -221,7 +202,7 @@
 		"nombre": "Pizza Barbacoa Gourmet",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"5 quesos",
 			"pollo marinado",
 			"pollo",
@@ -232,16 +213,14 @@
 			"salsa barbacoa",
 			"barbacoa",
 			"mozzarella",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente",
-			"carne",
-			"gourmet"
+			"queso"
 		],
 		"descripción": "Una mezcla de 5 quesos, tiras de pollo marinado, bacon ahumado, doble ración de carne de vacuno, salsa barbacoa y topping a base de mozzarella.",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/53bq_c.png"
 	},
@@ -249,7 +228,7 @@
 		"nombre": "Pizza Carbonara Gourmet Queso",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"5 quesos",
 			"gourmet",
 			"masa fina",
@@ -258,15 +237,14 @@
 			"salsa carbonara",
 			"carbonara",
 			"mozzarella",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente",
-			"carne"
+			"queso"			
 		],
 		"descripción": "Una pizza mediana mezcla de 5 quesos cubierta de una masa fina con doble ración de bacon, champiñón, salsa carbonara y extra de topping a base de mozzarella",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/tkgq_c.png"
 	},
@@ -274,7 +252,7 @@
 		"nombre": "Pizza Carbonara Gourmet Cebolla",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"5 quesos",
 			"masa fina",
 			"bacon",
@@ -282,15 +260,14 @@
 			"salsa carbonara",
 			"carbonara",
 			"cebolla",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente",
-			"carne"
+			"queso"
 		],
 		"descripción": "Una pizza mediana mezcla de 5 quesos cubierta de una masa fina con doble ración de bacon, champiñón, salsa carbonara y cebolla.",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/tkgo_c.png"
 	},
@@ -298,7 +275,7 @@
 		"nombre": "Pizza Telepizza Vulcano Nachos",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"5 quesos",
 			"masa fina",
 			"bacon",
@@ -306,14 +283,14 @@
 			"salsa carbonara",
 			"carbonara",
 			"cebolla",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente"
+			"queso"
 		],
 		"descripción": "Una pizza mediana mezcla de 5 quesos cubierta de una masa fina con doble ración de bacon, champiñón, salsa carbonara y cebolla.",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/tkgo_c.png"
 	},
@@ -321,7 +298,7 @@
 		"nombre": "Pizza Bacon Cheeseburger",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"masa fresca",
 			"bacon",
 			"mini hamburguesas",
@@ -332,15 +309,14 @@
 			"salsa burger",
 			"tomate natural",
 			"tomate",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente",
-			"carne"
+			"queso"
 		],
 		"descripción": "Masa fresca, bacon, mini hamburguesitas, queso cheddar, topping a base de mozzarella, salsa burger y tomate natural.",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pzbc_c.png"
 	},
@@ -348,7 +324,7 @@
 		"nombre": "Pizza Barbacoa Crème Queso",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"masa fresca",
 			"bacon",
 			"champiñón",
@@ -358,15 +334,14 @@
 			"salsa carbonara",
 			"carbonara",
 			"barbacoa",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente",
-			"carne"
+			"queso"
 		],
 		"descripción": "Masa fresca, bacon, champiñón, pollo, topping a base de mozzarella, mezcla de salsa barbacoa y carbonara y extra de topping a base de mozzarella.",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/pbcq_c.png"
 	},
@@ -374,22 +349,21 @@
 		"nombre": "Pizza Jalisco",
 		"precio": 7,
 		"restaurante": "TelePizza",
-		"tags": [
+		"ingredientes": [
 			"masa fresca",
 			"aceitunas negras",
 			"aceitunas",
 			"cebolla",
 			"pimiento morrón",
 			"vacuno",
-			"queso",
-			"pizza",
-			"caliente",
-			"contundente",
-			"carne"
+			"queso"
 		],
 		"descripción": "Masa fresca, Aceitunas negras, Cebolla, Pimiento morrón, carne de vacuno",
 		"categoria": "pizzas",
 		"cantidad": "para compartir",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://images.telepizza.com/vol/es/images/content/productos/jali_c.png"
 	},
@@ -397,7 +371,7 @@
 		"nombre": "Chicken McRoll",
 		"precio": 2.5,
 		"restaurante": "McDonals",
-		"tags": [
+		"ingredientes": [
 			"tortilla",
 			"tortita",
 			"pollo",
@@ -406,14 +380,14 @@
 			"burrito",
 			"mayonesa",
 			"pollo rebozado",
-			"pollo frito",
-			"carne",
-			"ligero",
-			"caliente"
+			"pollo frito"	
 		],
 		"descripción": "Disfruta de nuestro inconfundible pollo crujiente acompañado de tomate, lechuga y mayonesa. ¡Bien envuelto en una rica tortilla para que no se te escape!",
 		"categoria": "rolls",
 		"cantidad": "para una persona",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://www.mcdonalds.es/sites/default/files/produits/477x360_mcwrap_0.png"
 	},
@@ -421,12 +395,10 @@
 		"nombre": "Miso Ramen",
 		"precio": 9.95,
 		"restaurante": "Udon",
-		"tags": [
-			"sopa",
+		"ingredientes": [
 			"fideos",
 			"caldo",
 			"caldo de pollo",
-			"carne",
 			"soja",
 			"miso",
 			"cerdo",
@@ -437,13 +409,14 @@
 			"huevo",
 			"alga nori",
 			"cebolleta tierna",
-			"cebolleta",
-			"caliente",
-			"ligero"
+			"cebolleta"
 		],
 		"descripción": "Fideos Ramen con caldo de pollo elaborado con soja y miso. Con láminas de cerdo marinado (chashu), algas wakame, huevo de corral semicocido y marinado, alga nori y cebolleta tierna",
 		"categoria": "sopas",
 		"cantidad": "para una persona",
+		"pic":"agridulce",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "http://www.udon.es/products/images/Miso_Soup_G_1.jpg"
 	},
@@ -451,8 +424,7 @@
 		"nombre": "Tempura Soba",
 		"precio": 9.95,
 		"restaurante": "Udon",
-		"tags": [
-			"sopa",
+		"ingredientes": [
 			"caldo",
 			"soba",
 			"tempura",
@@ -460,15 +432,15 @@
 			"langostino",
 			"tempura de verduras",
 			"tempura de langostino",
-			"pescado",
 			"alga",
-			"alga nori",
-			"ligero",
-			"caliente"
+			"alga nori"
 		],
 		"descripción": "Soba con una deliciosa y crujiente tempura de verduras ecológicas y langostino con alga nori",
 		"categoria": "tempuras",
 		"cantidad": "para una persona",
+		"pic":"agridulce",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "http://www.udon.es/products/images/Tempura_soba_G896.jpg"
 	},
@@ -476,11 +448,10 @@
 		"nombre": "Oyako Don",
 		"precio": 9.35,
 		"restaurante": "Udon",
-		"tags": [
+		"ingredientes": [
 			"arroz",
 			"pollo rebozado",
 			"pollo",
-			"carne",
 			"cebolla",
 			"setas shiitake",
 			"setas",
@@ -490,13 +461,14 @@
 			"huevo",
 			"salsa tonkatsu",
 			"tonkatsu",
-			"cebollino",
-			"caliente",
-			"ligero"
+			"cebollino"
 		],
 		"descripción": "Arroz con tiras de contramuslo de pollo rebozadas, cebolla, setas shiitake, dashi, huevo revuelto, salsa tonkatsu y cebollino",
-		"categoria": "cocina japonesa",
+		"categoria": "arroces",
 		"cantidad": "para una persona",
+		"pic":"agridulce",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "http://udon.es/products/images/Oyako_Don_G.jpg"
 	},
@@ -504,11 +476,10 @@
 		"nombre": "Yakimeshi Don",
 		"precio": 9.35,
 		"restaurante": "Udon",
-		"tags": [
+		"ingredientes": [
 			"arroz",
 			"secreto de Cerdo",
 			"cerdo",
-			"carne",
 			"setas",
 			"soja",
 			"maíz",
@@ -520,13 +491,15 @@
 			"calabacín",
 			"brotes de soja",
 			"maíz dulce",
-			"salsa de soja",
-			"ligero",
-			"caliente"
+			"salsa de soja"
+			
 		],
 		"descripción": "Arroz salteado con secreto de cerdo de granja, cebolleta, zanahoria, setas shiitake, calabacín, brotes de soja y maíz dulce. Con salsa de soja Kikkoman",
 		"categoria": "arroces",
 		"cantidad": "para una persona",
+		"pic":"agridulce",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "http://www.udon.es/products/images/Yakimeshi_Don_G.jpg"
 	},
@@ -534,7 +507,7 @@
 		"nombre": "Kaesar Asian Salad",
 		"precio": 8.45,
 		"restaurante": "Udon",
-		"tags": [
+		"ingredientes": [
 			"aguacate",
 			"tomate cherry",
 			"tomate",
@@ -549,14 +522,14 @@
 			"dashi",
 			"chips de maiz",
 			"cacahuete",
-			"parmesano",
-			"ensalada",
-			"frío",
-			"ligero"
+			"parmesano"
 		],
 		"descripción": "Ensalada verde con aguacate, tomate cherry, dados de pechuga de pollo de corral rebozado con maíz tostado, salsa césar con dashi, chips crujientes de maíz, cacahuetes y parmesano rallado",
 		"categoria": "ensaladas",
 		"cantidad": "para una persona",
+		"pic":"nada picante",
+		"temp":"frío",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "http://www.udon.es/products/images/CAESARSALADG.jpg"
 	},
@@ -564,9 +537,7 @@
 		"nombre": "Big Mac",
 		"precio": 4.20,
 		"restaurante": "McDonals",
-		"tags": [
-			"hamburguesa",
-			"carne",
+		"ingredientes": [
 			"vacuno",
 			"lechuga",
 			"cebolla",
@@ -576,14 +547,15 @@
 			"cheddar",
 			"salsa",
 			"pan de sésamo",
-			"contundente",
 			"pan",
-			"sésamo",
-			"caliente"
+			"sésamo"
 		],
 		"descripción": "Dos jugosas hamburguesas de carne 100% vacuno español, lechuga fresca y crujiente, cebolla, pepinillo, queso Cheddar fundido y nuestra inimitable salsa secreta. Todo esto envuelto en un nuevo pan de sésamo horneado al estilo tradicional.",
 		"categoria": "hamburguesas",
 		"cantidad": "para una persona",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://www.mcdonalds.es/sites/default/files/produits/477x360_bm.png"
 	},
@@ -591,8 +563,7 @@
 		"nombre": "Grand McExtreme™ Chiken Crispy Cheese",
 		"precio": 5.50,
 		"restaurante": "McDonals",
-		"tags": [
-			"hamburguesa",
+		"ingredientes": [
 			"pollo",
 			"pollo rebozado",
 			"pollo frito",
@@ -602,13 +573,14 @@
 			"queso gouda",
 			"gouda",
 			"lechuga",
-			"salsa de queso",
-			"contundente",
-			"caliente"
+			"salsa de queso"
 		],
 		"descripción": "Delicioso pollo crujiente 100% origen español, cebolla crispy y asada, queso Gouda, lechuga Batavia y una irresistible salsa cremosa de queso. ¿Se te ha hecho ya la boca agua?",
 		"categoria": "hamburguesas",
 		"cantidad": "para una persona",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://www.mcdonalds.es/sites/default/files/produits/477x360_chickenbells.png"
 	},
@@ -616,8 +588,7 @@
 		"nombre": "Mediterranean Tuna",
 		"precio": 5.55,
 		"restaurante": "McDonals",
-		"tags": [
-			"ensalada",
+		"ingredientes": [
 			"atún",
 			"pescado",
 			"pimientos",
@@ -625,13 +596,14 @@
 			"pimiento amarillo",
 			"lechuga",
 			"croutons",
-			"pan",
-			"frío",
-			"ligero"
+			"pan"
 		],
 		"descripción": "¡Nuestra base más fresca acompañado de nuestros productos más frescos! Disfruta de esta deliciosa ensalada de atún con la mejor variedad de pimientos y crujientes croutons.",
 		"categoria": "ensaladas",
 		"cantidad": "para una persona",
+		"pic":"nada picante",
+		"temp":"frío",
+		"alergia":"",
 		"preferencia": "",
 		"foto": "https://www.mcdonalds.es/sites/default/files/produits/mediterraneantuna477.png"
 	},
@@ -639,9 +611,7 @@
 		"nombre": "Wowburger",
 		"precio": 5.6,
 		"restaurante": "La trocadero",
-		"tags": [
-			"hamburguesa",
-			"vegano",
+		"ingredientes": [
 			"remolacha",
 			"mostaza",
 			"pepinillos",
@@ -650,17 +620,14 @@
 			"espinacas",
 			"lechuga",
 			"jalapeños",
-			"pan vegano",
-			"muy picante",
-			"vegetal",
-			"sin lactosa",
-			"sin huevo",
-			"caliente",
-			"contundente"
+			"pan vegano"
 		],
 		"descripción": "Vegan burger ecológica de remolacha, pepinillos, cebolla caramelizada, espinaca baby, lechuga trocadero, y jalapeños.",
 		"categoria": "hamburguesas",
 		"cantidad": "para una persona",
+		"pic":"picante",
+		"temp":"caliente",
+		"alergia":["sin lactosa", "sin huevo"],
 		"preferencia": "vegano",
 		"foto": "http://www.latrocadero.com/wp-content/uploads/2017/10/wowburger-300x294.png"
 	},
@@ -668,9 +635,7 @@
 		"nombre": "Setburg",
 		"precio": 5.95,
 		"restaurante": "La trocadero",
-		"tags": [
-			"hamburguesa",
-			"vegano",
+		"ingredientes": [
 			"setas",
 			"rúcula",
 			"tomate concentrado",
@@ -681,15 +646,16 @@
 			"queso",
 			"salsa pesto vegana",
 			"pesto",
-			"sin lactosa",
-			"sin huevo",
 			"pan vegano",
-			"contundente",
-			"caliente"
+			"contundente"
 		],
 		"descripción": "Vegan burger ecológica de setas, rúcula, tomate concentrado, cebolla roja, queso vegano, y salsa pesto vegana.",
 		"categoria": "hamburguesas",
 		"cantidad": "para una persona",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":["sin lactosa",
+			"sin huevo"],
 		"preferencia": "vegano",
 		"foto": "http://www.latrocadero.com/wp-content/uploads/2017/10/setburg-300x288.png"
 	},
@@ -697,8 +663,7 @@
 		"nombre": "Setbacon",
 		"precio": 5.95,
 		"restaurante": "La trocadero",
-		"tags": [
-			"vegano",
+		"ingredientes": [
 			"setas",
 			"bacon vegano",
 			"cebolla caramelizada",
@@ -707,18 +672,16 @@
 			"tomate",
 			"lechuga",
 			"curry",
-			"picante",
 			"salsa curry",
 			"pan vegano",
-			"vegetal",
-			"cebolla",
-			"caliente",
-			"contundente", 
-			"hamburguesa"
+			"cebolla"
 		],
 		"descripción": "Vegan burger ecológica de setas, vegan bacon, cebolla caramelizada, lechuga trocadero, tomate fresco, y salsa curry.",
 		"categoria": "hamburguesas",
 		"cantidad": "para una persona",
+		"pic":"picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "vegano",
 		"foto": "http://www.latrocadero.com/wp-content/uploads/2017/10/setbacon-300x257.png"
 	},
@@ -726,8 +689,7 @@
 		"nombre": "LTClaccic",
 		"precio": 5.95,
 		"restaurante": "La trocadero",
-		"tags": [
-			"vegano",
+		"ingredientes": [
 			"remolacha",
 			"bacon vegano",
 			"cebolla roja",
@@ -738,16 +700,14 @@
 			"pan vegano",
 			"queso vegano",
 			"veganesa",
-			"ketchup", 
-			"vegetal", 
-			"hamburguesa", 
-			"caliente", 
-			"contundente"
-
+			"ketchup"
 		],
 		"descripción": "Vegan burger ecológica de setas, vegan bacon, cebolla caramelizada, lechuga trocadero, tomate fresco, y salsa curry.",
 		"categoria": "hamburguesas",
 		"cantidad": "para una persona",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "vegano",
 		"foto": "http://www.latrocadero.com/wp-content/uploads/2017/10/Ltclasic-300x288.png"
 	},
@@ -755,10 +715,10 @@
 		"nombre": "Falburger",
 		"precio": 5.75,
 		"restaurante": "La trocadero",
-		"tags": [
+		"ingredientes": [
 			"hamburguesa",
-			"vegetal", 
-			"tomate", 
+			"vegetal",
+			"tomate",
 			"cebolla",
 			"vegano",
 			"falafel",
@@ -771,13 +731,14 @@
 			"pan vegano",
 			"lechuga trocadero",
 			"ajonesa",
-			"hummus", 
-			"caliente", 
-			"contundente"
+			"hummus"
 		],
 		"descripción": "Vegan burger ecológica de falafel, tomate concentrado, cebolla roja, pepinillos, lechuga trocadero, espinaca baby, aceitunas negras, ajonesa y hummus.",
 		"categoria": "hamburguesas",
 		"cantidad": "para una persona",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "vegano",
 		"foto": "http://www.latrocadero.com/wp-content/uploads/2017/10/falburger-300x261.png"
 	},
@@ -785,12 +746,11 @@
 		"nombre": "Campburg",
 		"precio": 5.75,
 		"restaurante": "La trocadero",
-		"tags": [
-			"vegano",
+		"ingredientes": [
 			"zanahoria",
 			"cebolla",
 			"pimiento rojo asado",
-			"pimiento rojo", 
+			"pimiento rojo",
 			"pimiento",
 			"cebolla caramelizada",
 			"rúcula",
@@ -798,15 +758,14 @@
 			"lechuga trocadero",
 			"queso vegano",
 			"veganesa",
-			"mostaza", 
-			"vegetal", 
-			"contundente", 
-			"caliente", 
-			"hamburguesa"
+			"mostaza"
 		],
 		"descripción": "Vegan burger ecológica de zanahoria y cebolla, pimiento rojo asado, cebolla caramelizada, rúcula, lechuga trocadero, queso vegano, veganesa, y mostaza.",
 		"categoria": "hamburguesas",
 		"cantidad": "para una persona",
+		"pic":"nada picante",
+		"temp":"caliente",
+		"alergia":"",
 		"preferencia": "vegano",
 		"foto": "http://www.latrocadero.com/wp-content/uploads/2017/10/CAMPBURG-300x254.png"
 	}
