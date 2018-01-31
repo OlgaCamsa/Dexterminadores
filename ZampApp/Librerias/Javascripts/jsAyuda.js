@@ -37,4 +37,4 @@ var Contact = (function () {
     }
 })();
 
-$('#submit').click(ContactModule);
+$('#submit').click(Contact);
