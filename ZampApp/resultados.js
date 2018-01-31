@@ -170,4 +170,3 @@ function pintarPlatos(listaFiltrada){
     },'html');
 }
 listaFiltrada.splice(0,listaFiltrada.length);
-

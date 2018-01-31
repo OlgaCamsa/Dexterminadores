@@ -1,5 +1,5 @@
 var LSModule = (function () {
-    var valores = {};
+    var valores = {categoria: null, cantidad: null, preferencia: null, pic: null, temp: null};
 
     // ---Función que rellena el objeto valores  y lo devuelve repleto de los inputs de la página---
     function _preparaDatos() {
