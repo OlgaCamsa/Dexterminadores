@@ -21,9 +21,9 @@ var preguntas = {
             titulo: "Alergias",
             descripcion: "¿Tienes alguna intolerancia alimenticia?",
             opciones: [
-                { type: "checkbox", name: "alergias", value: "gluten", text: "Gluten" },
-                { type: "checkbox", name: "alergias", value: "lactosa", text: "Lactosa" },
-                { type: "checkbox", name: "alergias", value: "frutossecos", text: "Frutos secos" }],
+                { type: "checkbox", name: "preferencia", value: "gluten", text: "Gluten" },
+                { type: "checkbox", name: "preferencia", value: "lactosa", text: "Lactosa" },
+                { type: "checkbox", name: "preferencia", value: "frutossecos", text: "Frutos secos" }],
         },
         {
             posicion: "downder",
