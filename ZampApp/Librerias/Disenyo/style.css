@@ -147,11 +147,12 @@ header .login img {
     margin: 0px;
     padding: 0px;
     background-color: transparent;
-    height: 50px;
+    /* height: 50px; */
+    height: 0px;
 }
 
 footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
     background: #ea5b0c;
     width: 100%;
@@ -194,7 +195,8 @@ footer>.enlaces>div {
 
 @media (max-width:700px) {
     .rellenofooter {
-        height: 90px;
+        /* height: 90px; */
+        height: 0px;
     }
     footer {
         height: 110px;
@@ -219,7 +221,8 @@ footer>.enlaces>div {
 
 @media (max-width:400px) {
     .rellenofooter {
-        height: 90px;
+        /* height: 90px; */
+        height: 0px;
     }
     footer {
         height: 90px;
@@ -677,7 +680,10 @@ footer>.enlaces>div {
         max-width: initial;
     }
     #asks {
-        height: 524px;
+        height: 500px;
+    }
+    #asks h5{
+        height: 60px;
     }
     #asks>div {
         margin: 6px 10px;
