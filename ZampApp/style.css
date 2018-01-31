@@ -639,6 +639,10 @@ footer>.enlaces>div {
     text-align: center;
 }
 
+#asks input{
+    margin-right: 5px;
+}
+
 #askbutton {
     display: block;
     width: 100%;
