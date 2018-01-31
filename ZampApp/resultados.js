@@ -27,7 +27,7 @@ window.onload = function(){
 
 	var myArr;
 	var requestFiltro = new XMLHttpRequest();
-	var url = "./listaDeProductos.json";
+	var url = "./Librerias/Base_Datos/listaDeProductos.json";
 	requestFiltro.onload = function() {
 		if (this.readyState == 4) {
 			if (this.status == 200) {
@@ -45,7 +45,7 @@ window.onload = function(){
 			alert('La página se está cargando');
 		}
 	};
-	requestFiltro.open("POST", url, true);
+	requestFiltro.open("GET", url, true);
 	requestFiltro.send();
 
 	$('#botonFiltro').click(function(){
