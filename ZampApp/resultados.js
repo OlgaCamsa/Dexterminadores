@@ -48,9 +48,7 @@ window.onload = function(){
 	requestFiltro.open("POST", url, true);
 	requestFiltro.send();
 
-	$('#botonFiltro').click(function(e){
-		localStorage.removeItem("inputs");
-		valores = {};
+	$('#botonFiltro').click(function(){
 		console.log("true");
 		valores=LSModule.LeerInputs();
 		console.log('valores2:', valores);
@@ -71,13 +69,13 @@ function CrearListaFiltrada(valores, myArr){
 		console.log('prefer is not null');
 			if(valores[prefer[k]].split(",").length==1){
 				listaFiltrada = listaFiltrada.concat(myArr.filter(plato => {
-					return plato[prefer[k]] == valores[prefer[k]]
+					return (plato[prefer[k]] == valores[prefer[k]])
 				}));
 			}
 			else{
 				for(let i=0; i<valores[prefer[k]].split(",").length;i++){
 					listaFiltrada = listaFiltrada.concat(myArr.filter(plato => {
-						return plato[prefer[k]] == valores[prefer[k]].split(",")[i]
+						return (plato[prefer[k]] == valores[prefer[k]].split(",")[i])
 					
 					}));
 				}

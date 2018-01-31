@@ -1,9 +1,9 @@
 var LSModule = (function () {
-    var valores = {categoria: null, cantidad: null, preferencia: null, pic: null, temp: null};
+    var valores = {};
 
     // ---Función que rellena el objeto valores  y lo devuelve repleto de los inputs de la página---
     function _preparaDatos() {
-        valores = {};
+        valores = {categoria: null, cantidad: null, preferencia: null, temp: null, pic: null, precio:null, proximidad:null};
         $('select').each(function () {
             valores[this.name] = this.value;
         });
