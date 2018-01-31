@@ -24,40 +24,42 @@ var RandomModul = (function () {
             function (data, textStatus, jqXHR) {
                 console.log('Recibido');
                 console.log(inputs);
-                $('#textModal').html("Me gusta tu elección amigo<br>ZampApp's Actitude Always");
-                $('#myModal').modal('show');
+                $('#modalmsg').html("Me gusta tu elección amigo<br>ZampApp's Actitude Always");
+                $('#modalfeedback').modal('show');
                 setTimeout(_enlaceResultados, 4000);
             },
         )
-            .fail(function (obj, textStatus, jqXHR) {
-                console.log('No Recibido');
-                $('#textModal').html("Parece que tenemos algún tipo de problema en la cocina<br>En unos segundos te redirigiremos a la página principal");
-                $('#myModal').modal('show');
-                setTimeout(_enlaceHome, 4000);
-            },
-        )
+            .fail(function () {
+                ErrorEnvio()
+            });
+        // .fail(function (obj, textStatus, jqXHR) {
+        // console.log('No Recibido');
+        // $('#textModal').html("Parece que tenemos algún tipo de problema en la cocina<br>En unos segundos te redirigiremos a la página principal");
+        // $('#myModal').modal('show');
+        // setTimeout(_enlaceHome, 4000);
     }
 
-    // opciones del modal iniciales
-    $('#myModal').modal({
-        backdrop: false,
-        Keyboard: true,
-        focus: true,
-        show: false
-    });
 
-    // enlace a pagina resultados
-    function _enlaceResultados() {
-        window.location.href = "resultados.html";
-    }
+// opciones del modal iniciales
+$('#myModal').modal({
+    backdrop: false,
+    Keyboard: true,
+    focus: true,
+    show: false
+});
 
-    // enlace a pagina home
-    function _enlaceHome() {
-        window.location.href = "home.html";
-    }
+// enlace a pagina resultados
+function _enlaceResultados() {
+    window.location.href = "resultados.html";
+}
 
-    return _EnvioDatosyModal;
-})();
+// enlace a pagina home
+// function _enlaceHome() {
+//     window.location.href = "home.html";
+// }
+
+return _EnvioDatosyModal;
+}) ();
 
 $('#btnAdelante').click((evento) => {
     evento.preventDefault();
