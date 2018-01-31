@@ -1,0 +1,1210 @@
+/*Empieza Diseño general*/
+
+* {
+    font-family: Helvetica, arial;
+    color: #D35400;
+    padding: 0px;
+    margin: 0px;
+    font-size: 15pt;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+body {
+    font-family: helvetica, Arial;
+    color: #C0CA33;
+    background-color: #f5f5f5;
+}
+
+
+/*Fin Diseño general*/
+
+
+/* Empieza HEADER*/
+
+header {
+    width: 100%;
+    height: 42pt;
+    margin-bottom: 20pt;
+    background-color: #eb5b0c;
+    position: relative;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+}
+
+header nav div {
+    display: inline-block;
+}
+
+header .logo {
+    position: absolute;
+    padding-left: 20px;
+}
+
+header .logo a {
+    text-decoration-line: none;
+    font-size: 0pt;
+}
+
+header .logo img {
+    width: 250px;
+}
+
+header .login {
+    /* position: absolute; */
+    /* right: 20px; */
+    float: right;
+    /* top: 8px; */
+    width: 250px;
+    margin-top: 10px;
+    margin-right: 5px;
+    /* display: -webkit-flex;
+  display: flex; */
+    /* border: 1px solid black; */
+    height: 20px;
+}
+
+header .login>div {
+    display: inline-block;
+    margin: 0pt 5pt;
+    float: right;
+}
+
+header .login a {
+    text-decoration-line: none;
+    font-size: 0pt;
+}
+
+header .login img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+@media (max-width:650px) {
+    header {
+        height: 33pt;
+    }
+    header .logo {
+        padding-left: 10px;
+    }
+    header .logo img {
+        width: 200px;
+    }
+    header .login {
+        width: 160px;
+        margin-top: 5px;
+    }
+    header .login img {
+        width: 35px;
+        height: 35px;
+        top: 0px;
+    }
+}
+
+@media (max-width:450px) {
+    header .logo {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    header .login {
+        display: block;
+        float: initial;
+        margin: auto;
+        position: relative;
+    }
+    header .login div {
+        float: initial;
+        position: relative;
+        text-align: center;
+    }
+    header {
+        margin-bottom: 70px;
+    }
+}
+
+
+/*fin HEADER*/
+
+
+/* Empieza FOOTER*/
+
+.rellenofooter {
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    height: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    background: #ea5b0c;
+    width: 100%;
+    height: 50px;
+}
+
+footer>div {
+    display: inline-block;
+    line-height: initial;
+}
+
+footer>.enlaces {
+    margin-left: 20pt;
+    width: 400pt;
+    background: #ea5b0c;
+}
+
+footer>.enlaces>div {
+    display: inline-block;
+    margin-left: 30pt;
+    margin-top: 15pt;
+    top: 0px;
+}
+
+.rrssicon {
+    position: absolute;
+    margin-top: 8pt;
+    right: 20pt;
+}
+
+.rrssicon a {
+    text-decoration-line: none;
+    font-size: 0pt;
+}
+
+.rrssicon img {
+    width: 25pt;
+    margin-right: 5pt;
+}
+
+@media (max-width:700px) {
+    .rellenofooter {
+        height: 90px;
+    }
+    footer {
+        height: 110px;
+    }
+    footer>.enlaces {
+        margin-left: 0pt;
+        width: 180pt;
+    }
+    footer>.enlaces>div {
+        display: block;
+        margin-left: 20pt;
+        margin-top: 5pt;
+        top: 0px;
+    }
+    footer>.enlaces>div:first-of-type {
+        margin-top: 15pt;
+    }
+    .rrssicon {
+        right: 10pt;
+    }
+}
+
+@media (max-width:400px) {
+    .rellenofooter {
+        height: 90px;
+    }
+    footer {
+        height: 90px;
+    }
+    footer>.enlaces {
+        margin-left: 0pt;
+        width: 130pt;
+        margin-top: 0pt;
+    }
+    footer>.enlaces>div {
+        display: block;
+        margin-left: 10pt;
+        margin-top: 1pt;
+        top: 0px;
+    }
+    footer>.enlaces>div:first-of-type {
+        margin-top: 10px;
+    }
+    footer>.enlaces>div>a {
+        font-size: 13pt;
+    }
+    .rrssicon {
+        right: 0pt;
+    }
+    .rrssicon img {
+        width: 18pt;
+        margin-right: 5pt;
+    }
+}
+
+
+/*Fin FOOTER*/
+
+
+/* Empieza HOME */
+
+.home * h1 {
+    margin: 0px;
+}
+
+.home section {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.home section p {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.home section h1 {
+    padding: 5px 5px 5px 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.home .izquierda {
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    margin-bottom: 10px;
+    border: 4px #566573 solid;
+    position: relative;
+}
+
+.home .derecha {
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    margin-bottom: 10px;
+    border: 4px #566573 solid;
+}
+
+.home .derecha div {
+    text-align: center;
+}
+
+.home .subderecha {
+    display: block;
+}
+
+.home .busqueda {
+    margin: 0px 15px 15px 15px;
+}
+
+.home .busqueda a {
+    margin: 0px;
+}
+
+.home .busqueda a img {
+    margin: 0px;
+    width: 75px;
+    height: 75px;
+}
+
+.home .pretable {
+    margin: 0 auto 0 auto;
+    overflow-y: auto;
+    padding: 5px;
+    height: 390px;
+}
+
+.home .pretable div {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    height: auto;
+    overflow: hidden;
+}
+
+.home .transparent {
+    width: 80px;
+    height: 80px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.home .pretable div #catpizza {
+    content: url("img/comida/pizza.png");
+}
+
+.home .pretable div #cathamburguesa {
+    content: url("img/comida/burguer.png");
+}
+
+.home .pretable div #catbocadillo {
+    content: url("img/comida/bocadillo.png");
+}
+
+.home .pretable div #catensalada {
+    content: url("img/comida/ensalada.png");
+}
+
+.home .pretable div #catsopa {
+    content: url("img/comida/sopa.png");
+}
+
+.home .pretable div #catcarne {
+    content: url("img/comida/carne.png");
+}
+
+.home .pretable div #catpescado {
+    content: url("img/comida/pescado.png");
+}
+
+.home .pretable div #catpescado {
+    content: url("img/comida/pescado.png");
+}
+
+.home .pretable div #catpasta {
+    content: url("img/comida/pasta.png");
+}
+
+.home .pretable div #catkebab {
+    content: url("img/comida/kebab.png");
+}
+
+.home .pretable div #catsushi {
+    content: url("img/comida/japonesa.png");
+}
+
+.home .pretable div #catarroz {
+    content: url("img/comida/arroz.png");
+}
+
+.home .pretable div #catvarios {
+    content: url("img/comida/varios.png");
+}
+
+.home .pretable div #catpizza:checked {
+    content: url("img/comida/pizza2.png");
+}
+
+.home .pretable div #cathamburguesa:checked {
+    content: url("img/comida/burguer2.png");
+}
+
+.home .pretable div #catbocadillo:checked {
+    content: url("img/comida/bocadillo2.png");
+}
+
+.home .pretable div #catensalada:checked {
+    content: url("img/comida/ensalada2.png");
+}
+
+.home .pretable div #catsopa:checked {
+    content: url("img/comida/sopa2.png");
+}
+
+.home .pretable div #catcarne:checked {
+    content: url("img/comida/carne2.png");
+}
+
+.home .pretable div #catpescado:checked {
+    content: url("img/comida/pescado2.png");
+}
+
+.home .pretable div #catpescado:checked {
+    content: url("img/comida/pescado2.png");
+}
+
+.home .pretable div #catpasta:checked {
+    content: url("img/comida/pasta2.png");
+}
+
+.home .pretable div #catkebab:checked {
+    content: url("img/comida/kebab2.png");
+}
+
+.home .pretable div #catsushi:checked {
+    content: url("img/comida/japonesa2.png");
+}
+
+.home .pretable div #catarroz:checked {
+    content: url("img/comida/arroz2.png");
+}
+
+.home .pretable div #catvarios:checked {
+    content: url("img/comida/varios2.png");
+}
+
+.home .pretable div p {
+    margin: 3px 2px;
+}
+
+@media (max-width: 480px) {
+    .home section {
+        display: block;
+    }
+    .home .izquierda .random a img {
+        margin: 0 0 10px 37%;
+    }
+    .home .busqueda a img {
+        margin: 5px;
+    }
+}
+
+@media (min-width: 320px) {
+    .home .resultadoshome h1 {
+        font-size: 30px;
+    }
+    .home.ingredientes h1 {
+        font-size: 30px;
+    }
+    .home .izquierda .random a img {
+        width: 100px;
+        height: 100px;
+    }
+    .home .izquierda {
+        margin: 5px;
+    }
+    .home .derecha {
+        margin: 5px;
+    }
+}
+
+@media (min-width: 481px) {
+    .home .resultadoshome h1 {
+        font-size: 20px;
+    }
+    .ingredientes h1 {
+        font-size: 20px;
+    }
+    .home .izquierda .random a img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+    .home .izquierda {
+        width: 200px;
+        margin: 10px;
+    }
+    .home .derecha {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 641px) {
+    .home .transparent {
+        width: 84px;
+        height: 84px;
+    }
+    .home .resultadoshome h1 {
+        font-size: 25px;
+    }
+    .home .ingredientes h1 {
+        font-size: 25px;
+    }
+    .home .izquierda .random a img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+    .home .izquierda {
+        width: 250px;
+        margin: 10px;
+    }
+    .home .derecha {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 961px) {
+    .home .resultadoshome h1 {
+        font-size: 30px;
+    }
+    .home .ingredientes h1 {
+        font-size: 30px;
+    }
+    .home {
+        font-size: 1.25em;
+    }
+    .home .transparent {
+        width: 120px;
+        height: 120px;
+    }
+    .home .izquierda .random a img {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+    }
+    .home .pretable div {
+        width: 125px;
+        height: 170px;
+        margin-bottom: 20px;
+    }
+    .home .pretable div p {
+        margin-top: 5px;
+    }
+    .home .izquierda {
+        width: 300px;
+        margin: 15px;
+        margin-bottom: 10px;
+    }
+    .home .derecha {
+        margin: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .home .resultadoshome h1 {
+        font-size: 30px;
+    }
+    .home .ingredientes h1 {
+        font-size: 30px;
+    }
+    .home .izquierda .random a img {
+        width: 250px;
+        height: 250px;
+        margin: 20px;
+    }
+    .home .izquierda {
+        width: 350px;
+        /* margin: 20px; */
+    }
+    .home .derecha {
+        /* margin: 20px; */
+    }
+}
+
+@media (min-width: 1281px) {
+    .home .resultadoshome h1 {
+        font-size: 30px;
+    }
+    .home .ingredientes h1 {
+        font-size: 30px;
+    }
+    .home .izquierda .random a img {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+    }
+    .home .izquierda {
+        width: 350px;
+        /* margin: 20px; */
+    }
+    .home .derecha {
+        /* margin: 20px; */
+    }
+}
+
+
+/* Fin clickable de categorias*/
+
+
+/*fin HOME*/
+
+
+/*Empieza RANDOM*/
+
+#asks {
+    width: 100%;
+}
+
+#asks>div {
+    padding: 0px;
+    border: 5px #566573 solid;
+    margin: 6px 0px;
+    background-color: white;
+    border-radius: 20pt;
+}
+
+#asks .pregunta h3 {
+    text-align: center;
+    margin: 10px 5px;
+}
+
+#asks h5 {
+    text-align: center;
+    margin: 10px 10px;
+}
+
+#asks form {
+    text-align: center;
+}
+
+#askbutton {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#askbutton>a {
+    width: 1px;
+    /* margin:auto; */
+}
+
+#askbutton>a>img {
+    width: 25%;
+    margin-bottom: 5px;
+}
+
+#audioyoutube{
+    height: 0px;
+    width: 0px;
+    color: transparent;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+}
+
+@media (min-width:900px) {
+    .container {
+        margin: 0px;
+        margin-bottom: 15px;
+        padding: 0px;
+        width: 100%;
+        max-width: initial;
+    }
+    #asks {
+        height: 524px;
+    }
+    #asks>div {
+        margin: 6px 10px;
+        width: 40%;
+    }
+    #asks>#topizq {
+        float: left;
+    }
+    #asks>#topder {
+        float: right;
+    }
+    #asks>#downizq {
+        float: left;
+    }
+    #asks>#downder {
+        float: right;
+    }
+    #askbutton>a>img {
+        width: 10%;
+        margin-bottom: 5px;
+    }
+}
+
+
+/*Fin RANDOM*/
+
+
+/* Empieza AYUDA */
+
+.ayuda h1 {
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    font-family: Helvetica, arial;
+    font-size: 30px;
+    color: #C0CA33;
+}
+
+.ayuda p {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Helvetica, arial;
+    font-size: 20px;
+    color: #C0CA33;
+}
+
+.contacto {
+    margin: auto;
+    width: 70%;
+    border: 4px solid #566573;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.contacto label {
+    text-align: center;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: bold;
+}
+
+.contacto div {
+    margin-left: 8%;
+    margin-top: 15px;
+    margin-bottom: 1px;
+    width: 80%;
+}
+
+.contacto input {
+    align-content: center;
+    text-decoration-color: #f5f5f5;
+    padding: 6px 6px;
+    width: 100%;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    resize: none;
+    box-shadow: 0 0 0 3px #f5f5f5;
+}
+
+.contacto textarea {
+    padding: 70px 6px;
+    width: 100%;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    resize: none;
+    box-shadow: 0 0 0 3px #f5f5f5;
+}
+
+.contacto input :focus {
+    box-shadow: none;
+}
+
+.nounderline {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* FIN AYUDA */
+
+
+/* Empieza Condiciones de uso*/
+
+.condiciones {
+    margin: 15px auto;
+    width: 70%;
+    border: 4px solid #566573;
+    border-radius: 10px;
+    /* padding: 45px 45px 20px; */
+    /* margin-top: 50px; */
+    background-color: white;
+    /* margin-bottom: 15px; */
+    height: 500px;
+    overflow: auto;
+    /* margin-top: 15px; */
+    padding: 30px 20px;
+}
+
+.condh1 h1 {
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    font-family: Helvetica, arial;
+    font-size: 30px;
+    color: #C0CA33;
+}
+
+.about {
+    margin: auto;
+    width: 70%;
+    border: 4px solid #566573;
+    border-radius: 10px;
+    padding: 45px 45px 20px;
+    margin-top: 50px;
+    background-color: white;
+    margin-bottom: 15px;
+    /* overflow: auto; */
+}
+
+.condiciones p {
+    text-align: left;
+    color: #566573;
+    font-size: 12px;
+}
+
+.condiciones h2 {
+    font-size: 16px;
+}
+
+@media (max-width:450px) {
+    .condiciones>h2 {
+        font-size: 16px;
+    }
+    .condiciones>p {
+        font-size: 14px;
+    }
+}
+
+
+/* Fin CONDICIONES*/
+
+
+/* Empieza RESULTADOS */
+
+.result {
+  display: flex;
+}
+
+.result section .result {
+  margin: 50px auto 20px auto;
+  display: flex;
+}
+
+.result #divEscondido h2 {
+  font-size: 0.7em;
+  text-align: center;
+  color: #566573;
+  margin-bottom: 25px;
+}
+
+.result h3 {
+  color: #566573;
+  font-size: 0.7em;
+  margin: 5px 0;
+}
+
+.result img {
+  width: 85%;
+  height: 85%;
+  border-radius: 5px
+}
+
+.result a {
+  text-decoration: none;
+  color: #C0CA33;
+}
+
+.result button.añadir {
+  width: 25px;
+  height: 25px;
+  background-image: url(img/icono/carrito.png);
+  border-radius: 50%;
+  background-position: center;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 0px;
+  vertical-align: middle;
+}
+
+.result input, .result select {
+  cursor: pointer;
+  border-radius: 3px;
+  color: #C0CA33;
+  border: 1px #C0CA33 solid;
+  padding-left: 3px;
+}
+
+.result select {
+  font-size: 0.7em;
+  color: #C0CA33;
+  border: 1px #C0CA33 solid;
+}
+
+.result select option {
+  font-size: 1em;
+  color: #C0CA33;
+}
+
+.result button:hover {
+  box-shadow: 0 3px 34px rgba(0, 0, 0, .25);
+  transform: translateY(-2px);
+}
+
+.result div.filtro {
+  padding: 25px 25px;
+  font-size: 0.5em;
+  background-color: white;
+  border-radius: 5px;
+  margin: 5px;
+  line-height: 1.3;
+  border: 4px #566573 solid;
+}
+
+.result div.filtro>div {
+  margin: 10px 0px
+}
+
+.result div.resultados {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: white;
+  border: 4px #566573 solid;
+}
+
+.result div.divTableBody {
+  margin: 40px 0px;
+}
+
+.result div>label {
+  font-size: 0.7em;
+  color: #C0CA33;
+  font-weight: normal;
+}
+
+.result div.orden {
+  text-align: right;
+  margin-bottom: 15px;
+  font-size: 0.9em
+}
+
+.result div.divTableCell {
+  width: 260px;
+  height: 260px;
+  perspective: 1000px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.result div.front {
+  text-align: center;
+  width: 85%;
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+
+.precio{
+  width: auto;
+  font-size: 1em;
+}
+
+.result .divTableCell:hover .flipper,
+.divTableCell.hover .flipper {
+  transform: rotateY(180deg);
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  height: 80%;
+  text-align: center;
+}
+
+.result .flipper {
+  transition: 0.4s;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 80%;
+  margin-bottom: 10px;
+}
+
+.result .front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  padding: 10px;
+  /*font-weight: normal;*/
+}
+
+.front p{
+  font-size: 0.9em;
+  bottom: 5px;
+}
+
+.front img{
+  height: 140px;
+  width: 140px;
+}
+
+.front h3{
+  height: 20px;
+}
+
+.result .back a:hover {
+  text-decoration: none;
+}
+
+.result .back {
+  transform: rotateY(180deg);
+  width: 260px;
+  height: 230px;
+}
+
+.result .back p {
+  font-size: 0.6em;
+  line-height: 1em;
+}
+
+
+/*div.back div{
+font-size: 0.6em;
+text-align: left;
+line-height: 0.8;
+color: #566573;
+}
+div.divTableCell > div {
+font-weight: bold;
+color: #566573;
+}
+div.front span {
+font-size: 0.7em; 
+color: #C0CA33;
+}
+*/
+
+.result input[type="range"] {
+  width: 90%;
+}
+
+.result .busqueda {
+  width: 100%;
+  position: relative;
+}
+
+.result .busqueda button {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  right: 20px;
+}
+
+.result .busqueda button img {
+  text-align: center;
+  height: 35px;
+  width: 35px;
+  right: 20px;
+  bottom: 10px;
+}
+
+.tooltip-inner{
+  background-color: #566573 !important;
+}
+
+@media screen and (max-width:480px) {
+  section .result {
+      display: block;
+  }
+
+  .slider-horizontal{
+    width: 95% !important;
+  }
+
+  #divEscondido{
+    display: none;
+  }
+  #responsiveBusqueda{
+    display: block;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    margin:auto;
+    font-size: 1.2em;
+    box-shadow: none;
+  }
+  .filtro{
+    display: block;
+    width: auto;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .result .resultados {
+      width: 78%;
+  }
+  .result div.filtro {
+    height: 870px;
+    width: 250px;
+}
+  #responsiveBusqueda{
+    display: none;
+    box-shadow: none;
+  }
+}
+
+
+
+/* FIN RESULTADOS*/
+
+
+/* Empieza SOBRE NOSOTROS */
+
+.nosotros h1 {
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    font-family: Helvetica, arial;
+    font-size: 30px;
+    color: #C0CA33;
+}
+
+.nosotros>.about {
+    margin-top: 15px;
+    padding: 30px 20px;
+}
+
+
+/* FIN SOBRE NOSOTROS*/
+
+/* Empieza REGISTRO EMPRESA */
+
+.RegEmpresa{
+    height: 598px;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  
+  .RegEmpresa #uldias{
+    margin-left: 30%;
+  }
+  
+  .RegEmpresa #Logo{
+    display: none;
+  
+  }
+  
+  .RegEmpresa #LogoImg{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .RegEmpresa .form-control{
+    padding: 2px;
+    margin: 2px;
+  }
+  
+  .RegEmpresa .btn{
+    background-color: #c0ca33;
+    border: 2px solid #566573;
+  }
+  
+  .RegEmpresa input[type=checkbox] {
+    transform: scale(2);
+  }
+  
+  .input-group-prepend label{
+    vertical-align: middle;
+    margin: 0px;
+  
+  }
+  
+  .padding{
+    padding:5px;
+  }
+  
+  #btnRegistro{
+    color: white;
+  }
+  
+  @media (max-width: 481px) {
+    .RegEmpresa #uldias{
+      margin-left: 0%;
+    }
+    .abajo .col-6 .form-control{
+      margin-top: 17px;
+    }
+    .medio .tab-content .tab-pane .row .col-6 .HCierre{
+      margin-top: 30px;
+    }
+    .RegEmpresa #LogoImg{
+      width: 50px;
+      height: 50px;
+    }
+  
+  }
+  /* FIN REGISTRO EMPRESA*/
+  
